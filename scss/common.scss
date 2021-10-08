@@ -1,0 +1,67 @@
+p,
+label,
+input,
+button,
+th,
+td,
+textarea,
+span,
+a {
+  font-family: "Stolzl", sans-serif;
+}
+a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.03em;
+}
+main {
+  margin: 0 auto;
+  width: 100%;
+  max-width: $maxWidthContent;
+}
+.sidebar {
+  width: 325px;
+  border-right: 1px solid #eeeef4;
+}
+.content {
+  padding: 0 0 0 40px;
+  width: calc(100% - 325px);
+}
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column {
+  flex-direction: column;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+@mixin btn($color, $bgColor) {
+  width: 183px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  text-decoration: none;
+  color: $color;
+  background-color: $bgColor;
+  font-size: 13px;
+  line-height: 40px;
+}
+@mixin btnHover() {
+  opacity: 0.8;
+}

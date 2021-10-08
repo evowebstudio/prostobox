@@ -1,0 +1,119 @@
+.sidebar-nav {
+  margin: 68px 0 0 0;
+
+  .item {
+    position: relative;
+    margin: 0 0 28px 0;
+    max-width: 300px;
+
+    &.has-child {
+      &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 50%;
+        right: 0;
+        margin: -3px 0 0 0;
+        width: 12px;
+        height: 6px;
+        background-image: url("../../img/icons/arrow-down.svg");
+        background-position: right center;
+        background-size: 12px 6px;
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+      }
+
+      &.opened {
+        &:after {
+          transform: rotate(0);
+        }
+      }
+    }
+
+    .link {
+      min-height: 24px;
+      padding: 0 0 0 48px;
+      font-size: 15px;
+      line-height: 18px;
+
+      background-position: left center;
+      background-size: 24px 24px;
+      background-repeat: no-repeat;
+
+      &.home {
+        background-image: url("../../img/icons/home.svg");
+      }
+
+      &.early-delivery {
+        background-image: url("../../img/icons/cart.svg");
+      }
+
+      &.my-parcels {
+        background-image: url("../../img/icons/parcels.png");
+      }
+
+      &.affilate {
+        background-image: url("../../img/icons/affilate.svg");
+      }
+
+      &.settings {
+        background-image: url("../../img/icons/settings.svg");
+      }
+
+      &.support {
+        background-image: url("../../img/icons/support.svg");
+      }
+
+      &.logout {
+        background-image: url("../../img/icons/logout.svg");
+      }
+    }
+  }
+
+  .child {
+    .search {
+      position: relative;
+      margin: 0 0 26px 0;
+
+      input[type="text"] {
+        padding: 20px;
+        width: 300px;
+        height: 54px;
+        background: #ffffff;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+        border-radius: 20px;
+
+        &::placeholder {
+          font-size: 12px;
+          line-height: 14px;
+          color: #99a2c5;
+        }
+      }
+
+      button {
+        position: absolute;
+        top: 50%;
+        right: 45px;
+        margin: -12px 0 0 0;
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-repeat: no-repeat;
+        background-size: 24px;
+        background-position: center;
+        background-image: url("../../img/icons/search.svg");
+      }
+    }
+
+    li {
+      margin: 0 0 24px 24px;
+      list-style-type: disc;
+
+      &:last-child {
+        margin: 0 0 32px 24px;
+      }
+    }
+  }
+}

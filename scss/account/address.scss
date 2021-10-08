@@ -1,0 +1,74 @@
+.account .address {
+  margin: 40px 0 0 0;
+  padding: 0 0 24px 0;
+  background: #ffffff;
+  border: 2px solid #fae14c;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+  border-radius: 20px;
+
+  .title {
+    padding: 27px 45px 0;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .row {
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+    .item {
+      width: 50%;
+      padding: 15px 0 0 45px;
+
+      &:last-child {
+        padding: 15px 0 0 0;
+      }
+
+      .label {
+        font-size: 13px;
+        line-height: 16px;
+        color: #616d99;
+      }
+
+      .value {
+        margin: 2px 0 0 0;
+        font-size: 16px;
+        line-height: 19px;
+
+        &.yellow {
+          padding: 5px 7px;
+          border-radius: 4px;
+          background-color: #fae14c;
+        }
+      }
+
+      .copy {
+        margin: 0 0 0 6px;
+        font-size: 12px;
+        line-height: 0px;
+        text-decoration-line: underline;
+        color: #2b69f6;
+      }
+
+      .faq {
+        position: relative;
+        font-size: 12px;
+        line-height: 18px;
+        text-decoration-line: underline;
+
+        &:before {
+          content: "";
+          margin: 0 10px 0 0;
+          width: 30px;
+          height: 30px;
+          background-image: url("../../img/icons/warning.svg");
+          background-position: center;
+          background-size: 30px 30px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+.account {
+  .head {
+    .time {
+      margin: 48px 0 0 0;
+      font-size: 15px;
+      line-height: 18px;
+      color: #616d99;
+
+      span {
+        color: #000;
+      }
+    }
+
+    .info {
+      margin: 28px 0 0 0;
+      padding: 20px 30px;
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      box-sizing: border-box;
+      box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+      border-radius: 20px;
+
+      .item {
+        padding: 0 45px 0 45px;
+        border-right: 1px solid #eeeef4;
+
+        &:first-child {
+          padding: 0 45px 0 0;
+        }
+
+        &:last-child {
+          padding: 0 0 0 45px;
+          border-right: 0;
+        }
+
+        .name {
+          font-size: 16px;
+          line-height: 19px;
+          color: #000000;
+        }
+
+        .email {
+          margin: 4px 0 0 0;
+          font-size: 12px;
+          line-height: 14px;
+          color: #2b69f6;
+
+          button {
+            width: 15px;
+            height: 15px;
+            margin: 0 0 0 4px;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 15px;
+            color: #ffffff;
+            border-radius: 8px;
+            background: #ff0000;
+          }
+        }
+
+        .code {
+          display: inline-block;
+          margin: 4px 0 0 0;
+          padding: 4px;
+          font-size: 14px;
+          line-height: 17px;
+          text-transform: uppercase;
+          background: #fae14c;
+          border-radius: 4px;
+        }
+
+        .balance {
+          font-size: 16px;
+          line-height: 19px;
+          color: #000000;
+
+          span {
+            color: #2b69f6;
+          }
+        }
+
+        .add {
+          display: block;
+          margin: 12px 0 0 0;
+          font-size: 12px;
+          line-height: 14px;
+          text-decoration-line: underline;
+          color: #000000;
+        }
+
+        .history {
+          display: block;
+          margin: 6px 0 0 0;
+          font-size: 12px;
+          line-height: 14px;
+          text-decoration-line: underline;
+          color: #616d99;
+        }
+
+        .ref-title {
+          font-size: 14px;
+          line-height: 17px;
+          color: #616d99;
+
+          button {
+            width: 15px;
+            height: 15px;
+            margin: 0 0 0 4px;
+            font-weight: 600;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 15px;
+            color: #6d80a7;
+            border-radius: 8px;
+            background: #bfd3fb;
+          }
+        }
+
+        .ref-code {
+          margin: 9px 0 0 0;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 22px;
+          color: #000000;
+        }
+
+        .copy {
+          margin: 2px 0 0 0;
+          font-size: 12px;
+          line-height: 14px;
+          text-decoration-line: underline;
+          color: #000000;
+        }
+      }
+    }
+  }
+}

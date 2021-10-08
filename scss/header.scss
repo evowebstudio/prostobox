@@ -1,0 +1,61 @@
+header {
+  background: #fafafb;
+
+  .header {
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 100%;
+    max-width: $maxWidthContent;
+
+    .nav {
+      li {
+        margin: 0 30px 0 0;
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+
+    .buttons {
+      .notification {
+        position: relative;
+        margin: 0 20px 0 0;
+
+        button {
+          width: 26px;
+          height: 27px;
+          background-image: url("../img/icons/notification.svg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 26px 27px;
+
+          &.active {
+            background-image: url("../img/icons/notification_active.svg");
+          }
+        }
+
+        span {
+          position: absolute;
+          top: 0;
+          right: 0;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 8px;
+          line-height: 10px;
+          letter-spacing: 0.03em;
+          color: #ff0000;
+        }
+      }
+
+      .login {
+        width: 29px;
+        height: 29px;
+        background-image: url("../img/icons/login.svg");
+        background-repeat: no-repeat;
+        background-size: 29px 29px;
+        background-position: center;
+      }
+    }
+  }
+}

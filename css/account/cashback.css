@@ -1,0 +1,11 @@
+.account .cashback {
+  margin: 40px 0 0 0;
+}
+.account .cashback .title {
+  font-size: 18px;
+  line-height: 18px;
+  color: #616d99;
+}
+.account .cashback .item {
+  margin: 20px 0 0 0;
+}

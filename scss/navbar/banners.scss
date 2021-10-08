@@ -1,0 +1,88 @@
+.sidebar {
+  .banners {
+    .item {
+      width: 296px;
+      height: 380px;
+      margin: 12px 0 0 0;
+      text-align: center;
+      box-sizing: border-box;
+      border-radius: 20px;
+
+      &.affilate {
+        background: #ffffff;
+        border: 1px solid #dfe9fd;
+
+        .title {
+          font-size: 20px;
+          line-height: 28px;
+          color: #000000;
+        }
+
+        .subtitle {
+          margin: 22px 0 0 0;
+          padding: 6px 20px;
+          font-size: 14px;
+          line-height: 24px;
+          color: #ffffff;
+          background-color: #000;
+          border-radius: 10px;
+
+          span {
+            font-weight: bold;
+          }
+        }
+
+        .description {
+          margin: 12px 0;
+          font-size: 12px;
+          line-height: 24px;
+          color: rgba(0, 0, 0, 0.75);
+
+          span {
+            font-weight: bold;
+          }
+        }
+
+        .btn {
+          @include btn(#fff, #2b69f6);
+
+          &:hover {
+            @include btnHover();
+          }
+        }
+      }
+
+      &.cashback {
+        background-color: #f5cbff;
+
+        .title {
+          max-width: 260px;
+          font-size: 20px;
+          line-height: 28px;
+          color: #583760;
+        }
+
+        .description {
+          margin: 4px 0 0 0;
+          max-width: 250px;
+          font-size: 13px;
+          line-height: 20px;
+          color: #583760;
+
+          span {
+            font-weight: bold;
+          }
+        }
+
+        .btn {
+          margin: 18px 0 0 0;
+          @include btn(#000000, #fff);
+
+          &:hover {
+            @include btnHover();
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.account .grid {
+  margin: 40px 0 0 0;
+}
+.account .grid .title {
+  font-size: 18px;
+  line-height: 18px;
+  color: #616d99;
+}

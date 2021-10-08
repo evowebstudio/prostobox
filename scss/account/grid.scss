@@ -1,0 +1,84 @@
+.account {
+  .grid {
+    margin: 40px 0 0 0;
+    .title {
+      font-size: 18px;
+      line-height: 18px;
+      color: #616d99;
+    }
+
+    .item {
+      margin: 24px 0 0 0;
+      padding: 0 0 20px 0;
+      max-width: 250px;
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      box-sizing: border-box;
+      box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+      border-radius: 20px;
+      text-align: center;
+
+      p {
+        max-width: 208px;
+      }
+
+      .title {
+        margin: 10px auto 0;
+      }
+
+      .description {
+        margin: 10px auto 0;
+        font-size: 12px;
+        line-height: 16px;
+        color: #616d99;
+
+        span {
+          color: #000;
+        }
+      }
+
+      a {
+        margin: 8px 0 0 0;
+        font-size: 14px;
+        line-height: 25px;
+        text-decoration-line: underline;
+        color: #3a78bc;
+      }
+
+      &.coupon {
+        padding: 60px 20px;
+        border: 2px dashed rgba(153, 162, 197, 0.5);
+
+        .title {
+          font-size: 14px;
+          line-height: 17px;
+          text-align: center;
+          color: #000000;
+        }
+
+        .code {
+          margin: 10px 0 0 0;
+          padding: 12px 50px;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 29px;
+          text-align: center;
+          color: #000000;
+          border: 2px solid #fae14c;
+          box-sizing: border-box;
+          filter: drop-shadow(0px 2px 30px rgba(97, 109, 153, 0.08));
+          border-radius: 20px;
+        }
+
+        .copy {
+          display: block;
+          margin: 8px 0 0 0;
+          font-size: 14px;
+          line-height: 17px;
+          text-decoration-line: underline;
+          color: #2b69f6;
+        }
+      }
+    }
+  }
+}

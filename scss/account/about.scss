@@ -1,0 +1,32 @@
+.account {
+  .about {
+    margin: 40px 0 0 0;
+
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 18px;
+      color: #000000;
+    }
+
+    .text {
+      margin: 20px 0 0 0;
+      font-size: 16px;
+      line-height: 24px;
+      color: #000000;
+    }
+
+    a {
+      margin: 20px 0 0 0;
+      display: block;
+      font-size: 18px;
+      line-height: 24px;
+      text-decoration-line: underline;
+      color: #2b69f6;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

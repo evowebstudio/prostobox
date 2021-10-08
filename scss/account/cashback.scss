@@ -1,0 +1,49 @@
+.account {
+  .cashback {
+    margin: 40px 0 0 0;
+
+    .title {
+      font-size: 18px;
+      line-height: 18px;
+      color: #616d99;
+    }
+
+    .item {
+      margin: 20px 0 0 0;
+      padding: 42px 0 20px 54px;
+      background: #fae14c;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      box-sizing: border-box;
+      border-radius: 20px;
+
+      .info {
+        margin: 0 0 0 55px;
+
+        .title {
+          max-width: 275px;
+          font-weight: bold;
+          font-size: 32px;
+          line-height: 40px;
+          color: #1a223f;
+        }
+
+        .description {
+          max-width: 275px;
+          margin: 10px 0 0 0;
+          font-size: 16px;
+          line-height: 24px;
+          color: #1a223f;
+        }
+
+        .btn {
+          margin: 20px 0 0 0;
+          @include btn(#fff, #2b69f6);
+
+          &:hover {
+            @include btnHover();
+          }
+        }
+      }
+    }
+  }
+}
