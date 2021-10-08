@@ -285,7 +285,7 @@ header .header .buttons .login {
   margin: -3px 0 0 0;
   width: 12px;
   height: 6px;
-  background-image: url("/img/icons/arrow-down.svg");
+  background-image: url("../../img/icons/arrow-down.svg");
   background-position: right center;
   background-size: 12px 6px;
   background-repeat: no-repeat;
@@ -306,25 +306,25 @@ header .header .buttons .login {
   background-repeat: no-repeat;
 }
 .sidebar-nav .item .link.home {
-  background-image: url("/img/icons/home.svg");
+  background-image: url("../../img/icons/home.svg");
 }
 .sidebar-nav .item .link.early-delivery {
-  background-image: url("/img/icons/cart.svg");
+  background-image: url("../../img/icons/cart.svg");
 }
 .sidebar-nav .item .link.my-parcels {
-  background-image: url("/img/icons/parcels.png");
+  background-image: url("../../img/icons/parcels.png");
 }
 .sidebar-nav .item .link.affilate {
-  background-image: url("/img/icons/affilate.svg");
+  background-image: url("../../img/icons/affilate.svg");
 }
 .sidebar-nav .item .link.settings {
-  background-image: url("/img/icons/settings.svg");
+  background-image: url("../../img/icons/settings.svg");
 }
 .sidebar-nav .item .link.support {
-  background-image: url("/img/icons/support.svg");
+  background-image: url("../../img/icons/support.svg");
 }
 .sidebar-nav .item .link.logout {
-  background-image: url("/img/icons/logout.svg");
+  background-image: url("../../img/icons/logout.svg");
 }
 .sidebar-nav .child .search {
   position: relative;
@@ -378,7 +378,7 @@ header .header .buttons .login {
   background-repeat: no-repeat;
   background-size: 24px;
   background-position: center;
-  background-image: url("/img/icons/search.svg");
+  background-image: url("../../img/icons/search.svg");
 }
 .sidebar-nav .child li {
   margin: 0 0 24px 24px;
@@ -737,7 +737,7 @@ header .header .buttons .login {
   margin: 0 10px 0 0;
   width: 30px;
   height: 30px;
-  background-image: url("/img/icons/warning.svg");
+  background-image: url("../../img/icons/warning.svg");
   background-position: center;
   background-size: 30px 30px;
 }
@@ -1034,7 +1034,7 @@ header .header .buttons .login {
   display: block;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/img/icons/arrow-right.svg");
+  background-image: url("../../img/icons/arrow-right.svg");
   cursor: pointer;
 }
 .account .news .item .text {

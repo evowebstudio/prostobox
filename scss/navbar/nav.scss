@@ -16,7 +16,7 @@
         margin: -3px 0 0 0;
         width: 12px;
         height: 6px;
-        background-image: url("/img/icons/arrow-down.svg");
+        background-image: url("../../img/icons/arrow-down.svg");
         background-position: right center;
         background-size: 12px 6px;
         background-repeat: no-repeat;
@@ -41,31 +41,31 @@
       background-repeat: no-repeat;
 
       &.home {
-        background-image: url("/img/icons/home.svg");
+        background-image: url("../../img/icons/home.svg");
       }
 
       &.early-delivery {
-        background-image: url("/img/icons/cart.svg");
+        background-image: url("../../img/icons/cart.svg");
       }
 
       &.my-parcels {
-        background-image: url("/img/icons/parcels.png");
+        background-image: url("../../img/icons/parcels.png");
       }
 
       &.affilate {
-        background-image: url("/img/icons/affilate.svg");
+        background-image: url("../../img/icons/affilate.svg");
       }
 
       &.settings {
-        background-image: url("/img/icons/settings.svg");
+        background-image: url("../../img/icons/settings.svg");
       }
 
       &.support {
-        background-image: url("/img/icons/support.svg");
+        background-image: url("../../img/icons/support.svg");
       }
 
       &.logout {
-        background-image: url("/img/icons/logout.svg");
+        background-image: url("../../img/icons/logout.svg");
       }
     }
   }
@@ -103,7 +103,7 @@
         background-repeat: no-repeat;
         background-size: 24px;
         background-position: center;
-        background-image: url("/img/icons/search.svg");
+        background-image: url("../../img/icons/search.svg");
       }
     }
 
