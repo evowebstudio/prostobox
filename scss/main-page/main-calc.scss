@@ -178,6 +178,15 @@
         margin-top: 10px;
         font-size: 16px;
         line-height: 180%;
+        display: block;
+        padding-left: 20px;
+        max-width: calc(100% - 30px);
+
+        &::before {
+          position: absolute;
+          left: 0;
+          top: 10px;
+        }
       }
     }
   }

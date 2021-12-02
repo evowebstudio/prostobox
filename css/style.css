@@ -2022,6 +2022,8 @@ header .header .buttons .login.guest:after {
   }
   .main-advantages .text {
     padding-top: 70px;
+    padding-left: 15px;
+    padding-right: 15px;
     width: 100%;
     text-align: center;
   }
@@ -2211,6 +2213,14 @@ header .header .buttons .login.guest:after {
     margin-top: 10px;
     font-size: 16px;
     line-height: 180%;
+    display: block;
+    padding-left: 20px;
+    max-width: calc(100% - 30px);
+  }
+  .main-calc .features .item::before {
+    position: absolute;
+    left: 0;
+    top: 10px;
   }
 }
 .main-plans {
@@ -3812,6 +3822,7 @@ header .header .buttons .login.guest:after {
     font-size: 30px;
   }
   .main-work .heading {
+    margin-top: 20px;
     text-align: center;
     font-size: 20px;
   }
@@ -3824,6 +3835,7 @@ header .header .buttons .login.guest:after {
     margin: 0 auto;
   }
   .main-work .content {
+    margin-top: 40px;
     width: 100%;
   }
   .main-work .content .item {
@@ -3909,7 +3921,7 @@ header .header .buttons .login.guest:after {
     -webkit-transform: none;
             transform: none;
     background-image: url("../img/discounts-mob.png");
-    height: 540px;
+    height: 340px;
   }
   .main-discounts .content {
     width: 100%;
