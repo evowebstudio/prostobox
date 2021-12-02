@@ -5,7 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, inital-scale=1.0">
     <title>Prostobox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="js/scripts.js"></script>
 </head>
 
 <body>
@@ -22,318 +31,501 @@
                 <li><a href="#">Блог</a></li>
             </ul>
             <div class="buttons d-flex">
-                <div class="notification">
-                    <button class="active"></button>
-                    <span>2</span>
-                </div>
-                <button class="login"></button>
+                <button class="login guest">Вход</button>
             </div>
         </div>
     </header>
-    <main class="d-flex">
-        <div class="sidebar">
-            <ul class="breadcrumbs d-flex">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Личный кабинет</a></li>
-            </ul>
-            <ul class="sidebar-nav">
-                <li class="item"><a class="link d-flex align-center home" href="#">Главная</a></li>
-                <li class="item"><a class="link d-flex align-center early-delivery" href="#">Оформить доставку заранее</a></li>
-                <li class="item has-child opened"><a class="link d-flex align-center my-parcels" href="#">Мои посылки</a></li>
-                <ul class="child">
-                    <form action="" class="search">
-                        <input type="text" placeholder="Поиск входящей по треку" required>
-                        <button></button>
-                    </form>
-                    <li><a href="#">Зарегистрировать посылку</a></li>
-                    <li><a href="#">Ожидаемые посылки</a></li>
-                    <li><a href="#">Посылки на складе</a></li>
-                    <li><a href="#">Формируемые посылки</a></li>
-                    <li><a href="#">Ожидают отправки</a></li>
-                    <li><a href="#">Отправленные посылки</a></li>
-                    <li><a href="#">Полученные посылки</a></li>
-                    <li><a href="#">Отмененные посылки</a></li>
-                </ul>
-                <li class="item has-child opened"><a class="link d-flex align-center affilate" href="#">Партнерская программа</a></li>
-                <ul class="child">
-                    <li><a href="#">Промо-материалы</a></li>
-                    <li><a href="#">Статистика</a></li>
-                </ul>
-                <li class="item"><a class="link d-flex align-center settings" href="#">Настройки</a></li>
-                <li class="item"><a class="link d-flex align-center support" href="#">Служба поддержки</a></li>
-                <li class="item"><a class="link d-flex align-center logout" href="#">Выход</a></li>
-            </ul>
-            <div class="banners">
-                <div class="item d-flex column align-center justify-center affilate">
-                    <img src="img/banner-affilate.png" alt="">
-                    <p class="title">Партнерская программа Простобокса</p>
-                    <p class="subtitle">Дарите друзьям <span>скидку 10%</span></p>
-                    <p class="description"><span>Зарабатывайте по $2</span> c каждой посылки</p>
-                    <a href="#" class="btn">Подробнее</a>
-                </div>
-                <div class="item d-flex column align-center justify-center cashback">
-                    <img src="img/banner-cashback.png" alt="">
-                    <p class="title">Кешбэк за покупки
-                        в США</p>
-                    <p class="description">Регистрируйтесь в кешбэк-сервисах и <span>получайте $20</span> после первой покупки</p>
-                    <a href="#" class="btn">Подробнее</a>
+
+    <div class="main-banner section">
+        <div class="section-xxl">
+            <div class="main-banner__wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="main-banner__text">
+                                <b class="main-banner__lead heading-primary">Дешевая доставка<br> из США от&nbsp;<span class="blue blue--white-bg">$3.99</span> от&nbsp;100 гр</b>
+                                <p class="main-banner__desc">Для продвинутых шопоголиков, ценящих время&nbsp;и&nbsp;разумную экономию</p>
+                                <a class="button main-banner__cta" href="#">Зарегистрироваться</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="content account">
-            <div class="head">
-                <p class="time">Время на складе: <span>12:06:45</span></p>
-                <div class="info d-flex justify-between">
-                    <div class="item">
-                        <p class="name">Anastasiya Fedina</p>
-                        <p class="email">annav...bos@inbox.com<button>!</button></p>
-                        <p class="code">STE 390433</p>
+        <div class="container">
+            <ul class="main-banner__features row">
+                <li class="main-banner__feature col-xl-3 col-6">
+                  <div class="main-banner__feature-item">
+                    <p class="title">Адрес в&nbsp;Делавэре</p>
+                    <span class="price">Бесплатно</span>
+                  </div>
+                </li>
+                <li class="main-banner__feature col-xl-3 col-6">
+                  <div class="main-banner__feature-item">
+                    <p class="title">Приёмка на&nbsp;складе</p>
+                    <span class="price">Бесплатно</span>
+                  </div>
+                </li>
+                <li class="main-banner__feature col-xl-3 col-6">
+                  <div class="main-banner__feature-item">
+                    <p class="title">Объединение посылок</p>
+                    <span class="price">Бесплатно</span>
+                  </div>
+                </li>
+                <li class="main-banner__feature col-xl-3 col-6">
+                  <div class="main-banner__feature-item">
+                    <p class="title">Пополнение счёта от&nbsp;$10</p>
+                    <span class="price">Без комиссии</span>
+                  </div>
+                </li>
+              </ul>
+        </div>
+    </div>
+
+    <div class="main-advantages">
+        <div class="d-flex container">
+            <div class="pic">
+                <img src="/img/man-with-boxes-2.png" alt="">
+            </div>
+            <div class="text">
+                <p><span class="blue">Доставляем</span> даже самые <span class="blue">маленькие посылки</span><br>
+                    без переплаты за вес<br>
+                    и округлений<br>
+                    до полукилограмма.</p>
+                <a href="#" class="button">Получить адрес</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-calc">
+        <div class="container">
+            <p class="title">Калькулятор</p>
+            <div class="d-flex">
+                <div class="calc">
+                    <div class="d-flex justify-between">
+                        <div class="group">
+                            <label for="" class="input_label">Страна доставки*</label>
+                            <div class="select">
+                                <select name="country">
+                                    <option value="">Россия</option>
+                                    <option value="">Россия</option>
+                                    <option value="">Украина</option>
+                                    <option value="">Грузия</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <label for="" class="input_label">Город доставки*</label>
+                            <input type="text" class="input_text" value="Москва" name="city">
+                        </div>
                     </div>
-                    <div class="item">
-                        <p class="balance">Мой баланс: <span>$25.09</span></p>
-                        <a href="#" class="add">пополнить баланс</a>
-                        <a href="#" class="history">история транзакций</a>
+                    <div class="d-flex justify-between">
+                        <div class="group">
+                            <label for="" class="input_label">Индекс</label>
+                            <input type="text" class="input_text" value="123456" name="postcode">
+                        </div>
+                        <div class="group">
+                            <label for="" class="input_label">Вес посылки*</label>
+                            <div class="group d-flex justify-between">
+                                <input type="text" class="input_text" value="0.3" name="weight">
+                                <div class="select small">
+                                    <select name="weight_type">
+                                        <option value="">Кг</option>
+                                        <option value="">Кг</option>
+                                        <option value="">Г</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="item">
-                        <p class="ref-title">Реферальный код:<button>i</button></p>
-                        <p class="ref-code">XS5FF4S</p>
-                        <a href="#" class="copy">скопировать</a>
+                    <div class="d-flex justify-between">
+                        <div class="group">
+                            <label for="" class="input_label">Цена товара</label>
+                            <input type="text" class="input_text" value="$19 000" name="price">
+                        </div>
+                        <div class="group d-flex align-end">
+                            <button class="button">Рассчитать доставку</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="features">
+                    <li class="item">Приём посылок - <span class="blue">$0</span></li>
+                    <li class="item">Консолидация - <span class="blue">$0</span></li>
+                    <li class="item">Упаковка стандартная - <span class="blue">$0</span></li>
+                    <li class="item">Комиссия за пополнение баланса - <span class="blue">$0</span><button class="ask"></button></li>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="main-plans">
+        <div class="container">
+            <p class="title">Подходящие тарифы:</p>
+            <div class="swiper-plans">
+                <div class="list swiper-wrapper">
+                    <div class="item swiper-slide active">
+                        <img src="img/econom.png" alt="" class="econom-img">
+                        <p class="heading">Тариф</p>
+                        <p class="name">Для экономных</p>
+                        <p class="time">5 - 10 дней</p>
+                        <p class="price">$3.99</p>
+                        <div class="services">
+                            <p class="name d-flex align-center">Страховка от утери<button class="ask"></button></p>
+                            <p class="price">...</p>
+                        </div>
+                    </div>
+                    <div class="item swiper-slide">
+                        <img src="img/one.png" alt="" class="one-img">
+                        <p class="heading">Тариф</p>
+                        <p class="name">По одной</p>
+                        <p class="time">7 - 14 дней</p>
+                        <p class="price">$9.99</p>
+                        <div class="services">
+                            <p class="name d-flex align-center">Страховка от утери<button class="ask"></button></p>
+                            <p class="price">$5</p>
+                        </div>
+                    </div>
+                    <div class="item swiper-slide">
+                        <img src="img/combination.png" alt="" class="combination-img">
+                        <p class="heading">Тариф</p>
+                        <p class="name">С Объединением</p>
+                        <p class="time">7 - 14 дней</p>
+                        <p class="price">$14.99</p>
+                        <div class="services">
+                            <p class="name d-flex align-center">Страховка от утери<button class="ask"></button></p>
+                            <p class="price">$5</p>
+                            <p class="name d-flex align-center">Таможенная пошлина</p>
+                            <p class="price">$5</p>
+                        </div>
+                    </div>
+                    <div class="item swiper-slide">
+                        <img src="img/post.png" alt="" class="post-img">
+                        <p class="heading">Тариф</p>
+                        <p class="name">Через почту</p>
+                        <p class="time">20 - 30 дней</p>
+                        <p class="price">$22,99</p>
+                        <div class="services">
+                            <p class="name d-flex align-center">Страховка от утери<button class="ask"></button></p>
+                            <p class="price">$5</p>
+                        </div>
+                    </div>
+                    <div class="item swiper-slide">
+                        <img src="img/parcel.png" alt="" class="parcel-img">
+                        <p class="heading">Тариф</p>
+                        <p class="name">Для бандеролек</p>
+                        <p class="time">20 - 30 дней</p>
+                        <p class="price">$15,99</p>
+                        <div class="services">
+                            <p class="name d-flex align-center">Страховка от утери<button class="ask"></button></p>
+                            <p class="price">$5</p>
+                        </div>
+                    </div>
+                    <div class="item swiper-slide">
+                        <img src="img/big-parcel.png" alt="" class="big-img">
+                        <p class="heading">Тариф</p>
+                        <p class="name">Большие посылки</p>
+                        <p class="time">7 - 14 дней</p>
+                        <p class="price">$22,99</p>
+                        <div class="services">
+                            <p class="name d-flex align-center">Страховка от утери<button class="ask"></button></p>
+                            <p class="price">от $3</p>
+                            <p class="name d-flex align-center">Таможенная пошлина</p>
+                            <p class="price">...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="plans-slider-nav">
+                    <ul class="slider-nav">
+                        <li class="slider-nav__item">
+                            <button class="slider-nav__btn slider-nav__btn--prev" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-10f11efd49c60dbcb" aria-disabled="false"></button>
+                        </li>
+                        <li class="slider-nav__item">
+                            <button class="slider-nav__btn slider-nav__btn--next" tabindex="-1" aria-label="Next slide" aria-controls="swiper-wrapper-10f11efd49c60dbcb" aria-disabled="true" disabled=""></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-work-scheme section">
+        <div class="container">
+          <p class="title">Простобокс – у&nbsp;нас&nbsp;все просто</p>
+            <ul class="list d-flex">
+                <li class="item">
+                <div class="work-scheme__wrapper">
+                    <p class="title">Заказываете</p>
+                    <p class="text">вещи в интернет-магазинах США, как будто вы там живете</p>
+                </div>
+                <div class="work-scheme__phase work-scheme__phase--1">
+                    <span>1 - 2 дня</span>
+                </div>
+                </li>
+                <li class="item">
+                <div class="work-scheme__wrapper">
+                    <p class="title">Оформляете</p>
+                    <p class="text">и оплатить доставку посылки на&nbsp;ваш Российский адрес</p>
+                </div>
+                <div class="work-scheme__phase work-scheme__phase--2">
+                    <span>5 - 10 дней</span>
+                </div>
+                </li>
+                <li class="item item-lines">
+                <div class="work-scheme__wrapper">
+                    <p class="title">Получаете</p>
+                    <p class="text">заказ через 5-10 дней после отправки со склада из США</p>
+                </div>
+                </li>
+            </ul>
+            <div class="d-flex justify-end">
+                <a class="button" href="#">Зарегистрироваться</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-promo ">
+        <div class="swiper-promo">
+            <div class="swiper-wrapper">
+                <div class="item swiper-slide">
+                    <div class="img">
+                        <img src="img/iphone.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="title">iPhone из США</p>
+                        <div class="text">Как купить новый iPhone 12 из Америки с доставкой в Россию. Мы подготовили подробную инструкцию по покупке с официального сайта Apple, а также рассказали где еще можну купить яблочную продукцию.</div>
+                    </div>
+                </div>
+                <div class="item swiper-slide">
+                    <div class="img">
+                        <img src="img/slide2.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="title">Новая фишка Простобокса: покупки с американскими байерами!</p>
+                        <div class="text">Теперь вы можете покупать в тех магазинах, которые не принимают российские карты.
+                            Функциональность новая и находится в бета-тесте.</div>
                     </div>
                 </div>
             </div>
-            <div class="achievements">
-                <div class="d-flex justify-between align-center">
-                    <p class="title">Ваши достижения</p>
-                    <button class="button-hide">Скрыть</button>
+            <div class="promo-slider__nav">
+                <ul class="slider-nav">
+                    <li class="slider-nav__item">
+                        <button class="slider-nav__btn slider-nav__btn--prev" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-4e101d361a206a76d" aria-disabled="false"></button>
+                    </li>
+                    <li class="slider-nav__item">
+                        <button class="slider-nav__btn slider-nav__btn--next slider-nav__btn--disabled" tabindex="-1" aria-label="Next slide" aria-controls="swiper-wrapper-4e101d361a206a76d" aria-disabled="true" disabled=""></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="promo-slider__dots"></div>
+        </div>
+    </div>
+
+    <div class="main-important">
+        <div class="container">
+            <p class="title">Самое важное о Простобоксе</p>
+            <p class="heading"><span>Двойная выгода</span> – платите меньше 
+                не только за товары, но и за доставку</p>
+            <ul class="list d-flex">
+                <li class="item">Склад в <span class="blue">100% безналоговом</span> Делавэре</li>
+                <li class="item"><span class="blue">Бесплатный приём</span> входящих посылок на&nbsp;складе</li>
+                <li class="item"><span class="blue">Пополнение</span> счёта от&nbsp;$10 <span class="blue">без комиссии</span> эквайринга</li>
+                <li class="item"><span class="blue">Бесплатное объединение<br></span>входящих посылок</li>
+                <li class="item"><span class="blue">Бесплатная</span><br>стандартная<br><span class="blue">упаковка</span> посылок</li>
+                <li class="item"><span class="blue">Склад без соседей</span>: посылки точно привезут нам</li>
+                <li class="item"><span class="blue">24/7&nbsp;работает служба&nbsp;поддержки</span> Простобокса</li>
+                <li class="item"><span class="blue">45 дней</span> входящие посылки <span class="blue">хранятся бесплатно</span></li>
+                <li class="item"><span class="blue">Выплачиваем $2</span> за каждую посылку, отправленную по реферальной программе</li>
+            </ul>
+            <a href="#" class="button">Зарегистрироваться</a>
+        </div>
+    </div>
+
+    <div class="main-review">
+        <div class="container">
+            <p class="title">Отзывы</p>
+            <div class="wrapper swiper-reviews">
+                <div class="list swiper-wrapper">
+                    <div class="item swiper-slide">
+                        <p class="time">26.04.2021</p>
+                        <p class="name">Name</p>
+                        <div class="rating">
+                            <div class="stars stars_5"></div>
+                        </div>
+                        <p class="city">Москва</p>
+                        <p class="trackcode">PCT000000443175</p>
+                        <p class="text">А ещё тщательные исследования конкурентов смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Современные технологии достигли такого уровня, что убеждённость некоторых оппонентов предопределяет высокую востребованность системы обучения.</p>
+                    </div>
+                    <div class="item swiper-slide">
+                        <p class="time">26.04.2021</p>
+                        <p class="name">Name</p>
+                        <div class="rating">
+                            <div class="stars stars_4"></div>
+                        </div>
+                        <p class="city">Москва</p>
+                        <p class="trackcode">PCT000000443175</p>
+                        <p class="text">А ещё тщательные исследования конкурентов смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Современные технологии достигли такого уровня, что убеждённость некоторых оппонентов предопределяет высокую востребованность системы обучения.</p>
+                    </div>
+                    <div class="item swiper-slide">
+                        <p class="time">26.04.2021</p>
+                        <p class="name">Name</p>
+                        <div class="rating">
+                            <div class="stars stars_2"></div>
+                        </div>
+                        <p class="city">Москва</p>
+                        <p class="trackcode">PCT000000443175</p>
+                        <p class="text">А ещё тщательные исследования конкурентов смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Современные технологии достигли такого уровня, что убеждённость некоторых оппонентов предопределяет высокую востребованность системы обучения.</p>
+                    </div>
+                    
                 </div>
-                <div class="d-flex justify-between">
-                    <div class="item d-flex column align-center justify-start">
-                        <div class="img"></div>
-                        <p class="name">Регистрация</p>
-                    </div>
-                    <div class="item d-flex column align-center justify-start">
-                        <div class="img"></div>
-                        <p class="name">Подтверждение почты</p>
-                    </div>
-                    <div class="item d-flex column align-center justify-start">
-                        <div class="img"></div>
-                        <p class="name">Подписка
-                            на паблики</p>
-                    </div>
-                    <div class="item d-flex column align-center justify-start">
-                        <div class="img"></div>
-                        <p class="name">Установка бота</p>
-                    </div>
-                    <div class="item d-flex column align-center justify-start">
-                        <div class="img"></div>
-                        <p class="name">Регистрация посылки</p>
-                    </div>
-                    <div class="item d-flex column align-center justify-start">
-                        <div class="img"></div>
-                        <p class="name">Пополнение баланса</p>
-                    </div>
-                    <div class="item d-flex column align-center justify-start">
-                        <div class="img"></div>
-                        <p class="name">Оформить заранее</p>
-                    </div>
-                    <div class="item d-flex column align-center justify-start">
-                        <div class="img"></div>
-                        <p class="name">Оставлен отзыв</p>
-                    </div>
-                    <div class="item d-flex column align-center justify-start">
-                        <div class="img"></div>
-                        <p class="name">Партнерская программа</p>
-                    </div>
-                    <div class="item d-flex column align-center justify-start">
-                        <div class="img"></div>
-                        <p class="name">Отправлена 1 посылка</p>
-                    </div>
-                    <div class="item d-flex column align-center justify-start">
-                        <div class="img"></div>
-                        <p class="name">Отправлено 5 посылок</p>
-                    </div>
-                    <div class="item d-flex column align-center justify-start">
-                        <div class="img"></div>
-                        <p class="name">Отправлено 10 посылок</p>
-                    </div>
+                <div class="review-slider-nav">
+                    <ul class="slider-nav">
+                        <li class="slider-nav__item">
+                            <button class="slider-nav__btn slider-nav__btn--prev" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-10f11efd49c60dbcb" aria-disabled="false"></button>
+                        </li>
+                        <li class="slider-nav__item">
+                            <button class="slider-nav__btn slider-nav__btn--next" tabindex="-1" aria-label="Next slide" aria-controls="swiper-wrapper-10f11efd49c60dbcb" aria-disabled="true" disabled=""></button>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="address">
-                <p class="title">Склад в 100%<br>
-                    безналоговом Делавере</p>
-                <div class="row">
-                    <div class="item">
-                        <p class="label">First name and last name:</p>
-                        <div class="d-flex align-center">
-                            <p class="value">Anton Kovalchuk</p>
-                            <a href="#" class="copy">скопировать</a>
-                        </div>
+            <div class="buttons">
+                <a href="#" class="button">Больше отзывов</a>
+                <a href="#" class="review-world">Отзывы соседей на карте</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-additional">
+        <div class="container">
+            <p class="title">Что еще надо знать о Простобокс</p>
+            <div class="list d-flex">
+                <div class="item">
+                    <div class="img comfortable">
+                        <img src="img/cap.png" alt="">
                     </div>
-                    <div class="item">
-                        <p class="label">State:</p>
-                        <div class="d-flex align-center">
-                            <p class="value">Deleware (DE)</p>
-                            <a href="#" class="copy">скопировать</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="item">
-                        <p class="label">Street Adress (Строка 1):</p>
-                        <div class="d-flex align-center">
-                            <p class="value">510 Carroll Dr</p>
-                            <a href="#" class="copy">скопировать</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <p class="label">ZIP:</p>
-                        <div class="d-flex align-center">
-                            <p class="value">19720</p>
-                            <a href="#" class="copy">скопировать</a>
-                        </div>
+                    <div class="content">
+                        <p class="heading">Удобно</p>
+                        <p class="text">доставляем до постаматов<br>или ПВЗ рядом с вашим домом</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="item">
-                        <p class="label">Street Adress (Строка 2):</p>
-                        <div class="d-flex align-center">
-                            <p class="value yellow">Ste 340700</p>
-                            <a href="#" class="copy">скопировать</a>
-                        </div>
+                <div class="item">
+                    <div class="img shield">
+                        <img src="img/shield.png" alt="">
                     </div>
-                    <div class="item">
-                        <p class="label">Phone:</p>
-                        <div class="d-flex align-center">
-                            <p class="value">412-567-3011</p>
-                            <a href="#" class="copy">скопировать</a>
-                        </div>
+                    <div class="content">
+                        <p class="heading">Надежно</p>
+                        <p class="text">работаем только с проверенными<br>транспортными компаниями</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="item">
-                        <p class="label">City:</p>
-                        <div class="d-flex align-center">
-                            <p class="value">New Castle</p>
-                            <a href="#" class="copy">скопировать</a>
-                        </div>
+                <div class="item">
+                    <div class="img fast">
+                        <img src="img/rocket.png" alt="">
                     </div>
-                    <div class="item d-flex align-center">
-                            <a href="#" class="faq d-flex align-center">Какой у меня биллинг адрес и что это такое?</a>
+                    <div class="content">
+                        <p class="heading">Быстро</p>
+                        <p class="text">собираем и отправляем посылки<br>
+                            за минимальную стоимость, благодаря<br>автоматизированному процессу. </p>
+                        <p class="footer-text">Доставка от 5 дней до Москвы и 10 дней<br>в регионы</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img friendly">
+                        <img src="img/frendly.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="heading">Френдли сервис</p>
+                        <p class="text">Наша служба поддержки 24/7 - наедине<br>
+                            с проблемой никого не оставит. А Telegram -<br>бот  покажет уведомления о посылках<br>
+                            и других событиях</p>
                     </div>
                 </div>
             </div>
+            <div class="d-flex justify-center">
+                <a href="#" class="button">Зарегистрироваться</a>
+            </div>
+        </div>
+    </div>
 
-            <form action="" class="add-early">
-                <p class="title">Оформить посылку заранее</p>
-                <p class="subtitle">чтобы отправить посылку со склада без задержек и ещё больше сэкономить</p>
-                <div class="d-flex">
-                    <input type="text" placeholder="Введите номер трекинга" required>
-                    <button class="btn">Оформить</button>
+    <div class="main-work">
+        <p class="title">Посмотрите как мы работаем</p>
+        <p class="heading">Доставим между континентами <span>проще</span> и <span>быстрее</span>, чем внутри страны.</p>
+        <div class="d-flex">
+            <div class="img">
+                <img src="img/service.png" alt="">
+            </div>
+            <div class="content">
+                <ul>
+                    <li class="item">Наш современный склад находится <span>далеко 
+                        от соседей.</span> Ваша посылка попадет только к нам. </li>
+                    <li class="item">Принимаем посылки за <span>3 секунды</span>. Весь процесс автоматизирован и продуман до мелочей</li>
+                    <li class="item">Отправка посылок происходит <span>2 раза в неделю</span>. Ваша посылка <span>не задержится на складе</span> долго.</li>
+                    <li class="item">Самолеты в Россию <span>летают регулярно</span>. Среднее время доставки посылок <span>от 5 до 10 дней</span> в ПВЗ или Постамат</li>
+                </ul>
+                <a href="#" class="button">3D тур по складу</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="main-discounts">
+        <div class="content">
+            <p class="title">Подскажем где и что покупать</p>
+            <p class="heading">50 Американских <span>распродаж</span></p>
+            <a href="#" class="button">К распродажам</a>
+        </div>
+    </div>
+
+    <div class="main-subcribe">
+        <div class="wrapper">
+            <form class="content">
+                <p class="text"><span>Подпишитесь</span> на новостную рассылку Простобокса и получайте информацию о новинках и акциях в числе первых.</p>
+                <div class="d-flex justify-between buttons">
+                    <input type="text" class="input_text" name="email" placeholder="Ваш e-mail" required>
+                    <button class="button">Подписаться</button>
                 </div>
             </form>
+        </div>
+        
+    </div>
 
-            <div class="grid">
-                <p class="title">Актуальные распродажи</p>
-                <div class="d-flex justify-between">
-                    <div class="item column justify-center">
-                        <img src="img/item-1.png" alt="">
-                        <p class="title">B&H Photo Video</p>
-                        <p class="description">Большая распродажа гаджетов
-                            : до - <span>$500 на Apple, Samsung,</span>
-                            <span>камеры Nikon и Canon, One Plus</span></p>
-                        <a href="#">Перейти в магазин</a>
-                    </div>
-                    <div class="item column justify-center">
-                        <img src="img/item-1.png" alt="">
-                        <p class="title">B&H Photo Video</p>
-                        <p class="description">Большая распродажа гаджетов
-                            : до - <span>$500 на Apple, Samsung,</span>
-                            <span>камеры Nikon и Canon, One Plus</span></p>
-                        <a href="#">Перейти в магазин</a>
-                    </div>
-                    <div class="item column justify-center">
-                        <img src="img/item-1.png" alt="">
-                        <p class="title">B&H Photo Video</p>
-                        <p class="description">Большая распродажа гаджетов
-                            : до - <span>$500 на Apple, Samsung,</span>
-                            <span>камеры Nikon и Canon, One Plus</span></p>
-                        <a href="#">Перейти в магазин</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cashback">
-                <p class="title">Кэшбек сервисы</p>
-                <div class="item d-flex align-center">
-                    <div class="image">
-                        <img src="img/cashback.png" alt="">
-                    </div>
-                    <div class="info">
-                        <p class="title">Кешбек за
-                            покупки в США</p>
-                        <p class="description">Зарегистрируйтесь и получите
-                                $15 на счет.</p>
-                        <a href="#" class="btn">Зарегистрировать</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid">
-                <p class="title">Скидки и бонусы</p>
-                <div class="d-flex justify-between">
-                    <div class="item column justify-center coupon">
-                        <p class="title">Ваш код на бессрочную
-                            скидку на доставку
-                            из США</p>
-                        <p class="code">FAE14C</p>
-                        <a href="#" class="copy">Скопировать</a>
-                    </div>
-                    <div class="item column justify-center coupon">
-                        <p class="title">Ваш код на бессрочную
-                            скидку на доставку
-                            из США</p>
-                        <p class="code">FAE14C</p>
-                        <a href="#" class="copy">Скопировать</a>
-                    </div>
-                    <div class="item column justify-center coupon">
-                        <p class="title">Ваш код на бессрочную
-                            скидку на доставку
-                            из США</p>
-                        <p class="code">FAE14C</p>
-                        <a href="#" class="copy">Скопировать</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="about">
-                <p class="title">Про таможенные лимиты</p>
-                <p class="text">Беспошлинный лимит ввоза товаров в Россию составляет 200 евро и 31 кг на одну
-                    посылку (или несколько посылок, если они проходят таможню одновременно, в один день).
-                    При превышении беспошлинного порога необходимо будет оплатить пошлину в размере
-                    15% от суммы превышения и таможенный сбор в размере 500 рублей.</p>
-                <a href="#">Посчитать пошлину</a>
-            </div>
-
-            <div class="news">
-                <p class="title">Новости</p>
-                <div class="item">
-                    <a class="title d-flex justify-between align-center">Важно! Новые правила декларирования бьюти-боксов!</a>
-                    <p class="text">Уважаемые клиенты! Обратите, пожалуйста, внимание! Для бьюти-боксов, состав которых не раскрывается магазином (например, от Ipsy): перед оформлением посылки на отправку тарифами ФастБокс и Экспресс надо заказать фото вложений посылки</p>
-                    <p class="date">12 сентября 2020</p>
-                </div>
-                <div class="item">
-                    <a class="title d-flex justify-between align-center">Важно! Новые правила декларирования бьюти-боксов!</a>
-                    <p class="text">Уважаемые клиенты! Обратите, пожалуйста, внимание! Для бьюти-боксов, состав которых не раскрывается магазином (например, от Ipsy): перед оформлением посылки на отправку тарифами ФастБокс и Экспресс надо заказать фото вложений посылки</p>
-                    <p class="date">12 сентября 2020</p>
-                </div>
-                <div class="item">
-                    <a class="title d-flex justify-between align-center">Важно! Новые правила декларирования бьюти-боксов!</a>
-                    <p class="text">Уважаемые клиенты! Обратите, пожалуйста, внимание! Для бьюти-боксов, состав которых не раскрывается магазином (например, от Ipsy): перед оформлением посылки на отправку тарифами ФастБокс и Экспресс надо заказать фото вложений посылки</p>
-                    <p class="date">12 сентября 2020</p>
-                </div>
+    <div class="footer-nav">
+        <div class="container">
+            <div class="d-flex justify-between align-start">
+                <p class="service-name">Prostobox</p>
+                <ul class="list">
+                    <li class="item"><a href="#" class="link">Как покупать в США</a></li>
+                    <li class="item"><a href="#" class="link">Калькулятор</a></li>
+                    <li class="item"><a href="#" class="link">Скидки</a></li>
+                    <li class="item"><a href="#" class="link">Партнерская программа</a></li>
+                </ul>
+                <ul class="list">
+                    <li class="item"><a href="#" class="link">Ликбез</a></li>
+                    <li class="item"><a href="#" class="link">Блог</a></li>
+                    <li class="item"><a href="#" class="link">Подобрать размер</a></li>
+                    <li class="item"><a href="#" class="link">Контакты</a></li>
+                </ul>
+                <ul class="list">
+                    <li class="item"><a href="#" class="link">Обработка персональных данных</a></li>
+                    <li class="item"><a href="#" class="link">Условия использования сервиса</a></li>
+                </ul>
             </div>
         </div>
-    </main>
+    </div>
+
+    <footer class="footer d-flex justify-between align-center">
+        <p class="copy">©prostobox.com 2021</p>
+        <div class="socnet d-flex align-center">
+            <p class="text">Мы в соцсетях:</p>
+            <ul class="list">
+                <li class="item vk"><a href="#" class="link"></a></li>
+                <li class="item instagram"><a href="#" class="link"></a></li>
+                <li class="item telegram"><a href="#" class="link"></a></li>
+                <li class="item fb"><a href="#" class="link"></a></li>
+                <li class="item twitter"><a href="#" class="link"></a></li>
+            </ul>
+        </div>
+    </footer>
 </body> 
 </html>

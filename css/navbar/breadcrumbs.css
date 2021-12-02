@@ -1,0 +1,26 @@
+.breadcrumbs {
+  margin: 48px 0 0 0;
+}
+.breadcrumbs li {
+  position: relative;
+}
+.breadcrumbs li:after {
+  content: "/";
+  margin: 0 5px;
+  font-family: "Stolzl", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1a223f;
+}
+.breadcrumbs li:last-child:after {
+  display: none;
+}
+.breadcrumbs li a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1a223f;
+}

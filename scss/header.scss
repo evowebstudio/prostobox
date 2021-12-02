@@ -3,7 +3,7 @@ header {
 
   .header {
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 38px 0;
     width: 100%;
     max-width: $maxWidthContent;
 
@@ -55,7 +55,45 @@ header {
         background-repeat: no-repeat;
         background-size: 29px 29px;
         background-position: center;
+
+        &.guest {
+          position: relative;
+          width: 118px;
+          height: 60px;
+          padding: 0 0 0 20px;
+          background: #ffffff;
+          border-radius: 20px;
+          background-image: url("../img/icons/login_main.svg");
+          background-size: 30px 30px;
+          background-position: 68px center;
+          background-repeat: no-repeat;
+          text-align: left;
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: 0.03em;
+
+          &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -18px;
+            left: 0;
+            right: 0;
+            width: 90px;
+            height: 18px;
+            background: rgba(20, 103, 255, 0.4);
+            filter: blur(40px);
+            border-radius: 20px;
+          }
+        }
       }
     }
+  }
+}
+
+@media (max-width: 1240px) {
+  header .header {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }

@@ -1,0 +1,58 @@
+.main-discounts {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  max-width: $maxWidthContent;
+  margin: 150px auto 0;
+  background: #ffffff;
+  box-shadow: 0px 24px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+
+  .content {
+    width: 100%;
+    padding: 60px 55% 64px 60px;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 1px;
+    right: calc(50% + 59px);
+    transform: translateX(100%);
+    width: 657px;
+    height: 621px;
+    background-image: url(../img/clothes.png);
+  }
+
+  .title {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 130%;
+    color: #1a223f;
+  }
+
+  .heading {
+    margin: 20px 0 0 0;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 130%;
+    color: #1a223f;
+
+    span {
+      color: #1467ff;
+      font-family: Jost;
+    }
+  }
+
+  .button {
+    margin-top: 40px;
+  }
+}

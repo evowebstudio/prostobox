@@ -6,6 +6,10 @@
 @import "navbar/breadcrumbs";
 @import "navbar/nav";
 @import "navbar/banners";
+
+@import "footer-nav";
+@import "footer";
+
 @import "account/head";
 @import "account/achievements";
 @import "account/address";
@@ -14,3 +18,16 @@
 @import "account/cashback";
 @import "account/about";
 @import "account/news";
+
+@import "main-page/main-banner";
+@import "main-page/main-advantages";
+@import "main-page/main-calc";
+@import "main-page/main-plans";
+@import "main-page/main-work-scheme";
+@import "main-page/main-promo";
+@import "main-page/main-important";
+@import "main-page/main-review";
+@import "main-page/main-additional";
+@import "main-page/main-work";
+@import "main-page/main-discounts";
+@import "main-page/main-subcribe";

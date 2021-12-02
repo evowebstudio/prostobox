@@ -1,0 +1,8 @@
+.main-additional {
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: #282828;
+  border-radius: 20px;
+}

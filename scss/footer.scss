@@ -1,0 +1,81 @@
+.footer {
+  width: 100%;
+  max-width: $maxWidthContent;
+  margin: 60px auto 75px;
+
+  .copy {
+    font-family: Stolzl;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 180%;
+    letter-spacing: 0.04em;
+    color: #5d5d5d;
+  }
+
+  .socnet {
+    .text {
+      margin: 0 33px 0 0;
+      font-family: Stolzl;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: 0.04em;
+      color: #1a223f;
+    }
+
+    .list {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .item {
+        margin: 0 10px 0 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+
+        &:last-child {
+          margin: 0;
+        }
+
+        &.vk {
+          background-image: url("../img/icons/vk.svg");
+        }
+
+        &.instagram {
+          background-image: url("../img/icons/instagram.svg");
+        }
+
+        &.fb {
+          background-image: url("../img/icons/facebook.svg");
+        }
+
+        &.telegram {
+          background-image: url("../img/icons/telegram.svg");
+        }
+
+        &.twitter {
+          background-image: url("../img/icons/twitter.svg");
+        }
+
+        .link {
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

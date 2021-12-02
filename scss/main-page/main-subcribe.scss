@@ -1,0 +1,79 @@
+.main-subcribe {
+  margin: 102px auto 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  max-width: $maxWidthContent;
+
+  .wrapper {
+    padding-top: 130px;
+    padding-bottom: 65px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: -10px;
+      left: calc(50% - 44px);
+      transform: translateX(-75%);
+      width: 742px;
+      height: 675px;
+      background-image: url(../img/subscribe-email.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      z-index: -1;
+    }
+  }
+
+  .content {
+    width: 50%;
+    max-width: 50%;
+    margin-left: 50%;
+
+    .text {
+      font-family: Jost;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 130%;
+      color: #1a223f;
+
+      span {
+        font-family: Jost;
+        color: #1467ff;
+      }
+    }
+
+    .buttons {
+      margin: 40px 0 0 0;
+    }
+
+    .input_text {
+      max-width: 285px;
+    }
+
+    .button {
+      max-width: 285px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-subcribe {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .content {
+      .input_text {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+      .button {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}

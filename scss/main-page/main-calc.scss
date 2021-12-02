@@ -1,0 +1,124 @@
+.main-calc {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-bottom: 80px;
+
+  .container {
+    width: 100%;
+    max-width: $maxWidthContent;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 130%;
+    color: #1a223f;
+  }
+
+  .calc {
+    width: 50%;
+    padding: 100px 0 0 0;
+
+    .group {
+      margin: 0 0 20px 0;
+      width: 100%;
+      max-width: 285px;
+
+      .select {
+        &.small {
+          max-width: 130px;
+        }
+      }
+
+      .input_text {
+        width: 100%;
+        max-width: 285px;
+
+        &[name="weight"] {
+          max-width: 130px;
+        }
+      }
+    }
+  }
+
+  .features {
+    margin: 0 0 20px 0;
+    padding: 0 0 0 60px;
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .item {
+      position: relative;
+      padding: 0;
+      margin: 20px 0 0 0;
+      display: flex;
+      align-items: center;
+      font-family: "Stolzl";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 180%;
+      letter-spacing: 0.04em;
+      color: #282828;
+      list-style-type: none;
+
+      &:before {
+        content: "";
+        margin: 0 20px 0 0;
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
+        background: #1467ff;
+      }
+
+      span {
+        margin-left: 3px;
+        color: #1467ff;
+        font-weight: bold;
+      }
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 60px;
+      right: auto;
+      transform: none;
+      width: 156px;
+      height: 156px;
+      border-radius: 20px;
+      background-color: #fff;
+      box-shadow: 0 24px 30px 0 rgb(0 0 0 / 5%);
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 196px;
+      height: 197px;
+      background-image: url(../img/calculator.png);
+      top: -50px;
+      left: 19px;
+      right: auto;
+      transform: none;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-calc {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
