@@ -120,5 +120,65 @@
   .main-calc {
     padding-left: 15px;
     padding-right: 15px;
+
+    .features {
+      padding-left: 15px;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 1030px) {
+  .main-calc {
+    margin-top: 30px;
+    padding-bottom: 25px;
+
+    .title {
+      text-align: center;
+      font-size: 30px;
+      line-height: 130%;
+    }
+    .calc {
+      padding: 40px 20px 0;
+      width: 100%;
+
+      .group {
+        width: 100%;
+        max-width: 100%;
+
+        .input_label {
+          text-align: center;
+        }
+
+        .input_text,
+        .select {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
+      .button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 285px;
+      }
+    }
+    .features {
+      width: 100%;
+      padding: 0 15px;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+
+      .item {
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 180%;
+      }
+    }
   }
 }

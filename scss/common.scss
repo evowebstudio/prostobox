@@ -1,5 +1,9 @@
 body {
   background-color: #fbfbfb;
+
+  &.fixed {
+    overflow: hidden;
+  }
 }
 p,
 label,
@@ -257,4 +261,17 @@ main {
 }
 @mixin btnHover() {
   opacity: 0.8;
+}
+
+@media (max-width: 1030px) {
+  .input_text {
+    font-size: 18px;
+    line-height: 180%;
+  }
+  .select {
+    .select-selected {
+      font-size: 18px;
+      line-height: 180%;
+    }
+  }
 }

@@ -77,3 +77,36 @@
     }
   }
 }
+
+@media (max-width: 1030px) {
+  .main-subcribe {
+    margin-top: 60px;
+
+    .wrapper {
+      padding: 0;
+
+      &::before {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 260px;
+        height: 232px;
+        transform: none;
+        background-image: url("../img/subcribe-mob.png");
+      }
+    }
+    .content {
+      width: 100%;
+      max-width: 100%;
+      margin-left: 0;
+      padding: 0;
+
+      .text {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+  }
+}

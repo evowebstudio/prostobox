@@ -1,0 +1,9 @@
+.mob-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.mob-menu.active {
+  display: block;
+}

@@ -56,3 +56,43 @@
     margin-top: 40px;
   }
 }
+
+@media (max-width: 1030px) {
+  .main-discounts {
+    margin: 60px auto 0;
+    width: calc(100% - 30px);
+
+    &::before {
+      width: 100%;
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+      background-image: url("../img/discounts-mob.png");
+      height: 540px;
+    }
+
+    .content {
+      width: 100%;
+      padding: 0 15px 60px;
+
+      .title {
+        font-size: 30px;
+        text-align: center;
+      }
+
+      .heading {
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .button {
+        margin-top: 20px;
+        width: 260px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+    }
+  }
+}

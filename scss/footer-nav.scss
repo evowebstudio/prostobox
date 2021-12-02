@@ -57,3 +57,25 @@
     }
   }
 }
+
+@media (max-width: 1030px) {
+  .footer-nav {
+    margin-top: 60px;
+
+    .container {
+      padding: 40px 0;
+    }
+
+    .service-name {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .list {
+      padding-top: 40px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

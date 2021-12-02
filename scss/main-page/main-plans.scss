@@ -244,3 +244,29 @@
     padding-right: 15px;
   }
 }
+
+@media (max-width: 1030px) {
+  .main-plans {
+    .title {
+      font-size: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 260px;
+      display: block;
+    }
+
+    .list {
+      .item {
+        .heading {
+          font-size: 14px;
+        }
+        .name {
+          font-size: 18px;
+        }
+        .price {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

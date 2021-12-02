@@ -312,3 +312,126 @@
     padding-right: 15px;
   }
 }
+
+@media (max-width: 1030px) {
+  .main-review {
+    margin-top: 0;
+
+    .wrapper {
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    .container {
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    .title {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .list {
+      margin-top: 20px;
+
+      .item {
+        padding: 30px;
+        .time {
+          font-size: 14px;
+          &::before {
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background-size: 20px;
+          }
+        }
+
+        .city {
+          font-size: 14px;
+          &::before {
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background-size: 20px;
+          }
+        }
+
+        .trackcode {
+          font-size: 14px;
+          &::before {
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background-size: 20px;
+          }
+        }
+
+        .name {
+          margin-top: 5px;
+          font-size: 30px;
+        }
+
+        .text {
+          font-size: 14px;
+        }
+
+        .rating {
+          margin-top: 5px;
+
+          .stars {
+            height: 20px;
+            background-size: 20px 20px;
+            background-image: url("../img/icons/rating-star-icon-small.svg");
+
+            &.stars_5 {
+              max-width: 100px;
+            }
+
+            &.stars_4 {
+              max-width: 80px;
+            }
+
+            &.stars_3 {
+              max-width: 60px;
+            }
+
+            &.stars_2 {
+              max-width: 40px;
+            }
+
+            &.stars_1 {
+              max-width: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .review-slider-nav {
+      position: relative;
+      left: auto;
+      right: auto;
+      bottom: -45px;
+      max-width: 290px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+
+      .review-world {
+        padding-bottom: 80px;
+        margin-top: 15px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}

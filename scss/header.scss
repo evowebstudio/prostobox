@@ -1,11 +1,38 @@
 header {
   background: #fafafb;
+  position: relative;
+
+  &.active {
+    z-index: 999;
+  }
 
   .header {
     margin: 0 auto;
     padding: 38px 0;
     width: 100%;
     max-width: $maxWidthContent;
+    position: relative;
+
+    img {
+      max-width: 112px;
+    }
+
+    .burger {
+      display: none;
+      position: absolute;
+      top: 20px;
+      right: 15px;
+      width: 40px;
+      height: 44px;
+      background-image: url("../img/icons/burger.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 40px 44px;
+
+      &.active {
+        background-image: url("../img/icons/burger-close.svg");
+      }
+    }
 
     .nav {
       li {
@@ -95,5 +122,23 @@ header {
   header .header {
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+
+@media (max-width: 1040px) {
+  header {
+    .header {
+      .nav {
+        display: none;
+      }
+
+      .buttons {
+        display: none;
+      }
+
+      .burger {
+        display: block;
+      }
+    }
   }
 }

@@ -194,7 +194,7 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1030px) {
   .main-banner__wrapper {
     min-height: 754px;
     padding: 112px 0;
@@ -281,5 +281,50 @@
   .main-banner {
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .main-banner {
+    .row {
+      .col-lg-6 {
+        width: 100%;
+
+        .main-banner__text {
+          width: 100%;
+          text-align: center;
+
+          .heading-primary {
+            font-size: 30px;
+            line-height: 130%;
+          }
+        }
+      }
+    }
+
+    .main-banner__features {
+      .main-banner__feature-item {
+        margin: 0 auto;
+        width: 155px;
+
+        .title {
+          font-size: 18px;
+          line-height: 130%;
+        }
+
+        .price {
+          font-size: 14px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main-banner__features {
+    .main-banner__feature {
+      width: 50%;
+    }
   }
 }

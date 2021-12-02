@@ -141,3 +141,37 @@
     }
   }
 }
+
+@media (max-width: 1030px) {
+  .main-promo {
+    margin-top: 60px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    .item {
+      padding-bottom: 95px;
+      flex-wrap: wrap;
+
+      .img {
+        width: 100%;
+      }
+      .content {
+        padding: 0 30px;
+        width: 100%;
+        text-align: center;
+
+        .title {
+          font-size: 30px;
+          line-height: 120%;
+        }
+
+        .text {
+          font-size: 14px;
+        }
+      }
+    }
+    .promo-slider__nav {
+      display: none;
+    }
+  }
+}

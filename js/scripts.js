@@ -153,4 +153,16 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    /*mob menu*/
+    const navButton = document.querySelector('.header .burger');
+    const nav = document.querySelector('.mob-menu');
+    const header = document.querySelector('header');
+    const body = document.querySelector('body');
+    navButton.addEventListener('click', (event) => {
+        navButton.classList.toggle('active');
+        nav.classList.toggle('active');
+        header.classList.toggle('active');
+        body.classList.toggle('fixed');
+    });
 });

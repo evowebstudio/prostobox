@@ -150,3 +150,95 @@
     }
   }
 }
+
+@media (max-width: 1030px) {
+  .main-additional {
+    margin-top: 0;
+    padding-bottom: 40px;
+
+    .title {
+      padding-top: 40px;
+      font-size: 30px;
+      line-height: 130%;
+      text-align: center;
+    }
+
+    .list {
+      .item {
+        margin-bottom: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+        width: 100%;
+
+        .img {
+          width: 56px;
+          height: 56px;
+          border-radius: 12px;
+
+          &.comfortable {
+            img {
+              position: absolute;
+              left: -20px;
+              top: -20px;
+              max-width: 62px;
+            }
+          }
+
+          &.shield {
+            img {
+              position: absolute;
+              left: -10px;
+              top: -15px;
+              max-width: 60px;
+            }
+          }
+
+          &.fast {
+            img {
+              position: absolute;
+              left: -10px;
+              top: -20px;
+              max-width: 55px;
+            }
+          }
+
+          &.friendly {
+            img {
+              position: absolute;
+              left: -20px;
+              top: -10px;
+              max-width: 70px;
+            }
+          }
+        }
+        .content {
+          padding: 0;
+          margin: 0;
+          width: 100%;
+
+          .heading {
+            margin: 20px 0 0 0;
+            text-align: center;
+            font-size: 18px;
+          }
+
+          .text {
+            text-align: center;
+            font-size: 14px;
+          }
+
+          .footer-text {
+            font-size: 14px;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .button {
+      margin: 10px 0 0 0;
+    }
+  }
+}
