@@ -293,7 +293,7 @@ main {
   cursor: pointer;
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  background-image: url("../../img/icons/q-mark.svg");
+  background-image: url("../img/icons/q-mark.svg");
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
@@ -1705,7 +1705,7 @@ header .header .buttons .login.guest:after {
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
-  background-image: url("../../img/advantages-lines.svg");
+  background-image: url("../img/advantages-lines.svg");
 }
 .main-advantages .pic {
   width: 50%;
@@ -2073,10 +2073,10 @@ header .header .buttons .login.guest:after {
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
-  background-image: url("../../img/icons/arrow-left.svg");
+  background-image: url("../img/icons/arrow-left.svg");
 }
 .main-plans .plans-slider-nav .slider-nav__btn--next {
-  background-image: url("../../img/icons/arrow-right_slider.svg");
+  background-image: url("../img/icons/arrow-right_slider.svg");
 }
 .main-plans .plans-slider-nav .slider-nav__btn--disabled,
 .main-plans .plans-slider-nav .slider-nav__btn--disabled:active {
@@ -2278,10 +2278,10 @@ header .header .buttons .login.guest:after {
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
-  background-image: url("../../img/icons/arrow-left.svg");
+  background-image: url("../img/icons/arrow-left.svg");
 }
 .main-promo .promo-slider__nav .slider-nav__btn--next {
-  background-image: url("../../img/icons/arrow-right_slider.svg");
+  background-image: url("../img/icons/arrow-right_slider.svg");
 }
 .main-promo .promo-slider__nav .slider-nav__btn--disabled,
 .main-promo .promo-slider__nav .slider-nav__btn--disabled:active {
@@ -2610,7 +2610,7 @@ header .header .buttons .login.guest:after {
   content: "";
   width: 30px;
   height: 30px;
-  background-image: url("../../img/icons/clock-icon.svg");
+  background-image: url("../img/icons/clock-icon.svg");
   background-size: 30px;
   background-repeat: no-repeat;
   background-position: center;
@@ -2642,7 +2642,7 @@ header .header .buttons .login.guest:after {
   content: "";
   width: 30px;
   height: 30px;
-  background-image: url("../../img/icons/location-icon.svg");
+  background-image: url("../img/icons/location-icon.svg");
   background-size: 30px;
   background-repeat: no-repeat;
   background-position: center;
@@ -2675,7 +2675,7 @@ header .header .buttons .login.guest:after {
   content: "";
   width: 30px;
   height: 30px;
-  background-image: url("../../img/icons/parcel-icon.svg");
+  background-image: url("../img/icons/parcel-icon.svg");
   background-size: 30px;
   background-repeat: no-repeat;
   background-position: center;
@@ -2696,7 +2696,7 @@ header .header .buttons .login.guest:after {
   height: 40px;
   max-width: 40px;
   background-size: 40px 40px;
-  background-image: url("../../img/icons/rating-star-icon.svg");
+  background-image: url("../img/icons/rating-star-icon.svg");
   background-repeat: space;
 }
 .main-review .list .item .rating .stars.stars_5 {
@@ -2768,7 +2768,7 @@ header .header .buttons .login.guest:after {
   width: 30px;
   height: 30px;
   background-size: 30px 30px;
-  background-image: url("../../img/icons/world.svg");
+  background-image: url("../img/icons/world.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -2815,10 +2815,10 @@ header .header .buttons .login.guest:after {
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
-  background-image: url("../../img/icons/arrow-left.svg");
+  background-image: url("../img/icons/arrow-left.svg");
 }
 .main-review .review-slider-nav .slider-nav__btn--next {
-  background-image: url("../../img/icons/arrow-right_slider.svg");
+  background-image: url("../img/icons/arrow-right_slider.svg");
 }
 .main-review .review-slider-nav .slider-nav__btn--disabled,
 .main-review .review-slider-nav .slider-nav__btn--disabled:active {
