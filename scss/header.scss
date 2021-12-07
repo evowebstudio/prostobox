@@ -13,12 +13,6 @@ header {
     max-width: $maxWidthContent;
     position: relative;
 
-    img {
-      /*
-      max-width: 112px;
-      */
-    }
-
     .burger {
       display: none;
       position: absolute;
@@ -140,6 +134,10 @@ header {
 
       .burger {
         display: block;
+      }
+
+      img {
+        max-width: 112px;
       }
     }
   }

@@ -419,11 +419,6 @@ header .header {
   max-width: 1200px;
   position: relative;
 }
-header .header img {
-  /*
-  max-width: 112px;
-  */
-}
 header .header .burger {
   display: none;
   position: absolute;
@@ -525,6 +520,9 @@ header .header .buttons .login.guest:after {
   }
   header .header .burger {
     display: block;
+  }
+  header .header img {
+    max-width: 112px;
   }
 }
 .breadcrumbs {
