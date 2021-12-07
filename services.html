@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Услуги. Prostobox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header d-flex justify-between align-center">
+            <a href="#">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <ul class="nav d-flex">
+                <li><a href="#">Как покупать в США</a></li>
+                <li><a href="#">Калькулятор</a></li>
+                <li><a href="#">Скидки в США</a></li>
+                <li><a href="#">ЛикБез</a></li>
+                <li><a href="#">Блог</a></li>
+            </ul>
+            <div class="buttons d-flex">
+                <button class="login guest">Вход</button>
+            </div>
+            <button class="burger"></button>
+        </div>
+    </header>
+
+    <ul class="main-breadcrumbs">
+        <li class="item"><a href="#" class="link">Главная</a></li>
+        <li class="item"><a href="#" class="link">Услуги</a></li>
+    </ul>
+    
+    <div class="services-list-wrapper">
+        <div class="services-list">
+            <p class="title">Услуги Простобокса</p>
+            <div class="list">
+                <div class="item">
+                    <p class="name">Персональная<br>ячейка</p>
+                    <p class="description">на складе в 100% безналоговом штате Делавэр для хранения ваших американких покупок</p>
+                    <p class="price">Бесплатно</p>
+                </div>
+                <div class="item">
+                    <p class="name">Приёмка</p>
+                    <p class="description">с помощью современного конвейера всех посылок 
+                        на складе по будням<br> 
+                        с 8 до 17</p>
+                    <p class="price">Бесплатно</p>
+                </div>
+                <div class="item">
+                    <p class="name">Объединение</p>
+                    <p class="description">нескольких входящих посылок в одну, чтобы сэкономить на доставке</p>
+                    <p class="price">Бесплатно</p>
+                </div>
+                <div class="item">
+                    <p class="name">Удаление<br>обувных коробок</p>
+                    <p class="description">чтобы посылка весила меньше и стоила дешевле</p>
+                    <p class="price">Бесплатно</p>
+                </div>
+                
+                <div class="item">
+                    <p class="name">Стандартная<br>упаковка</p>
+                    <p class="description">в стандартные коробки, переупаковка, добавление товаров из нашего магазина</p>
+                    <p class="price">Бесплатно</p>
+                </div>
+                <div class="item">
+                    <p class="name">Хранение входящих<br>посылок 45 дней</p>
+                    <p class="description">чтобы вы могли  
+                        не беспокоиться 
+                        и отправлять товары
+                        в комфортное для вас время</p>
+                    <p class="price">Бесплатно</p>
+                </div>
+                <div class="item">
+                    <p class="name">Пополнение<br>баланса от 10$</p>
+                    <p class="description">мы возьмем на себя комиссии эквайринга, а вы сэкономите до 4 процентов</p>
+                    <p class="price">Без комиссии</p>
+                </div>
+                <div class="item">
+                    <p class="name">Поддержка 24/7</p>
+                    <p class="description">через тикеты, чат и соцсети, чтобы помочь вам в любую минуту</p>
+                    <p class="price">Бесплатно</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-calc">
+        <div class="container">
+            <p class="title">Калькулятор</p>
+            <div class="d-flex">
+                <div class="calc">
+                    <div class="d-flex justify-between">
+                        <div class="group">
+                            <label for="" class="input_label">Страна доставки*</label>
+                            <div class="select">
+                                <select name="country">
+                                    <option value="">Россия</option>
+                                    <option value="">Россия</option>
+                                    <option value="">Украина</option>
+                                    <option value="">Грузия</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <label for="" class="input_label">Город доставки*</label>
+                            <input type="text" class="input_text" value="Москва" name="city">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-between">
+                        <div class="group">
+                            <label for="" class="input_label">Индекс</label>
+                            <input type="text" class="input_text" value="123456" name="postcode">
+                        </div>
+                        <div class="group">
+                            <label for="" class="input_label">Вес посылки*</label>
+                            <div class="group d-flex justify-between">
+                                <input type="text" class="input_text" value="0.3" name="weight">
+                                <div class="select small">
+                                    <select name="weight_type">
+                                        <option value="">Кг</option>
+                                        <option value="">Кг</option>
+                                        <option value="">Г</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-between">
+                        <div class="group">
+                            <label for="" class="input_label">Цена товара</label>
+                            <input type="text" class="input_text" value="$19 000" name="price">
+                        </div>
+                        <div class="group d-flex align-end">
+                            <button class="button">Рассчитать доставку</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="features">
+                    <li class="item">Приём посылок - <span class="blue">$0</span></li>
+                    <li class="item">Консолидация - <span class="blue">$0</span></li>
+                    <li class="item">Упаковка стандартная - <span class="blue">$0</span></li>
+                    <li class="item">Комиссия за пополнение баланса - <span class="blue">$0</span><button class="ask"></button></li>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="main-plans">
+        <div class="container">
+            <p class="title">Подходящие тарифы:</p>
+            <div class="swiper-plans">
+                <div class="list swiper-wrapper">
+                    <div class="item swiper-slide active">
+                        <img src="img/econom.png" alt="" class="econom-img">
+                        <p class="heading">Тариф</p>
+                        <p class="name">Для экономных</p>
+                        <p class="time">5 - 10 дней</p>
+                        <p class="price">$3.99</p>
+                        <div class="services">
+                            <p class="name d-flex align-center">Страховка от утери<button class="ask"></button></p>
+                            <p class="price">...</p>
+                        </div>
+                    </div>
+                    <div class="item swiper-slide">
+                        <img src="img/one.png" alt="" class="one-img">
+                        <p class="heading">Тариф</p>
+                        <p class="name">По одной</p>
+                        <p class="time">7 - 14 дней</p>
+                        <p class="price">$9.99</p>
+                        <div class="services">
+                            <p class="name d-flex align-center">Страховка от утери<button class="ask"></button></p>
+                            <p class="price">$5</p>
+                        </div>
+                    </div>
+                    <div class="item swiper-slide">
+                        <img src="img/combination.png" alt="" class="combination-img">
+                        <p class="heading">Тариф</p>
+                        <p class="name">С Объединением</p>
+                        <p class="time">7 - 14 дней</p>
+                        <p class="price">$14.99</p>
+                        <div class="services">
+                            <p class="name d-flex align-center">Страховка от утери<button class="ask"></button></p>
+                            <p class="price">$5</p>
+                            <p class="name d-flex align-center">Таможенная пошлина</p>
+                            <p class="price">$5</p>
+                        </div>
+                    </div>
+                    <div class="item swiper-slide">
+                        <img src="img/post.png" alt="" class="post-img">
+                        <p class="heading">Тариф</p>
+                        <p class="name">Через почту</p>
+                        <p class="time">20 - 30 дней</p>
+                        <p class="price">$22,99</p>
+                        <div class="services">
+                            <p class="name d-flex align-center">Страховка от утери<button class="ask"></button></p>
+                            <p class="price">$5</p>
+                        </div>
+                    </div>
+                    <div class="item swiper-slide">
+                        <img src="img/parcel.png" alt="" class="parcel-img">
+                        <p class="heading">Тариф</p>
+                        <p class="name">Для бандеролек</p>
+                        <p class="time">20 - 30 дней</p>
+                        <p class="price">$15,99</p>
+                        <div class="services">
+                            <p class="name d-flex align-center">Страховка от утери<button class="ask"></button></p>
+                            <p class="price">$5</p>
+                        </div>
+                    </div>
+                    <div class="item swiper-slide">
+                        <img src="img/big-parcel.png" alt="" class="big-img">
+                        <p class="heading">Тариф</p>
+                        <p class="name">Большие посылки</p>
+                        <p class="time">7 - 14 дней</p>
+                        <p class="price">$22,99</p>
+                        <div class="services">
+                            <p class="name d-flex align-center">Страховка от утери<button class="ask"></button></p>
+                            <p class="price">от $3</p>
+                            <p class="name d-flex align-center">Таможенная пошлина</p>
+                            <p class="price">...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="plans-slider-nav">
+                    <ul class="slider-nav">
+                        <li class="slider-nav__item">
+                            <button class="slider-nav__btn slider-nav__btn--prev" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-10f11efd49c60dbcb" aria-disabled="false"></button>
+                        </li>
+                        <li class="slider-nav__item">
+                            <button class="slider-nav__btn slider-nav__btn--next" tabindex="-1" aria-label="Next slide" aria-controls="swiper-wrapper-10f11efd49c60dbcb" aria-disabled="true" disabled=""></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-nav">
+        <div class="container">
+            <div class="d-flex justify-between align-start">
+                <p class="service-name">Prostobox</p>
+                <ul class="list">
+                    <li class="item"><a href="#" class="link">Как покупать в США</a></li>
+                    <li class="item"><a href="#" class="link">Калькулятор</a></li>
+                    <li class="item"><a href="#" class="link">Скидки</a></li>
+                    <li class="item"><a href="#" class="link">Партнерская программа</a></li>
+                </ul>
+                <ul class="list">
+                    <li class="item"><a href="#" class="link">Ликбез</a></li>
+                    <li class="item"><a href="#" class="link">Блог</a></li>
+                    <li class="item"><a href="#" class="link">Подобрать размер</a></li>
+                    <li class="item"><a href="#" class="link">Контакты</a></li>
+                </ul>
+                <ul class="list">
+                    <li class="item"><a href="#" class="link">Обработка персональных данных</a></li>
+                    <li class="item"><a href="#" class="link">Условия использования сервиса</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer d-flex justify-between align-center">
+        <p class="copy">©prostobox.com 2021</p>
+        <div class="socnet d-flex align-center">
+            <p class="text">Мы в соцсетях:</p>
+            <ul class="list">
+                <li class="item vk"><a href="#" class="link"></a></li>
+                <li class="item instagram"><a href="#" class="link"></a></li>
+                <li class="item telegram"><a href="#" class="link"></a></li>
+                <li class="item fb"><a href="#" class="link"></a></li>
+                <li class="item twitter"><a href="#" class="link"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="mob-menu">
+        <div class="nav">
+            <ul class="list">
+                <li class="item"><a href="#" class="link">Как покупать в США</a></li>
+                <li class="item"><a href="#" class="link">Калькулятор</a></li>
+                <li class="item"><a href="#" class="link">Скидки</a></li>
+                <li class="item"><a href="#" class="link">Партнерская программа</a></li>
+            </ul>
+            <ul class="list">
+                <li class="item"><a href="#" class="link">Ликбез</a></li>
+                <li class="item"><a href="#" class="link">Блог</a></li>
+                <li class="item"><a href="#" class="link">Подобрать размер</a></li>
+                <li class="item"><a href="#" class="link">Контакты</a></li>
+            </ul>
+            <ul class="list">
+                <li class="item"><a href="#" class="link">Обработка персональных данных</a></li>
+                <li class="item"><a href="#" class="link">Условия использования сервиса</a></li>
+            </ul>
+        </div>
+        <div class="socnet">
+            <p class="text">Мы в соцсетях:</p>
+            <ul class="list">
+                <li class="item vk"><a href="#" class="link"></a></li>
+                <li class="item instagram"><a href="#" class="link"></a></li>
+                <li class="item telegram"><a href="#" class="link"></a></li>
+                <li class="item fb"><a href="#" class="link"></a></li>
+                <li class="item twitter"><a href="#" class="link"></a></li>
+            </ul>
+        </div>
+    </div>
+</body> 
+</html>

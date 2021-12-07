@@ -1,0 +1,109 @@
+.services-list-wrapper {
+  overflow: hidden;
+}
+
+.services-list {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 0 260px;
+
+  .title {
+    margin: 100px 0 0 0;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 130%;
+    color: #1a223f;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 848px;
+      height: 428px;
+      position: absolute;
+      top: -200px;
+      left: calc(50% + 383px);
+      transform: translateX(-50%);
+      background-image: url("../img/services-lines.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      z-index: -1;
+    }
+
+    .item {
+      margin: 100px 36px 0 0;
+      width: calc(25% - 27px);
+
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+
+      .name {
+        min-height: 52px;
+        position: relative;
+        padding: 0 30px 0 40px;
+        margin: 0 0 20px;
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 130%;
+
+        color: #1a223f;
+
+        &::before {
+          content: "";
+          display: block;
+          top: 0;
+          left: 0;
+          position: absolute;
+          border-radius: 50%;
+          width: 25px;
+          height: 25px;
+          background-image: radial-gradient(
+            #fff,
+            #fff 6px,
+            #282828 7px,
+            #282828 8px,
+            #c1c1c1 9px
+          );
+          box-shadow: 0 4px 14px rgb(128 128 128 / 22%);
+          z-index: 1;
+        }
+      }
+
+      .description {
+        max-width: 269px;
+        min-height: 116px;
+        font-family: "Stolzl";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 180%;
+        letter-spacing: 0.04em;
+        color: #282828;
+      }
+
+      .price {
+        margin: 20px 0 0 0;
+        font-family: "Stolzl";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 180%;
+        letter-spacing: 0.04em;
+        color: #1467ff;
+      }
+    }
+  }
+}

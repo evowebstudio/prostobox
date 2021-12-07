@@ -1,0 +1,41 @@
+.main-breadcrumbs {
+  margin: 30px auto 0;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+
+  .item {
+    &::after {
+      content: "/";
+      margin: 0 5px;
+      display: inline-block;
+      font-family: "Stolzl";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 180%;
+      letter-spacing: 0.04em;
+      color: #282828;
+    }
+
+    .link {
+      font-family: "Stolzl";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 180%;
+      letter-spacing: 0.04em;
+      color: #282828;
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+
+      .link {
+        font-weight: 700;
+      }
+    }
+  }
+}

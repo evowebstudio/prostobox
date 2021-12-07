@@ -420,7 +420,9 @@ header .header {
   position: relative;
 }
 header .header img {
+  /*
   max-width: 112px;
+  */
 }
 header .header .burger {
   display: none;
@@ -1059,6 +1061,42 @@ header .header .buttons .login.guest:after {
     text-align: center;
   }
 }
+.main-breadcrumbs {
+  margin: 30px auto 0;
+  width: 100%;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main-breadcrumbs .item::after {
+  content: "/";
+  margin: 0 5px;
+  display: inline-block;
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 180%;
+  letter-spacing: 0.04em;
+  color: #282828;
+}
+.main-breadcrumbs .item .link {
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 180%;
+  letter-spacing: 0.04em;
+  color: #282828;
+}
+.main-breadcrumbs .item:last-child::after {
+  display: none;
+}
+.main-breadcrumbs .item:last-child .link {
+  font-weight: 700;
+}
+
 .mob-menu {
   display: none;
   position: fixed;
@@ -4389,38 +4427,6 @@ header .header .buttons .login.guest:after {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-.stores-title .breadcrumbs {
-  margin: 30px 0 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.stores-title .breadcrumbs .item::after {
-  content: "/";
-  display: inline-block;
-  font-family: "Stolzl";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 180%;
-  letter-spacing: 0.04em;
-  color: #282828;
-}
-.stores-title .breadcrumbs .item .link {
-  font-family: "Stolzl";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 180%;
-  letter-spacing: 0.04em;
-  color: #282828;
-}
-.stores-title .breadcrumbs .item:last-child::after {
-  display: none;
-}
-.stores-title .breadcrumbs .item:last-child .link {
-  font-weight: 700;
-}
 .stores-title .content {
   width: 50%;
   padding: 0;
@@ -4479,4 +4485,105 @@ header .header .buttons .login.guest:after {
   .stores-title-wrapper::after {
     height: 230px;
   }
+}
+.services-list-wrapper {
+  overflow: hidden;
+}
+
+.services-list {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 0 260px;
+}
+.services-list .title {
+  margin: 100px 0 0 0;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 130%;
+  color: #1a223f;
+}
+.services-list .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+.services-list .list:before {
+  content: "";
+  display: block;
+  width: 848px;
+  height: 428px;
+  position: absolute;
+  top: -200px;
+  left: calc(50% + 383px);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-image: url("../img/services-lines.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+.services-list .list .item {
+  margin: 100px 36px 0 0;
+  width: calc(25% - 27px);
+}
+.services-list .list .item:nth-child(4n) {
+  margin-right: 0;
+}
+.services-list .list .item .name {
+  min-height: 52px;
+  position: relative;
+  padding: 0 30px 0 40px;
+  margin: 0 0 20px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 130%;
+  color: #1a223f;
+}
+.services-list .list .item .name::before {
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  position: absolute;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-image: radial-gradient(#fff, #fff 6px, #282828 7px, #282828 8px, #c1c1c1 9px);
+  -webkit-box-shadow: 0 4px 14px rgba(128, 128, 128, 0.22);
+          box-shadow: 0 4px 14px rgba(128, 128, 128, 0.22);
+  z-index: 1;
+}
+.services-list .list .item .description {
+  max-width: 269px;
+  min-height: 116px;
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 180%;
+  letter-spacing: 0.04em;
+  color: #282828;
+}
+.services-list .list .item .price {
+  margin: 20px 0 0 0;
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 180%;
+  letter-spacing: 0.04em;
+  color: #1467ff;
 }
