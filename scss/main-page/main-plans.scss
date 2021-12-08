@@ -236,6 +236,156 @@
       background-color: #bbd3ff;
     }
   }
+
+  .plans-include {
+    margin-top: 40px;
+    padding: 0 40px;
+    background: #ffffff;
+    box-shadow: 0px 24px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+
+    .title {
+      padding: 20px 0 0 0;
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 130%;
+      color: #1a223f;
+      background-color: transparent;
+    }
+
+    .item {
+      .name {
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 10px;
+          left: 0;
+          width: 6px;
+          height: 6px;
+          border-radius: 3px;
+          background: #1467ff;
+        }
+
+        &.blue {
+          color: #1467ff;
+        }
+
+        position: relative;
+        min-height: 58px;
+        width: calc(100% - 25px);
+        padding-left: 25px;
+        display: flex;
+        flex-direction: row;
+        font-family: Stolzl;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 180%;
+        /* or 29px */
+
+        letter-spacing: 0.04em;
+
+        color: #282828;
+      }
+
+      .description {
+        margin: 10px 0 0 0;
+        padding-left: 25px;
+        font-family: "Stolzl";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 180%;
+        letter-spacing: 0.04em;
+        color: #1467ff;
+      }
+
+      .text {
+        max-width: 405px;
+        font-family: "Stolzl";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 180%;
+        letter-spacing: 0.04em;
+        color: #282828;
+      }
+    }
+
+    .row-5 {
+      margin: 40px 0 0 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .item {
+        width: 20%;
+      }
+    }
+
+    .row-4 {
+      margin: 40px 0;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      background: #ffffff;
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
+
+      .item {
+        width: 25%;
+
+        .name {
+          min-height: 87px;
+        }
+      }
+    }
+
+    .row-2 {
+      margin: 40px 0 0 0;
+      padding: 0 0 40px 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .item {
+        width: 50%;
+      }
+    }
+
+    .include-footer {
+      margin: 0 -40px;
+      background: #282828;
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
+
+      .title {
+        padding: 40px 50px 0;
+        margin: 0;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 130%;
+        color: #ffffff;
+      }
+
+      .row-4 {
+        padding: 0 50px 40px;
+        background: #282828;
+
+        .item {
+          .name {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1200px) {
@@ -265,6 +415,72 @@
         }
         .price {
           font-size: 30px;
+        }
+      }
+    }
+
+    .plans-include {
+      .title {
+        width: auto;
+        text-align: left;
+        font-size: 18px;
+        line-height: 130%;
+      }
+
+      .row-5 {
+        .item {
+          margin-bottom: 20px;
+          width: 100%;
+        }
+      }
+
+      .row-4 {
+        box-shadow: none;
+        background: transparent;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+
+        .item {
+          width: 100%;
+          margin-bottom: 20px;
+
+          .name {
+            min-height: auto;
+          }
+        }
+      }
+
+      .row-2 {
+        .item {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+
+      .item {
+        .name {
+          min-height: auto;
+        }
+
+        br {
+          display: none;
+        }
+
+        .description {
+          margin-top: 5px;
+        }
+
+        .text {
+          padding-left: 25px;
+        }
+      }
+
+      .include-footer {
+        .title {
+          font-size: 18px;
+          line-height: 130%;
+          margin-bottom: 20px;
         }
       }
     }

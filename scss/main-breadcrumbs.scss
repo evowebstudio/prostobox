@@ -39,3 +39,24 @@
     }
   }
 }
+
+@media (max-width: 1240px) {
+  .main-breadcrumbs {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .main-breadcrumbs {
+    .item {
+      &:after {
+        font-size: 12px;
+      }
+
+      .link {
+        font-size: 12px;
+      }
+    }
+  }
+}

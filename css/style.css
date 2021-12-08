@@ -1095,6 +1095,20 @@ header .header .buttons .login.guest:after {
   font-weight: 700;
 }
 
+@media (max-width: 1240px) {
+  .main-breadcrumbs {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 1030px) {
+  .main-breadcrumbs .item:after {
+    font-size: 12px;
+  }
+  .main-breadcrumbs .item .link {
+    font-size: 12px;
+  }
+}
 .mob-menu {
   display: none;
   position: fixed;
@@ -2567,6 +2581,158 @@ header .header .buttons .login.guest:after {
 .main-plans .plans-slider-nav .slider-nav__btn--disabled:active {
   background-color: #bbd3ff;
 }
+.main-plans .plans-include {
+  margin-top: 40px;
+  padding: 0 40px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 24px 30px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 24px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+.main-plans .plans-include .title {
+  padding: 20px 0 0 0;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 130%;
+  color: #1a223f;
+  background-color: transparent;
+}
+.main-plans .plans-include .item .name {
+  position: relative;
+  min-height: 58px;
+  width: calc(100% - 25px);
+  padding-left: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: Stolzl;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  /* or 29px */
+  letter-spacing: 0.04em;
+  color: #282828;
+}
+.main-plans .plans-include .item .name::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background: #1467ff;
+}
+.main-plans .plans-include .item .name.blue {
+  color: #1467ff;
+}
+.main-plans .plans-include .item .description {
+  margin: 10px 0 0 0;
+  padding-left: 25px;
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 180%;
+  letter-spacing: 0.04em;
+  color: #1467ff;
+}
+.main-plans .plans-include .item .text {
+  max-width: 405px;
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 180%;
+  letter-spacing: 0.04em;
+  color: #282828;
+}
+.main-plans .plans-include .row-5 {
+  margin: 40px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.main-plans .plans-include .row-5 .item {
+  width: 20%;
+}
+.main-plans .plans-include .row-4 {
+  margin: 40px 0;
+  padding: 30px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+.main-plans .plans-include .row-4 .item {
+  width: 25%;
+}
+.main-plans .plans-include .row-4 .item .name {
+  min-height: 87px;
+}
+.main-plans .plans-include .row-2 {
+  margin: 40px 0 0 0;
+  padding: 0 0 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.main-plans .plans-include .row-2 .item {
+  width: 50%;
+}
+.main-plans .plans-include .include-footer {
+  margin: 0 -40px;
+  background: #282828;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+.main-plans .plans-include .include-footer .title {
+  padding: 40px 50px 0;
+  margin: 0;
+  font-family: Jost;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 130%;
+  color: #ffffff;
+}
+.main-plans .plans-include .include-footer .row-4 {
+  padding: 0 50px 40px;
+  background: #282828;
+}
+.main-plans .plans-include .include-footer .row-4 .item .name {
+  color: #fff;
+}
 
 @media (max-width: 1200px) {
   .main-plans {
@@ -2590,6 +2756,52 @@ header .header .buttons .login.guest:after {
   }
   .main-plans .list .item .price {
     font-size: 30px;
+  }
+  .main-plans .plans-include .title {
+    width: auto;
+    text-align: left;
+    font-size: 18px;
+    line-height: 130%;
+  }
+  .main-plans .plans-include .row-5 .item {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .main-plans .plans-include .row-4 {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: transparent;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .main-plans .plans-include .row-4 .item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .main-plans .plans-include .row-4 .item .name {
+    min-height: auto;
+  }
+  .main-plans .plans-include .row-2 .item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .main-plans .plans-include .item .name {
+    min-height: auto;
+  }
+  .main-plans .plans-include .item br {
+    display: none;
+  }
+  .main-plans .plans-include .item .description {
+    margin-top: 5px;
+  }
+  .main-plans .plans-include .item .text {
+    padding-left: 25px;
+  }
+  .main-plans .plans-include .include-footer .title {
+    font-size: 18px;
+    line-height: 130%;
+    margin-bottom: 20px;
   }
 }
 .main-work-scheme {
@@ -4584,4 +4796,647 @@ header .header .buttons .login.guest:after {
   line-height: 180%;
   letter-spacing: 0.04em;
   color: #1467ff;
+}
+
+@media (max-width: 1240px) {
+  .services-list {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 1240px) {
+  .services-list .title {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 130%;
+    color: #1a223f;
+  }
+  .services-list .list::before {
+    width: 553px;
+    height: 428px;
+    top: -173px;
+    left: calc(50% + 169px);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background-image: url(../img/services-lines-mobile.svg);
+    z-index: -1;
+  }
+  .services-list .list .item {
+    margin-top: 40px;
+    width: calc(50% - 54px);
+  }
+  .services-list .list .item:nth-child(4n) {
+    margin-right: 27px;
+  }
+  .services-list .list .item .name {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .services-list .list .item .description {
+    font-size: 14px;
+    line-height: 180%;
+    max-width: 273px;
+    min-height: auto;
+  }
+  .services-list .list .item .price {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 180%;
+  }
+}
+@media (max-width: 768px) {
+  .services-list .list .item {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+.services-warehouse-wrapper {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto 70px;
+  background: #282828;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.services-warehouse {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0 150px;
+}
+.services-warehouse .title {
+  font-family: Jost;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 130%;
+  color: #ffffff;
+}
+.services-warehouse .list {
+  margin: 80px 0 0 0;
+}
+.services-warehouse .list .item {
+  margin: 20px 0 0 30px;
+  padding: 20px 0 20px 70px;
+  position: relative;
+  width: 100%;
+  max-width: calc(100% - 30px);
+  background: #ffffff;
+  -webkit-box-shadow: 0px 17.227px 21.5337px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 17.227px 21.5337px rgba(0, 0, 0, 0.05);
+  border-radius: 14.3558px;
+}
+.services-warehouse .list .item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  -webkit-transform: none;
+          transform: none;
+  left: -24px;
+  top: 16px;
+  background-image: url("../img/icons/services-paid-dollar-sign.svg"), radial-gradient(#fff, #fff 14px, #282828 15px, #282828 22px, #c1c1c1 23px);
+  background-size: 12px 19px, 60px 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+.services-warehouse .list .item .description {
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 180%;
+  letter-spacing: 0.04em;
+  color: #1a223f;
+}
+.services-warehouse .list .item .price {
+  width: 256px;
+  font-family: Stolzl;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 180%;
+  letter-spacing: 0.04em;
+  color: #1467ff;
+}
+.services-warehouse .list .item .price span {
+  margin-left: 20px;
+  font-family: Stolzl;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: #1a223f;
+}
+.services-warehouse .additional-warehouse {
+  padding-top: 150px;
+}
+.services-warehouse .additional-warehouse .grid {
+  padding-top: 60px;
+}
+.services-warehouse .additional-warehouse .item {
+  padding: 80px 0 0 0;
+  width: 25%;
+  position: relative;
+}
+.services-warehouse .additional-warehouse .item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  -webkit-transform: none;
+          transform: none;
+  left: 0;
+  top: 0px;
+  background-image: url("../img/icons/packaging-cross-sign.svg"), radial-gradient(#fff, #fff 14px, #1467ff 15px, #1467ff 22px, #bbd3ff 23px);
+  background-position: top 23px left 23px, center;
+  background-size: 14px 14px, 60px 60px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+}
+.services-warehouse .additional-warehouse .item .name {
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 180%;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.services-warehouse .additional-warehouse .item .price {
+  margin: 20px 0 0 0;
+  font-family: Stolzl;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 180%;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.services-warehouse .additional-warehouse .item .price span {
+  display: block;
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+@media (max-width: 1240px) {
+  .services-warehouse-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: calc(100% - 30px);
+  }
+
+  .services-warehouse {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .services-warehouse .additional-warehouse {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 1030px) {
+  .services-warehouse {
+    padding-top: 60px;
+  }
+  .services-warehouse .list {
+    margin-top: 30px;
+  }
+  .services-warehouse .list .item {
+    margin-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+  }
+  .services-warehouse .list .item::before {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    border-radius: 50%;
+    background-image: url(../img/icons/services-paid-dollar-sign.svg), radial-gradient(#fff, #fff 9px, #282828 10px, #282828 15px, #c1c1c1 16px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 8px 13px, 40px 40px;
+  }
+  .services-warehouse .list .item .description {
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    line-height: 180%;
+  }
+  .services-warehouse .list .item .price {
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    line-height: 180%;
+  }
+  .services-warehouse .list .item .price.last {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .services-warehouse .list .item .price.last span {
+    margin-left: 0;
+    font-size: 14px;
+    line-height: 130%;
+  }
+  .services-warehouse .additional-warehouse {
+    padding-top: 60px;
+  }
+  .services-warehouse .additional-warehouse .grid .item {
+    width: 100%;
+    padding-top: 50px;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .services-warehouse .additional-warehouse .grid .item::before {
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    border-radius: 50%;
+    background-image: url(../img/icons/packaging-cross-sign.svg), radial-gradient(#fff, #fff 9px, #1467ff 10px, #1467ff 15px, #bbd3ff 16px);
+    background-position: top 15px left 15px, center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px, 40px 40px;
+  }
+  .services-warehouse .additional-warehouse .grid .item .name {
+    text-align: center;
+    font-size: 16px;
+    line-height: 180%;
+  }
+  .services-warehouse .additional-warehouse .grid .item .price {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 180%;
+  }
+  .services-warehouse .title {
+    font-size: 30px;
+    line-height: 130%;
+    text-align: center;
+  }
+}
+.services-insurance-wrapper {
+  overflow: hidden;
+  padding-top: 80px;
+}
+
+.services-insurance {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.services-insurance .description {
+  width: 50%;
+}
+.services-insurance .description .title {
+  margin: 0 0 100px 0;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 130%;
+  color: #1a223f;
+}
+.services-insurance .description .subtitle {
+  margin: 0 0 60px 0;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 130%;
+  color: #1a223f;
+}
+.services-insurance .description .subtitle span {
+  color: #1467ff;
+}
+.services-insurance .description .list .item {
+  margin-bottom: 20px;
+  padding-left: 26px;
+  position: relative;
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 180%;
+  letter-spacing: 0.04em;
+  color: #282828;
+}
+.services-insurance .description .list .item span {
+  color: #1467ff;
+  font-weight: bold;
+}
+.services-insurance .description .list .item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background: #1467ff;
+  border-radius: 3px;
+}
+.services-insurance .prices-wrapper {
+  width: 50%;
+  padding-top: 181px;
+  padding-right: 80px;
+}
+.services-insurance .prices-wrapper .prices .title {
+  position: relative;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 130%;
+  color: #1a223f;
+}
+.services-insurance .prices-wrapper .prices .title::before {
+  content: "";
+  display: block;
+  width: 254px;
+  height: 227px;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  left: calc(50% - 50px);
+  top: -244px;
+  position: absolute;
+  background-image: url("../img/insurance-lock.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 1;
+}
+.services-insurance .prices-wrapper .prices .title:after {
+  content: "";
+  display: block;
+  width: 1083px;
+  height: 1547px;
+  left: -142px;
+  -webkit-transform: translateY(-35%);
+          transform: translateY(-35%);
+  top: -255px;
+  position: absolute;
+  background-image: url("../img/insurance-line.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+.services-insurance .prices-wrapper .prices .list {
+  margin-top: 40px;
+}
+.services-insurance .prices-wrapper .prices .list .item {
+  margin-bottom: 25px;
+  max-width: 245px;
+  height: 153px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 17.227px 21.5337px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 17.227px 21.5337px rgba(0, 0, 0, 0.05);
+  border-radius: 14.3558px;
+}
+.services-insurance .prices-wrapper .prices .list .item .label {
+  font-family: Stolzl;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 180%;
+  letter-spacing: 0.04em;
+  color: #1a223f;
+}
+.services-insurance .prices-wrapper .prices .list .item .value {
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 180%;
+  letter-spacing: 0.04em;
+  color: #1467ff;
+}
+
+@media (max-width: 1240px) {
+  .services-insurance-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 1030px) {
+  .services-insurance-wrapper {
+    padding-top: 40px;
+  }
+
+  .services-insurance .description {
+    width: 100%;
+  }
+  .services-insurance .description .title {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 130%;
+    text-align: center;
+  }
+  .services-insurance .description .subtitle {
+    text-align: center;
+    font-size: 20px;
+    line-height: 130%;
+    margin-bottom: 35px;
+  }
+  .services-insurance .description .list .item {
+    font-size: 16px;
+    line-height: 180%;
+  }
+  .services-insurance .prices-wrapper {
+    width: 100%;
+    padding-right: 0;
+  }
+  .services-insurance .prices-wrapper .prices .title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 130%;
+  }
+  .services-insurance .prices-wrapper .prices .title::before {
+    top: -210px;
+    left: 20%;
+  }
+  .services-insurance .prices-wrapper .prices .list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .services-insurance .prices-wrapper .prices .list .item {
+    width: 155px;
+    height: 100px;
+  }
+  .services-insurance .prices-wrapper .prices .list .item .label {
+    font-size: 16px;
+    line-height: 180%;
+  }
+  .services-insurance .prices-wrapper .prices .list .item .value {
+    font-size: 18px;
+    line-height: 180%;
+  }
+}
+@media (max-width: 550px) {
+  .services-insurance .prices-wrapper .prices .title::before {
+    left: 0;
+    right: 0;
+  }
+}
+.services-customs {
+  margin: 150px auto 0;
+  width: 100%;
+  max-width: 1200px;
+}
+.services-customs .title {
+  font-family: Jost;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 130%;
+  color: #1a223f;
+}
+.services-customs .info {
+  padding-top: 80px;
+}
+.services-customs .info .image {
+  width: 50%;
+}
+.services-customs .info .description {
+  width: 50%;
+}
+.services-customs .info .description .text {
+  max-width: 590px;
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 180%;
+  letter-spacing: 0.04em;
+  color: #282828;
+}
+.services-customs .info .description .costs {
+  position: relative;
+  margin: 30px 0 0 0;
+  padding: 35px 49px;
+  border: 2px dashed #808181;
+  border-radius: 30px;
+  background-color: #fbfbfb;
+}
+.services-customs .info .description .costs .description {
+  width: 100%;
+  font-family: Jost;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 130%;
+  text-align: center;
+  color: #1a223f;
+}
+.services-customs .info .description .costs .description span {
+  color: #1467ff;
+}
+.services-customs .info .description .costs .ask {
+  position: absolute;
+  right: 25px;
+  bottom: 43px;
+}
+
+@media (max-width: 1240px) {
+  .services-customs {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 1030px) {
+  .services-customs {
+    margin-top: 60px;
+  }
+  .services-customs .info {
+    position: relative;
+    padding-top: 40px;
+  }
+  .services-customs .info .image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .services-customs .info .image img {
+    width: 180px;
+    margin: 0 auto;
+    display: block;
+  }
+  .services-customs .info .description {
+    width: 100%;
+  }
+  .services-customs .info .description .text {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    font-size: 16px;
+    line-height: 180%;
+  }
+  .services-customs .info .description .costs .description {
+    font-size: 20px;
+    line-height: 130%;
+  }
+  .services-customs .info .description .costs .description span {
+    font-size: 20px;
+    line-height: 130%;
+  }
+  .services-customs .title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 130%;
+  }
 }

@@ -1,0 +1,126 @@
+.services-customs {
+  margin: 150px auto 0;
+  width: 100%;
+  max-width: 1200px;
+
+  .title {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 130%;
+    color: #1a223f;
+  }
+
+  .info {
+    padding-top: 80px;
+
+    .image {
+      width: 50%;
+    }
+
+    .description {
+      width: 50%;
+
+      .text {
+        max-width: 590px;
+        font-family: "Stolzl";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 180%;
+        letter-spacing: 0.04em;
+        color: #282828;
+      }
+
+      .costs {
+        position: relative;
+        margin: 30px 0 0 0;
+        padding: 35px 49px;
+        border: 2px dashed #808181;
+        border-radius: 30px;
+        background-color: #fbfbfb;
+
+        .description {
+          width: 100%;
+          font-family: Jost;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 30px;
+          line-height: 130%;
+          text-align: center;
+          color: #1a223f;
+
+          span {
+            color: #1467ff;
+          }
+        }
+
+        .ask {
+          position: absolute;
+          right: 25px;
+          bottom: 43px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1240px) {
+  .services-customs {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .services-customs {
+    margin-top: 60px;
+
+    .info {
+      position: relative;
+      padding-top: 40px;
+
+      .image {
+        width: 100%;
+        margin-bottom: 20px;
+
+        img {
+          width: 180px;
+          margin: 0 auto;
+          display: block;
+        }
+      }
+
+      .description {
+        width: 100%;
+
+        .text {
+          text-align: center;
+          margin: 0 auto;
+          display: block;
+          font-size: 16px;
+          line-height: 180%;
+        }
+
+        .costs {
+          .description {
+            font-size: 20px;
+            line-height: 130%;
+
+            span {
+              font-size: 20px;
+              line-height: 130%;
+            }
+          }
+        }
+      }
+    }
+
+    .title {
+      text-align: center;
+      font-size: 30px;
+      line-height: 130%;
+    }
+  }
+}

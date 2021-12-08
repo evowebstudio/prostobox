@@ -107,3 +107,72 @@
     }
   }
 }
+
+@media (max-width: 1240px) {
+  .services-list {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .services-list {
+    .title {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 30px;
+      line-height: 130%;
+      color: #1a223f;
+    }
+
+    .list {
+      &::before {
+        width: 553px;
+        height: 428px;
+        top: -173px;
+        left: calc(50% + 169px);
+        transform: translateX(-50%);
+        background-image: url(../img/services-lines-mobile.svg);
+        z-index: -1;
+      }
+      .item {
+        margin-top: 40px;
+        width: calc(50% - 54px);
+
+        &:nth-child(4n) {
+          margin-right: 27px;
+        }
+
+        .name {
+          margin-bottom: 10px;
+          font-size: 18px;
+        }
+
+        .description {
+          font-size: 14px;
+          line-height: 180%;
+          max-width: 273px;
+          min-height: auto;
+        }
+
+        .price {
+          margin-top: 10px;
+          font-size: 18px;
+          line-height: 180%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .services-list {
+    .list {
+      .item {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+  }
+}
