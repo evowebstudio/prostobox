@@ -5293,6 +5293,7 @@ header .header .buttons .login.guest:after {
     font-size: 20px;
     line-height: 130%;
     margin-bottom: 35px;
+    margin-left: 0;
   }
   .services-insurance .description .list .item {
     font-size: 16px;
