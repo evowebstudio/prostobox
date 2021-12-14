@@ -154,6 +154,63 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    if(document.querySelector('.how-to-buy')) {
+        const deliveryOptionsItemFast = document.querySelectorAll('.delivery-options__item--fast');
+        const deliveryOptionsItemSimple = document.querySelectorAll('.delivery-options__item--simple');
+        const deliveryOptionsBtnFast = document.querySelector('.js-delivery-btn-fast');
+        const deliveryOptionsBtnSimple = document.querySelector('.js-delivery-btn-simple');
+        const pricingOptionsBtnYes = document.querySelector('.js-pricing-options-yes');
+        const pricingOptionsBtnNo = document.querySelector('.js-pricing-options-no');
+
+        deliveryOptionsItemFast.forEach((item) => {
+            item.style.display = 'none';
+        });
+        deliveryOptionsItemSimple.forEach((item) => {
+            item.style.display = 'none';
+        });
+
+        pricingOptionsBtnYes.addEventListener('click', (event) => {
+            event.preventDefault();
+            pricingOptionsBtnYes.classList.add('js-pricing-options-current');
+            pricingOptionsBtnNo.classList.remove('js-pricing-options-current');
+            document.querySelector('.delivery-options--yes').style.display = 'block';
+            document.querySelector('.delivery-options--no').style.display = 'none';
+        });
+
+        pricingOptionsBtnNo.addEventListener('click', (event) => {
+            event.preventDefault();
+            pricingOptionsBtnYes.classList.remove('js-pricing-options-current');
+            pricingOptionsBtnNo.classList.add('js-pricing-options-current');
+            document.querySelector('.delivery-options--yes').style.display = 'none';
+            document.querySelector('.delivery-options--no').style.display = 'block';
+        });
+
+        deliveryOptionsBtnFast.addEventListener('click', (event) => {
+            event.preventDefault();
+            deliveryOptionsBtnFast.classList.add('active');
+            deliveryOptionsBtnSimple.classList.remove('active');
+            deliveryOptionsItemFast.forEach((item) => {
+                item.style.display = 'block';
+            });
+            deliveryOptionsItemSimple.forEach((item) => {
+                item.style.display = 'none';
+            });
+        });
+
+        deliveryOptionsBtnSimple.addEventListener('click', (event) => {
+            event.preventDefault();
+            deliveryOptionsBtnFast.classList.remove('active');
+            deliveryOptionsBtnSimple.classList.add('active');
+            deliveryOptionsItemFast.forEach((item) => {
+                item.style.display = 'none';
+            });
+            deliveryOptionsItemSimple.forEach((item) => {
+                item.style.display = 'block';
+            });
+        });
+        
+    }
+
     /*mob menu*/
     const navButton = document.querySelector('.header .burger');
     const nav = document.querySelector('.mob-menu');
