@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Блог. Prostobox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header d-flex justify-between align-center">
+            <a href="#">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <ul class="nav d-flex">
+                <li><a href="#">Как покупать в США</a></li>
+                <li><a href="#">Калькулятор</a></li>
+                <li><a href="#">Скидки в США</a></li>
+                <li><a href="#">ЛикБез</a></li>
+                <li><a href="#">Блог</a></li>
+            </ul>
+            <div class="buttons d-flex">
+                <button class="login guest">Вход</button>
+            </div>
+            <button class="burger"></button>
+        </div>
+    </header>
+    
+    <div class="blog-main-wrapper">
+        <div class="blog-main">
+            <ul class="breadcrumbs">
+                <li class="item"><a href="#" class="link">Главная</a></li>
+                <li class="item"><a href="#" class="link">Блог</a></li>
+            </ul>
+            <div class="blog-main-content">
+                <div class="col">
+                    <p class="title">Обзоры товаров и магазинов</p>
+                    <form action="" class="blog-main-search">
+                        <input type="text" name="search" class="blog-main-search-text" placeholder="Поиск">
+                        <button class="blog-main-search-button"></button>
+                    </form>
+                </div>
+                <div class="col">
+                    <div class="blog-item-main">
+                        <div class="image">
+                            <div class="new-label"></div>
+                            <img src="img/blog/5.png" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="d-flex">
+                                <p class="date">26.04.2021</p>
+                                <p class="views">26</p>
+                            </div>
+                            <p class="name">Новая статья с интересным предложением или что-то подобное</p>
+                            <p class="description">Timberland – всемирно признанная американская марка обуви и верхней одежды. Её выбирают не только альпинисты и туристы, путешествующие через непроходимые дебри, но и обычные городские модницы, которым...</p>
+                            <div class="d-flex align-center">
+                                <div class="rating">
+                                    <img src="img/icons/rating-star-icon.svg" alt="">
+                                    <img src="img/icons/rating-star-icon.svg" alt="">
+                                    <img src="img/icons/rating-star-icon.svg" alt="">
+                                    <img src="img/icons/rating-star-icon.svg" alt="">
+                                    <img src="img/icons/rating-star-icon.svg" alt="">
+                                </div>
+                                <a href="#" class="more">Читать дальше</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog-category-wrapper">
+        <div class="blog-category">
+            <p class="title">Все категории:</p>
+            <div class="list">
+                <a href="" class="item active">Одежда<button class="cancel"></button></a>
+                <a href="" class="item">Обувь</a>
+                <a href="" class="item">Электроника</a>
+                <a href="" class="item">Красота и здоровье</a>
+                <a href="" class="item">Ювелирные украшения</a>
+                <a href="" class="item">Детская одежда</a>
+                <a href="" class="item">Детские товары</a>
+                <a href="" class="item">Аксессуары</a>
+                <a href="" class="item">Разное</a>
+                <a href="" class="item">Видео обзоры</a>
+                <a href="" class="item">Обзоры</a>
+                <a href="" class="item">Дом и сад</a>
+                <a href="" class="item">Спорт и активный отдых</a>
+                <a href="" class="item">Зоотовары</a>
+                <a href="" class="item">Коллекционирование</a>
+                <a href="" class="item">Подарки и сувениры</a>
+                <a href="" class="item">Хобби</a>
+                <a href="" class="item">Фото и видеокамеры</a>
+                <a href="" class="item">Скидки и распродажи</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="blog-posts">
+        <div class="title">Блог</div>
+        <div class="blog-item">
+            <div class="image">
+                <img src="img/blog/1.jpg" alt="">
+            </div>
+            <div class="info">
+                <div class="d-flex">
+                    <p class="date">26.04.2021</p>
+                    <p class="views">26</p>
+                </div>
+                <p class="name">Guess из Америки. Как сэкономить на обуви и аксессуарах до 5 000 рублей</p>
+                <p class="description">Сегодня Guess можно купить в любом американском бутике. Это почти самый известный брендовый производитель одежды во всем мире — одежду Guess покупают в 60 странах мира. Бренд выпускает одежду, обувь...</p>
+                <div class="d-flex align-center">
+                    <div class="rating">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                    </div>
+                    <a href="#" class="more">Читать дальше</a>
+                </div>
+            </div>
+        </div>
+        <div class="blog-item">
+            <div class="image">
+                <img src="img/blog/2.jpg" alt="">
+            </div>
+            <div class="info">
+                <div class="d-flex">
+                    <p class="date">26.04.2021</p>
+                    <p class="views">26</p>
+                </div>
+                <p class="name">Guess из Америки. Как сэкономить на обуви и аксессуарах до 5 000 рублей</p>
+                <p class="description">Сегодня Guess можно купить в любом американском бутике. Это почти самый известный брендовый производитель одежды во всем мире — одежду Guess покупают в 60 странах мира. Бренд выпускает одежду, обувь...</p>
+                <div class="d-flex align-center">
+                    <div class="rating">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                    </div>
+                    <a href="#" class="more">Читать дальше</a>
+                </div>
+            </div>
+        </div>
+        <div class="blog-item">
+            <div class="image">
+                <img src="img/blog/3.jpg" alt="">
+            </div>
+            <div class="info">
+                <div class="d-flex">
+                    <p class="date">26.04.2021</p>
+                    <p class="views">26</p>
+                </div>
+                <p class="name">Guess из Америки. Как сэкономить на обуви и аксессуарах до 5 000 рублей</p>
+                <p class="description">Сегодня Guess можно купить в любом американском бутике. Это почти самый известный брендовый производитель одежды во всем мире — одежду Guess покупают в 60 странах мира. Бренд выпускает одежду, обувь...</p>
+                <div class="d-flex align-center">
+                    <div class="rating">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                    </div>
+                    <a href="#" class="more">Читать дальше</a>
+                </div>
+            </div>
+        </div>
+        <div class="blog-item">
+            <div class="image">
+                <img src="img/blog/4.jpg" alt="">
+            </div>
+            <div class="info">
+                <div class="d-flex">
+                    <p class="date">26.04.2021</p>
+                    <p class="views">26</p>
+                </div>
+                <p class="name">Guess из Америки. Как сэкономить на обуви и аксессуарах до 5 000 рублей</p>
+                <p class="description">Сегодня Guess можно купить в любом американском бутике. Это почти самый известный брендовый производитель одежды во всем мире — одежду Guess покупают в 60 странах мира. Бренд выпускает одежду, обувь...</p>
+                <div class="d-flex align-center">
+                    <div class="rating">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                    </div>
+                    <a href="#" class="more">Читать дальше</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-item promo">
+            <div class="image">
+                <div class="hot-label"></div>
+                <img src="img/blog/5.jpg" alt="">
+            </div>
+            <div class="info">
+                <div class="d-flex">
+                    <p class="date">26.04.2021</p>
+                    <p class="views">26</p>
+                </div>
+                <p class="name">Акция, спецпредложение или что-то подобное</p>
+                <p class="description">Timberland – всемирно признанная американская марка обуви и верхней одежды. Её выбирают не только альпинисты и туристы, путешествующие через непроходимые дебри, но и обычные городские модницы, которым...</p>
+                <div class="d-flex align-center">
+                    <div class="rating">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                    </div>
+                    <a href="#" class="more">Читать дальше</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-item">
+            <div class="image">
+                <img src="img/blog/1.jpg" alt="">
+            </div>
+            <div class="info">
+                <div class="d-flex">
+                    <p class="date">26.04.2021</p>
+                    <p class="views">26</p>
+                </div>
+                <p class="name">Guess из Америки. Как сэкономить на обуви и аксессуарах до 5 000 рублей</p>
+                <p class="description">Сегодня Guess можно купить в любом американском бутике. Это почти самый известный брендовый производитель одежды во всем мире — одежду Guess покупают в 60 странах мира. Бренд выпускает одежду, обувь...</p>
+                <div class="d-flex align-center">
+                    <div class="rating">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                    </div>
+                    <a href="#" class="more">Читать дальше</a>
+                </div>
+            </div>
+        </div>
+        <div class="blog-item">
+            <div class="image">
+                <img src="img/blog/2.jpg" alt="">
+            </div>
+            <div class="info">
+                <div class="d-flex">
+                    <p class="date">26.04.2021</p>
+                    <p class="views">26</p>
+                </div>
+                <p class="name">Guess из Америки. Как сэкономить на обуви и аксессуарах до 5 000 рублей</p>
+                <p class="description">Сегодня Guess можно купить в любом американском бутике. Это почти самый известный брендовый производитель одежды во всем мире — одежду Guess покупают в 60 странах мира. Бренд выпускает одежду, обувь...</p>
+                <div class="d-flex align-center">
+                    <div class="rating">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                    </div>
+                    <a href="#" class="more">Читать дальше</a>
+                </div>
+            </div>
+        </div>
+        <div class="blog-item">
+            <div class="image">
+                <img src="img/blog/3.jpg" alt="">
+            </div>
+            <div class="info">
+                <div class="d-flex">
+                    <p class="date">26.04.2021</p>
+                    <p class="views">26</p>
+                </div>
+                <p class="name">Guess из Америки. Как сэкономить на обуви и аксессуарах до 5 000 рублей</p>
+                <p class="description">Сегодня Guess можно купить в любом американском бутике. Это почти самый известный брендовый производитель одежды во всем мире — одежду Guess покупают в 60 странах мира. Бренд выпускает одежду, обувь...</p>
+                <div class="d-flex align-center">
+                    <div class="rating">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                    </div>
+                    <a href="#" class="more">Читать дальше</a>
+                </div>
+            </div>
+        </div>
+        <div class="blog-item">
+            <div class="image">
+                <img src="img/blog/4.jpg" alt="">
+            </div>
+            <div class="info">
+                <div class="d-flex">
+                    <p class="date">26.04.2021</p>
+                    <p class="views">26</p>
+                </div>
+                <p class="name">Guess из Америки. Как сэкономить на обуви и аксессуарах до 5 000 рублей</p>
+                <p class="description">Сегодня Guess можно купить в любом американском бутике. Это почти самый известный брендовый производитель одежды во всем мире — одежду Guess покупают в 60 странах мира. Бренд выпускает одежду, обувь...</p>
+                <div class="d-flex align-center">
+                    <div class="rating">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                        <img src="img/icons/rating-star-icon.svg" alt="">
+                    </div>
+                    <a href="#" class="more">Читать дальше</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog-pagination">
+        <button class="prev"></button>
+            <ul class="pages">
+                <li class="item active"><a href="" class="link">1</a></li>
+                <li class="item"><a href="" class="link">2</a></li>
+                <li class="item"><a href="" class="link">3</a></li>
+                <li class="item"><a href="" class="link">...</a></li>
+                <li class="item"><a href="" class="link">30</a></li>
+            </ul>
+        <button class="next active"></button>
+    </div>
+
+    <div class="main-subcribe">
+        <div class="wrapper">
+            <form class="content">
+                <p class="text"><span>Подпишитесь</span> на новостную рассылку Простобокса и получайте информацию о новинках и акциях в числе первых.</p>
+                <div class="d-flex justify-between buttons">
+                    <input type="text" class="input_text" name="email" placeholder="Ваш e-mail" required="">
+                    <button class="button">Подписаться</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-nav">
+        <div class="container">
+            <div class="d-flex justify-between align-start">
+                <p class="service-name">Prostobox</p>
+                <ul class="list">
+                    <li class="item"><a href="#" class="link">Как покупать в США</a></li>
+                    <li class="item"><a href="#" class="link">Калькулятор</a></li>
+                    <li class="item"><a href="#" class="link">Скидки</a></li>
+                    <li class="item"><a href="#" class="link">Партнерская программа</a></li>
+                </ul>
+                <ul class="list">
+                    <li class="item"><a href="#" class="link">Ликбез</a></li>
+                    <li class="item"><a href="#" class="link">Блог</a></li>
+                    <li class="item"><a href="#" class="link">Подобрать размер</a></li>
+                    <li class="item"><a href="#" class="link">Контакты</a></li>
+                </ul>
+                <ul class="list">
+                    <li class="item"><a href="#" class="link">Обработка персональных данных</a></li>
+                    <li class="item"><a href="#" class="link">Условия использования сервиса</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer d-flex justify-between align-center">
+        <p class="copy">©prostobox.com 2021</p>
+        <div class="socnet d-flex align-center">
+            <p class="text">Мы в соцсетях:</p>
+            <ul class="list">
+                <li class="item vk"><a href="#" class="link"></a></li>
+                <li class="item instagram"><a href="#" class="link"></a></li>
+                <li class="item telegram"><a href="#" class="link"></a></li>
+                <li class="item fb"><a href="#" class="link"></a></li>
+                <li class="item twitter"><a href="#" class="link"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="mob-menu">
+        <div class="nav">
+            <ul class="list">
+                <li class="item"><a href="#" class="link">Как покупать в США</a></li>
+                <li class="item"><a href="#" class="link">Калькулятор</a></li>
+                <li class="item"><a href="#" class="link">Скидки</a></li>
+                <li class="item"><a href="#" class="link">Партнерская программа</a></li>
+            </ul>
+            <ul class="list">
+                <li class="item"><a href="#" class="link">Ликбез</a></li>
+                <li class="item"><a href="#" class="link">Блог</a></li>
+                <li class="item"><a href="#" class="link">Подобрать размер</a></li>
+                <li class="item"><a href="#" class="link">Контакты</a></li>
+            </ul>
+            <ul class="list">
+                <li class="item"><a href="#" class="link">Обработка персональных данных</a></li>
+                <li class="item"><a href="#" class="link">Условия использования сервиса</a></li>
+            </ul>
+        </div>
+        <div class="socnet">
+            <p class="text">Мы в соцсетях:</p>
+            <ul class="list">
+                <li class="item vk"><a href="#" class="link"></a></li>
+                <li class="item instagram"><a href="#" class="link"></a></li>
+                <li class="item telegram"><a href="#" class="link"></a></li>
+                <li class="item fb"><a href="#" class="link"></a></li>
+                <li class="item twitter"><a href="#" class="link"></a></li>
+            </ul>
+        </div>
+    </div>
+</body> 
+</html>
