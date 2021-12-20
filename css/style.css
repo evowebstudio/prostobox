@@ -6469,7 +6469,7 @@ header .header .buttons .login.guest:after {
 .blog-main-content .blog-item-main .image .new-label {
   width: 76px;
   height: 76px;
-  background-image: url("/img/icons/new-label.png");
+  background-image: url("../img/icons/new-label.png");
   background-repeat: no-repeat;
   background-size: 76px;
   background-position: center;
@@ -6518,7 +6518,7 @@ header .header .buttons .login.guest:after {
   height: 30px;
   background-repeat: no-repeat;
   background-size: 30px;
-  background-image: url("/img/icons/clock-icon.svg");
+  background-image: url("../img/icons/clock-icon.svg");
   background-position: center;
 }
 .blog-main-content .blog-item-main .info .views {
@@ -6549,7 +6549,7 @@ header .header .buttons .login.guest:after {
   height: 30px;
   background-repeat: no-repeat;
   background-size: 30px;
-  background-image: url("/img/icons/views.svg");
+  background-image: url("../img/icons/views.svg");
   background-position: center;
 }
 .blog-main-content .blog-item-main .info .name {
@@ -6600,7 +6600,7 @@ header .header .buttons .login.guest:after {
   width: 30px;
   height: 15px;
   background-size: 30px 15px;
-  background-image: url("/img/icons/arrow-right-blog.svg");
+  background-image: url("../img/icons/arrow-right-blog.svg");
   background-repeat: no-repeat;
   display: block;
 }
@@ -6639,7 +6639,7 @@ header .header .buttons .login.guest:after {
   margin-left: 20px;
   background-color: #1467ff;
   border-radius: 20px;
-  background-image: url("/img/icons/search_blog.svg");
+  background-image: url("../img/icons/search_blog.svg");
   background-position: center;
   background-size: 30px 30px;
   background-repeat: no-repeat;
@@ -6798,7 +6798,7 @@ header .header .buttons .login.guest:after {
   width: 25px;
   height: 25px;
   margin-left: 10px;
-  background-image: url("/img/icons/cancel.svg");
+  background-image: url("../img/icons/cancel.svg");
   background-size: 25px;
   background-repeat: no-repeat;
 }
@@ -6844,7 +6844,7 @@ header .header .buttons .login.guest:after {
 .blog-posts .blog-item.promo .image .hot-label {
   width: 76px;
   height: 76px;
-  background-image: url("/img/icons/hot-label.png");
+  background-image: url("../img/icons/hot-label.png");
   background-repeat: no-repeat;
   background-size: 76px;
   background-position: center;
@@ -6862,13 +6862,13 @@ header .header .buttons .login.guest:after {
   color: #e9e9e9;
 }
 .blog-posts .blog-item.promo .info .date::before {
-  background-image: url("/img/icons/clock-icon_yellow.svg");
+  background-image: url("../img/icons/clock-icon_yellow.svg");
 }
 .blog-posts .blog-item.promo .info .views {
   color: #e9e9e9;
 }
 .blog-posts .blog-item.promo .info .views::before {
-  background-image: url("/img/icons/views_yellow.svg");
+  background-image: url("../img/icons/views_yellow.svg");
 }
 .blog-posts .blog-item.promo .info .name {
   color: #fff;
@@ -6918,7 +6918,7 @@ header .header .buttons .login.guest:after {
   height: 30px;
   background-repeat: no-repeat;
   background-size: 30px;
-  background-image: url("/img/icons/clock-icon.svg");
+  background-image: url("../img/icons/clock-icon.svg");
   background-position: center;
 }
 .blog-posts .blog-item .info .views {
@@ -6949,7 +6949,7 @@ header .header .buttons .login.guest:after {
   height: 30px;
   background-repeat: no-repeat;
   background-size: 30px;
-  background-image: url("/img/icons/views.svg");
+  background-image: url("../img/icons/views.svg");
   background-position: center;
 }
 .blog-posts .blog-item .info .name {
@@ -7000,7 +7000,7 @@ header .header .buttons .login.guest:after {
   width: 30px;
   height: 15px;
   background-size: 30px 15px;
-  background-image: url("/img/icons/arrow-right-blog.svg");
+  background-image: url("../img/icons/arrow-right-blog.svg");
   background-repeat: no-repeat;
   display: block;
 }
@@ -7107,7 +7107,7 @@ header .header .buttons .login.guest:after {
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
-  background-image: url("/img/icons/arrow-left.svg");
+  background-image: url("../img/icons/arrow-left.svg");
 }
 .blog-pagination .prev.active {
   background-color: #1467ff;
@@ -7128,7 +7128,7 @@ header .header .buttons .login.guest:after {
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
-  background-image: url("/img/icons/arrow-right_slider.svg");
+  background-image: url("../img/icons/arrow-right_slider.svg");
 }
 .blog-pagination .next.active {
   background-color: #1467ff;

@@ -21,7 +21,7 @@
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
-    background-image: url("/img/icons/arrow-left.svg");
+    background-image: url("../img/icons/arrow-left.svg");
 
     &.active {
       background-color: #1467ff;
@@ -44,7 +44,7 @@
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
-    background-image: url("/img/icons/arrow-right_slider.svg");
+    background-image: url("../img/icons/arrow-right_slider.svg");
 
     &.active {
       background-color: #1467ff;
