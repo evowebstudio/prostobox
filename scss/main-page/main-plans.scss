@@ -24,6 +24,34 @@
     border-radius: 10px;
   }
 
+  .differences-plans {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 60px;
+    font-family: Stolzl;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 180%;
+    letter-spacing: 0.04em;
+    color: #1467ff;
+
+    &::before {
+      content: "";
+      width: 66px;
+      height: 66px;
+      display: block;
+      background-image: url("../img/icons/dif.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 66px;
+      top: 10px;
+      position: relative;
+    }
+  }
+
   .swiper-plans {
     position: relative;
     overflow: visible;
@@ -419,6 +447,9 @@
 
 @media (max-width: 1030px) {
   .main-plans {
+    .differences-plans {
+      display: none;
+    }
     .title {
       font-size: 20px;
       margin-left: auto;

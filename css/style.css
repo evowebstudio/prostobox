@@ -2484,6 +2484,39 @@ header .header .buttons .login.guest:after {
   background: #000000;
   border-radius: 10px;
 }
+.main-plans .differences-plans {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 60px;
+  font-family: Stolzl;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 180%;
+  letter-spacing: 0.04em;
+  color: #1467ff;
+}
+.main-plans .differences-plans::before {
+  content: "";
+  width: 66px;
+  height: 66px;
+  display: block;
+  background-image: url("../img/icons/dif.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 66px;
+  top: 10px;
+  position: relative;
+}
 .main-plans .swiper-plans {
   position: relative;
   overflow: visible;
@@ -2853,6 +2886,9 @@ header .header .buttons .login.guest:after {
   }
 }
 @media (max-width: 1030px) {
+  .main-plans .differences-plans {
+    display: none;
+  }
   .main-plans .title {
     font-size: 20px;
     margin-left: auto;
