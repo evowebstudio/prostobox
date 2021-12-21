@@ -27,6 +27,7 @@
       margin: 0 0 20px 0;
       width: 100%;
       max-width: 285px;
+      position: relative;
 
       .select {
         &.small {
@@ -41,6 +42,67 @@
         &[name="weight"] {
           max-width: 130px;
         }
+      }
+    }
+
+    .oversize {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      font-family: Stolzl;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 180%;
+      letter-spacing: 0.04em;
+      color: #1467ff;
+      text-align: left;
+      outline: none;
+
+      &::after {
+        content: "";
+        margin-left: 40px;
+        display: block;
+        width: 22px;
+        height: 8px;
+        background-image: url("../img/icons/arr.svg");
+        background-repeat: no-repeat;
+        background-size: 22px 8px;
+        background-position: center;
+      }
+
+      &.active {
+        &::after {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    .oversize-input {
+      display: none;
+
+      &.active {
+        display: flex;
+      }
+    }
+
+    .oversize-input-col {
+      display: none;
+
+      &.active {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .button-pos {
+      width: 285px;
+
+      &.abs {
+        position: absolute;
+        bottom: -200px;
+        left: 315px;
       }
     }
   }
@@ -164,10 +226,31 @@
         margin-right: auto;
         width: 285px;
       }
+
+      .oversize {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+
+        &::after {
+          margin-left: auto;
+          margin-right: auto;
+          left: -11px;
+        }
+      }
+
+      .button-pos {
+        &.abs {
+          left: 0;
+          right: 0;
+          bottom: -560px;
+          margin: 0 auto;
+        }
+      }
     }
     .features {
       width: 100%;
-      padding: 0 15px;
+      padding: 0 15px 120px;
 
       &::before,
       &::after {
@@ -186,6 +269,18 @@
           position: absolute;
           left: 0;
           top: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 510px) {
+  .main-calc {
+    .calc {
+      .button-pos {
+        &.abs {
+          bottom: -600px;
         }
       }
     }

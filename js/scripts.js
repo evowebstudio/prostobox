@@ -208,7 +208,19 @@ window.addEventListener('DOMContentLoaded', () => {
                 item.style.display = 'block';
             });
         });
-        
+    }
+
+    if(document.querySelector('.oversize')) {
+        const oversizeBtn = document.querySelector('.oversize');
+        const oversizeInput = document.querySelector('.oversize-input');
+        const oversizeInputCol = document.querySelector('.oversize-input-col');
+        const btnPos = document.querySelector('.button-pos');
+        oversizeBtn.addEventListener('click', (event) => {
+            oversizeBtn.classList.toggle('active');
+            oversizeInput.classList.toggle('active');
+            oversizeInputCol.classList.toggle('active');
+            btnPos.classList.toggle('abs');
+        });
     }
 
     /*mob menu*/
