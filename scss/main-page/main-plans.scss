@@ -312,6 +312,7 @@
         line-height: 180%;
         letter-spacing: 0.04em;
         color: #282828;
+        padding-left: 25px;
       }
     }
 
@@ -377,10 +378,31 @@
       .row-4 {
         padding: 0 50px 40px;
         background: #282828;
+        flex-direction: column;
 
         .item {
+          width: 100%;
+
           .name {
+            min-height: auto;
+            margin-bottom: 20px;
             color: #fff;
+          }
+
+          .warning {
+            margin-top: -10px;
+            padding-left: 25px;
+            max-width: 750px;
+            font-family: Stolzl;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 180%;
+            /* or 25px */
+
+            letter-spacing: 0.04em;
+
+            color: #ffffff;
           }
         }
       }
