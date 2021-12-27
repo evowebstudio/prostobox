@@ -7942,6 +7942,9 @@ header .header .buttons .login.guest:after {
   }
   .size-block .tabs .tab {
     margin-bottom: 10px;
+    margin-right: 0;
+    width: 155px;
+    padding: 20px;
   }
   .size-block .tabs .tab .subtitle {
     font-size: 14px;
