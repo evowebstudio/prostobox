@@ -1,0 +1,638 @@
+.size-title {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  .size-content {
+    padding-bottom: 50px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 765px;
+      height: 777px;
+      right: -15%;
+      top: -15%;
+      background-size: 100%;
+      background-image: url("../img/title-size.png");
+      background-position: center;
+    }
+
+    .title {
+      max-width: 720px;
+      margin: 100px 0 40px 0;
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 130%;
+      color: #1a223f;
+    }
+
+    .description {
+      max-width: 720px;
+      margin-bottom: 20px;
+      font-family: "Stolzl";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 180%;
+      letter-spacing: 0.04em;
+      color: #282828;
+    }
+  }
+}
+
+.size-advices {
+  margin: 100px auto 0;
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+
+  .title {
+    margin-top: 25px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 130%;
+    color: #1a223f;
+  }
+
+  .subtitle {
+    margin-top: 20px;
+    max-width: 675px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+    color: #1a223f;
+
+    span {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 130%;
+      color: #1467ff;
+    }
+  }
+
+  .list {
+    margin: 100px 0 0 0;
+
+    .item {
+      margin: 0 0 60px;
+      display: flex;
+
+      .point {
+        position: relative;
+        display: flex;
+        width: 410px;
+        padding-left: 45px;
+        padding-right: 32px;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 130%;
+        color: #1a223f;
+
+        &::before {
+          content: "";
+          display: block;
+          width: 25px;
+          height: 25px;
+          top: 0;
+          left: 0;
+          position: absolute;
+          border-radius: 50%;
+          background-image: radial-gradient(
+            #fff,
+            #fff 6px,
+            #282828 7px,
+            #282828 8px,
+            #c1c1c1 9px
+          );
+          /*
+          background-image: radial-gradient(
+            #fff,
+            #fff 5px,
+            #282828 6px,
+            #282828 7px,
+            #c1c1c1 9px
+          );*/
+          box-shadow: 0 4px 14px rgb(128 128 128 / 22%);
+        }
+      }
+
+      .description {
+        width: calc(100% - 410px);
+        font-family: Stolzl;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 180%;
+
+        letter-spacing: 0.04em;
+        color: #282828;
+
+        span {
+          font-family: Stolzl;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 180%;
+
+          letter-spacing: 0.04em;
+          color: #282828;
+        }
+      }
+    }
+  }
+}
+
+.size-block {
+  margin: 150px auto 0;
+  display: block;
+  max-width: 1200px;
+  width: 100%;
+
+  .title {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 130%;
+    color: #1a223f;
+  }
+
+  .mini-title {
+    margin-top: 40px;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+    color: #1a223f;
+
+    span {
+      font-family: Jost;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 130%;
+      color: #1467ff;
+    }
+  }
+
+  .tabs {
+    margin: 60px 0 0 0;
+    display: flex;
+    flex-direction: row;
+
+    .tab {
+      margin: 0 20px 0 0;
+      width: 183px;
+      padding: 24px 30px;
+      background: #ffffff;
+      box-shadow: 0px 17.227px 21.5337px rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
+
+      &:hover,
+      &.active {
+        cursor: pointer;
+        background: #ffe200;
+      }
+
+      .title {
+        font-family: Jost;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 130%;
+        color: #1a223f;
+      }
+
+      .subtitle {
+        font-family: Stolzl;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 180%;
+        letter-spacing: 0.04em;
+        color: #808080;
+      }
+
+      .description {
+        font-family: Jost;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        color: #1467ff;
+      }
+    }
+  }
+
+  .content {
+    margin: 40px 0 0 0;
+    padding: 0 0 0;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+
+    .categories {
+      display: flex;
+      padding: 40px 40px 20px 40px;
+
+      .item {
+        &.active {
+          background: #1467ff;
+          border: 1px dashed #1467ff;
+          color: #fff;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        margin-right: 15px;
+        padding: 7px 20px;
+        font-family: Stolzl;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 180%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #1467ff;
+        border: 1px dashed #1467ff;
+        box-sizing: border-box;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+    }
+
+    .table {
+      width: 100%;
+      padding: 40px 50px 0 0;
+
+      table {
+        width: 100%;
+
+        tr {
+          th {
+            padding: 13px 0;
+            text-align: left;
+            font-family: Stolzl;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 180%;
+            letter-spacing: 0.04em;
+            color: #282828;
+
+            &:first-child {
+              padding-left: 60px;
+            }
+          }
+
+          td {
+            padding: 13px 0;
+            font-family: Stolzl;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 180%;
+            letter-spacing: 0.04em;
+            color: #1a223f;
+
+            &:first-child {
+              padding-left: 60px;
+              font-family: Stolzl;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 14px;
+              line-height: 180%;
+              letter-spacing: 0.04em;
+              color: #1467ff;
+            }
+          }
+        }
+      }
+    }
+
+    .warning {
+      margin: 40px 0 0 0;
+      padding: 40px 30px 55px 60px;
+      background: #282828;
+      border-radius: 20px;
+
+      .title {
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 130%;
+        color: #ffffff;
+
+        &::before {
+          content: "";
+          margin-right: 20px;
+          display: block;
+          width: 76px;
+          height: 76px;
+          background-image: url("../img/icons/warning.png");
+          background-size: 100%;
+          background-position: center;
+          background-size: 76px;
+        }
+      }
+
+      .list {
+        margin-top: 20px;
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        &.full-width {
+          margin-bottom: 0;
+        }
+
+        .item {
+          position: relative;
+          margin-top: 30px;
+          padding-left: 36px;
+          width: 33%;
+          font-family: Stolzl;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 180%;
+          letter-spacing: 0.04em;
+          color: #ffffff;
+
+          span {
+            display: block;
+            font-family: Stolzl;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 180%;
+            /* or 32px */
+
+            letter-spacing: 0.04em;
+
+            color: #ffffff;
+          }
+
+          &.full {
+            width: 100%;
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 8px;
+            left: 10px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #1467ff;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1240px) {
+  .size-title {
+    .size-content {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  .size-advices {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .size-block {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .size-title {
+    .size-content {
+      overflow: hidden;
+      padding-bottom: 0;
+
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: relative;
+        width: 360px;
+        height: 474px;
+        background-size: contain;
+        background-image: url(../img/sandali-mob.png);
+        background-position: center;
+        margin: 0 auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+
+      .title {
+        margin: 20px 0;
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+        line-height: 130%;
+      }
+
+      .description {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 14px;
+        line-height: 180%;
+        text-align: center;
+      }
+    }
+  }
+
+  .size-advices {
+    margin-top: 0;
+
+    .title {
+      margin-top: 0;
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+      font-size: 30px;
+      line-height: 130%;
+    }
+
+    .subtitle {
+      padding-left: 25px;
+      padding-right: 25px;
+      font-size: 20px;
+      line-height: 130%;
+      text-align: center;
+      width: 100%;
+      max-width: 100%;
+
+      span {
+        font-size: 20px;
+        line-height: 130%;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .list {
+      margin-top: 30px;
+
+      .item {
+        flex-direction: column;
+        margin-bottom: 40px;
+
+        .point {
+          &::before {
+            top: -3px;
+          }
+          width: 100%;
+          font-size: 16px;
+        }
+
+        .description {
+          margin-top: 10px;
+          width: 100%;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .size-block {
+    margin-bottom: 40px;
+    margin-top: 60px;
+
+    .mini-title {
+      margin-top: 20px;
+      font-size: 20px;
+      text-align: center;
+
+      span {
+        font-size: 20px;
+      }
+    }
+
+    .title {
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .content {
+      .categories {
+        display: none;
+      }
+
+      .table {
+        overflow: auto;
+        position: relative;
+
+        table {
+          width: 860px;
+          overflow-x: auto;
+
+          tr {
+            td {
+              &:first-child {
+                padding-left: 25px;
+              }
+
+              padding: 5px 0;
+            }
+
+            th {
+              &:first-child {
+                padding-left: 25px;
+              }
+            }
+          }
+        }
+      }
+
+      .warning {
+        padding: 20px;
+        .title {
+          font-size: 16px;
+          &::before {
+            width: 40px;
+            height: 40px;
+            background-size: 40px;
+          }
+        }
+        .list {
+          margin-bottom: 20px;
+
+          .item {
+            margin-top: 10px;
+            width: 100%;
+            font-size: 14px;
+
+            span {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    .tabs {
+      margin-top: 30px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .tab {
+        margin-bottom: 10px;
+
+        .subtitle {
+          font-size: 14px;
+        }
+
+        .title {
+          text-align: left;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
