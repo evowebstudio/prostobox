@@ -1,0 +1,127 @@
+.black-list-pagination {
+  width: 100%;
+  max-width: 1024px;
+  margin: 72px auto 0;
+  display: flex;
+  justify-content: center;
+
+  .prev {
+    padding: 0;
+    background: 0 0;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 8px solid #ddeaff;
+    background-color: #bbd3ff;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 14px 14px 0 rgb(20 103 255 / 28%);
+    box-shadow: 0 14px 14px 0 rgb(20 103 255 / 28%);
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-image: url("../img/icons/arrow-left.svg");
+
+    &.active {
+      background-color: #1467ff;
+    }
+  }
+
+  .next {
+    padding: 0;
+    background: 0 0;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 8px solid #ddeaff;
+    background-color: #bbd3ff;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 14px 14px 0 rgb(20 103 255 / 28%);
+    box-shadow: 0 14px 14px 0 rgb(20 103 255 / 28%);
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-image: url("../img/icons/arrow-right_slider.svg");
+
+    &.active {
+      background-color: #1467ff;
+    }
+  }
+
+  .pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px;
+
+    .item {
+      margin-right: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+      border-radius: 10px;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.active {
+        background-color: #1467ff;
+
+        .link {
+          color: #fff;
+        }
+      }
+
+      .link {
+        display: flex;
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 130%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #1a223f;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1030px) {
+  .black-list-pagination {
+    .prev,
+    .next {
+      width: 40px;
+      height: 40px;
+    }
+    .pages {
+      margin-left: 20px;
+      margin-right: 20px;
+
+      .item {
+        margin-right: 3px;
+
+        .link {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
