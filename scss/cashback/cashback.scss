@@ -1,0 +1,446 @@
+.cashback-title {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1600px;
+
+  .content-wrap {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .content {
+    max-width: 600px;
+    width: 100%;
+    padding: 0;
+
+    .title {
+      margin-top: 100px;
+      font-family: Jost;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 130%;
+      color: #1a223f;
+    }
+
+    .subtitle {
+      margin-top: 40px;
+      font-family: Stolzl;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 180%;
+      letter-spacing: 0.04em;
+      color: #282828;
+
+      a {
+        color: #1467ff;
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .button {
+      margin-top: 40px;
+    }
+  }
+
+  .image {
+    //width: calc(100% - 618px);
+    width: 50%;
+  }
+}
+
+.cashback-what-do {
+  margin: 100px auto 0;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .image {
+    position: relative;
+    width: 464px;
+
+    img {
+      position: relative;
+      z-index: 1;
+    }
+
+    &::before {
+      content: "";
+      width: 1310px;
+      height: 520px;
+      background-position: center;
+      background-size: 1310px 520px;
+      background-image: url("../img/line3.png");
+      position: absolute;
+      right: -466px;
+      display: block;
+      top: -100px;
+    }
+  }
+
+  .content {
+    padding: 0 0 0 153px;
+    width: calc(100% - 464px);
+    position: relative;
+    z-index: 1;
+
+    .title {
+      max-width: 538px;
+      font-family: Jost;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 130%;
+      color: #1a223f;
+
+      span {
+        font-family: Jost;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 130%;
+        color: #1467ff;
+      }
+    }
+
+    .subtitle {
+      max-width: 586px;
+      margin-top: 40px;
+      font-family: Stolzl;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 180%;
+      letter-spacing: 0.04em;
+      color: #282828;
+    }
+  }
+}
+
+.cashback-scheme {
+  margin: 160px auto 0;
+  width: 100%;
+  max-width: 1200px;
+
+  .title {
+    max-width: 618px;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+    color: #1a223f;
+
+    span {
+      font-family: Jost;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 130%;
+      color: #1467ff;
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+
+    .image {
+      &.image-ebates {
+        img {
+          position: relative;
+          top: 50px;
+        }
+      }
+    }
+
+    .col-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .subtitle {
+      font-family: Jost;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 130%;
+      color: #1a223f;
+    }
+
+    .start {
+      margin-top: 20px;
+      font-family: Stolzl;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 120%;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.04em;
+      color: #1467ff;
+      position: relative;
+
+      &::after {
+        content: "";
+        margin-left: 20px;
+        padding: 0;
+        background: 0 0;
+        display: inline-block;
+        width: 44px;
+        height: 44px;
+        border: 8px solid #ddeaff;
+        background-color: #1467ff;
+        border-radius: 50%;
+        -webkit-box-shadow: 0 14px 14px 0 rgb(20 103 255 / 28%);
+        box-shadow: 0 14px 14px 0 rgb(20 103 255 / 28%);
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        background-image: url("../img/icons/arrow-right_slider.svg");
+      }
+    }
+
+    ul {
+      margin-top: 40px;
+
+      li {
+        position: relative;
+        margin-bottom: 20px;
+        font-family: Stolzl;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 180%;
+        letter-spacing: 0.04em;
+        color: #1a223f;
+        padding-left: 40px;
+
+        strong {
+          font-weight: bold;
+        }
+
+        a {
+          color: #1467ff;
+          text-decoration: underline;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+
+        &::before {
+          content: "";
+          margin-right: 20px;
+          display: block;
+          top: 0;
+          left: 0;
+          position: absolute;
+          border-radius: 50%;
+          width: 25px;
+          height: 25px;
+          min-width: 25px;
+          background-image: radial-gradient(
+            #fff,
+            #fff 6px,
+            #282828 7px,
+            #282828 8px,
+            #c1c1c1 9px
+          );
+          -webkit-box-shadow: 0 4px 14px rgb(128 128 128 / 22%);
+          box-shadow: 0 4px 14px rgb(128 128 128 / 22%);
+          z-index: 1;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1240px) {
+  .cashback-title {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .main-breadcrumbs {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .cashback-what-do {
+    .content {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+
+  .cashback-scheme {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .cashback-title {
+    flex-direction: column;
+
+    .content-wrap {
+      width: 100%;
+    }
+
+    .content {
+      max-width: 100%;
+      text-align: center;
+
+      .title {
+        margin-top: 20px;
+        font-size: 30px;
+        line-height: 130%;
+      }
+
+      .subtitle {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 180%;
+      }
+
+      .button {
+        margin-top: 20px;
+      }
+    }
+
+    .image {
+      width: 100%;
+
+      img {
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  }
+
+  .cashback-what-do {
+    margin-top: 0;
+    flex-direction: column-reverse;
+
+    .image {
+      width: 100%;
+      overflow: hidden;
+
+      &::before {
+        width: 360px;
+        height: 248px;
+        background-image: url("../img/line3_mob.png");
+        top: 50px;
+        right: 0;
+        background-size: 100%;
+      }
+
+      img {
+        margin: 0 auto;
+        display: block;
+      }
+    }
+
+    .content {
+      width: 100%;
+
+      .title {
+        max-width: 100%;
+        margin-top: 20px;
+        font-size: 30px;
+        line-height: 130%;
+        text-align: center;
+
+        span {
+          font-size: 30px;
+          line-height: 130%;
+        }
+      }
+
+      .subtitle {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 180%;
+        text-align: center;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .cashback-scheme {
+    margin-top: 60px;
+
+    .row {
+      width: 100%;
+      position: relative;
+
+      .start {
+        margin-top: 0;
+        margin-left: 20px;
+      }
+
+      .subtitle {
+        margin-top: 60px;
+        font-size: 18px;
+        line-height: 130%;
+        text-align: center;
+      }
+
+      ul {
+        margin-top: 20px;
+
+        li {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .col-left {
+        width: 100%;
+        margin-top: 240px;
+      }
+      .image {
+        width: 100%;
+        position: absolute;
+        top: 20px;
+
+        &.image-ebates {
+          top: -20px;
+        }
+
+        img {
+          width: 280px;
+          margin: 0 auto;
+          display: block;
+        }
+      }
+    }
+
+    .title {
+      max-width: 100%;
+      width: 100%;
+      text-align: center;
+      font-size: 18px;
+      line-height: 130%;
+
+      span {
+        font-size: 18px;
+        line-height: 130%;
+      }
+    }
+  }
+}

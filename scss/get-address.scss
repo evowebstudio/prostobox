@@ -1,0 +1,132 @@
+.get-address-wrap {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    width: 1240px;
+    height: 483px;
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/line3_2.png");
+  }
+
+  &::after {
+    content: "";
+    width: 1395px;
+    height: 640px;
+    display: block;
+    position: absolute;
+    top: 400px;
+    right: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/line5.png");
+  }
+}
+
+.get-address {
+  width: 100%;
+  max-width: 1200px;
+  padding-top: 270px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+
+  .content {
+    width: 50%;
+    padding: 0;
+
+    .title {
+      font-family: Jost;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 130%;
+      color: #1a223f;
+
+      span {
+        font-family: Jost;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 130%;
+        color: #1467ff;
+      }
+    }
+
+    .button {
+      margin-top: 40px;
+    }
+  }
+
+  .image {
+    position: relative;
+    width: 50%;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 1240px) {
+  .get-address {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .get-address-wrap {
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      top: 0;
+    }
+  }
+
+  .get-address {
+    padding-top: 90px;
+    flex-direction: column-reverse;
+
+    .image {
+      width: 100%;
+
+      img {
+        margin: 0 auto;
+        display: block;
+        width: 240px;
+      }
+    }
+
+    .content {
+      width: 100%;
+      text-align: center;
+
+      .title {
+        margin-top: 20px;
+        font-size: 20px;
+        line-height: 130%;
+
+        span {
+          font-size: 20px;
+          line-height: 130%;
+        }
+      }
+
+      .button {
+        margin-top: 20px;
+      }
+    }
+  }
+}
