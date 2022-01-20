@@ -9977,3 +9977,217 @@ header .header .buttons .login.guest:after {
     width: calc(100% - 30px);
   }
 }
+.text-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 80px auto 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.text-page .content {
+  position: relative;
+  width: calc(100% - 347px);
+  padding: 0;
+}
+.text-page .content .title {
+  padding-top: 40px;
+  max-width: 877px;
+  font-family: Jost;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 130%;
+  color: #1a223f;
+}
+.text-page .content .description {
+  max-width: 780px;
+  margin-top: 40px;
+  font-family: Stolzl;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160%;
+  color: #1a223f;
+}
+.text-page .content .description a {
+  font-family: Stolzl;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: #1467ff;
+}
+.text-page .image {
+  width: 347px;
+  position: relative;
+  overflow: visible;
+}
+
+.text-page-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 190px auto 0;
+}
+.text-page-content .title {
+  margin-bottom: 40px;
+  font-family: Jost;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 130%;
+  color: #1467ff;
+}
+.text-page-content .title span {
+  font-family: Jost;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 130%;
+  color: #1a223f;
+}
+.text-page-content .subtitle {
+  margin-bottom: 35px;
+  font-family: Jost;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 160%;
+  color: #1a223f;
+}
+.text-page-content .point {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  position: relative;
+  font-family: Stolzl;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 180%;
+  letter-spacing: 0.04em;
+  color: #1a223f;
+}
+.text-page-content .point::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background: #1467ff;
+  min-width: 6px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.text-page-content .point a {
+  font-family: Stolzl;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 180%;
+  letter-spacing: 0.04em;
+  color: #1467ff;
+}
+
+@media (max-width: 1240px) {
+  .text-page {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0;
+  }
+  .text-page .main-breadcrumbs {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .text-page-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 1040px) {
+  .text-page {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0;
+  }
+  .text-page .image {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .text-page .content {
+    width: 100%;
+  }
+  .text-page .content .title {
+    max-width: 100%;
+    margin-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 30px;
+    line-height: 130%;
+    text-align: center;
+  }
+  .text-page .content .description {
+    max-width: 100%;
+    margin-top: 24px;
+    margin-bottom: 20px;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 160%;
+    text-align: center;
+    color: #1a223f;
+  }
+  .text-page .content .description a {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 160%;
+  }
+
+  .text-page-content {
+    margin-top: 90px;
+  }
+  .text-page-content .title {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+  }
+  .text-page-content .title span {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+  }
+  .text-page-content .point {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 180%;
+  }
+  .text-page-content .point a {
+    font-size: 14px;
+    line-height: 180%;
+  }
+  .text-page-content .subtitle {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 180%;
+  }
+}
