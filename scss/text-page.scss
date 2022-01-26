@@ -22,6 +22,16 @@
       color: #1a223f;
     }
 
+    .date {
+      margin-top: 20px;
+      font-family: Jost;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 160%;
+      color: #c1c1c1;
+    }
+
     .description {
       max-width: 780px;
       margin-top: 40px;
@@ -122,6 +132,29 @@
       color: #1467ff;
     }
   }
+
+  .txt {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    position: relative;
+
+    font-family: Stolzl;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 180%;
+    letter-spacing: 0.04em;
+    color: #1a223f;
+
+    a {
+      font-family: Stolzl;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 180%;
+      letter-spacing: 0.04em;
+      color: #1467ff;
+    }
+  }
 }
 
 @media (max-width: 1240px) {
@@ -207,6 +240,17 @@
       }
     }
     .point {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 180%;
+
+      a {
+        font-size: 14px;
+        line-height: 180%;
+      }
+    }
+    .txt {
       margin-top: 10px;
       margin-bottom: 20px;
       font-size: 14px;

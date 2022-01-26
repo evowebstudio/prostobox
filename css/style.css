@@ -898,7 +898,7 @@ header .header .buttons .login.guest:after {
   padding: 100px 0;
 }
 .footer-nav .service-name {
-  width: 25%;
+  width: 22%;
   font-family: Ubuntu;
   font-style: normal;
   font-weight: normal;
@@ -913,7 +913,18 @@ header .header .buttons .login.guest:after {
   color: #ffffff;
 }
 .footer-nav .list {
-  width: 25%;
+  width: 26%;
+}
+.footer-nav .list .title {
+  margin-top: 2px;
+  margin-bottom: 30px;
+  font-family: Stolzl;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 140%;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
 .footer-nav .list .item {
   margin-bottom: 10px;
@@ -10003,6 +10014,15 @@ header .header .buttons .login.guest:after {
   line-height: 130%;
   color: #1a223f;
 }
+.text-page .content .date {
+  margin-top: 20px;
+  font-family: Jost;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: #c1c1c1;
+}
 .text-page .content .description {
   max-width: 780px;
   margin-top: 40px;
@@ -10085,6 +10105,26 @@ header .header .buttons .login.guest:after {
   margin-top: 10px;
 }
 .text-page-content .point a {
+  font-family: Stolzl;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 180%;
+  letter-spacing: 0.04em;
+  color: #1467ff;
+}
+.text-page-content .txt {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  position: relative;
+  font-family: Stolzl;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 180%;
+  letter-spacing: 0.04em;
+  color: #1a223f;
+}
+.text-page-content .txt a {
   font-family: Stolzl;
   font-style: normal;
   font-size: 16px;
@@ -10182,6 +10222,16 @@ header .header .buttons .login.guest:after {
     line-height: 180%;
   }
   .text-page-content .point a {
+    font-size: 14px;
+    line-height: 180%;
+  }
+  .text-page-content .txt {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 180%;
+  }
+  .text-page-content .txt a {
     font-size: 14px;
     line-height: 180%;
   }
