@@ -69,7 +69,7 @@ window.addEventListener('DOMContentLoaded', () => {
         document.addEventListener('click', closeAllSelect);
     }
 
-    if (document.querySelector(".swiper-reviews")) {
+    if (document.querySelector('.swiper-reviews')) {
         new Swiper(".swiper-reviews", {
             roundLengths: !0,
             breakpoints: {
