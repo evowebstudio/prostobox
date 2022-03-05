@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Расчет пошлины. Prostobox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header d-flex justify-between align-center">
+            <a href="#">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <ul class="nav d-flex">
+                <li><a href="#">Как покупать в США</a></li>
+                <li><a href="#">Калькулятор</a></li>
+                <li><a href="#">Скидки в США</a></li>
+                <li><a href="#">ЛикБез</a></li>
+                <li><a href="#">Блог</a></li>
+            </ul>
+            <div class="buttons d-flex">
+                <button class="login guest">Вход</button>
+            </div>
+            <button class="burger"></button>
+        </div>
+    </header>
+    
+    <section class="tolls-title section section--pb-m mb-lg-6">
+        <div class="section-xxl">
+            <div class="tolls-title__wrapper">
+                <div class=" container">
+                    <ul class="main-breadcrumbs">
+                        <li class="item"><a href="#" class="link">Главная</a></li>
+                        <li class="item"><a href="#" class="link">ЧаВо</a></li>
+                        <li class="item"><a href="#" class="link">Калькулятор пошлины</a></li>
+                    </ul>
+                    <div class="tolls-title__text-wrapper">
+                        <p class="title">Калькулятор пошлины</p>
+                        <p class="description">С 1 января 2020 года беспошлинный лимит ввоза товаров в Россию снизился до 200 евро и 31 кг на одну посылку или несколько посылок, если они проходят таможню одновременно, в один день.</p>
+                        <p class="description">Пошлина составляет <span class="blue">15%</span> от суммы превышения.</p>
+                        <p class="description">Пошлина рассчитывается на каждую посылку, а не на все посылки 
+                            за месяц как было до 2020 года. То есть, если в течение одного месяца вы отправили 10 посылок в разных партиях с товарами на 199 евро каждая и легче 31 кг, пошлину начислять не будут.</p>
+                        <p class="description">Дополнительно при превышении лимита необходимо оплатить таможенные сборы в сумме 500 рублей. Если посылка весит больше 
+                            31 – пошлина будет составлять не менее €2 за кг перевеса.Посылки, прибывшие на таможню одновременно в составе одной партии, могут трактоваться как одно отправление. Календарным месяцем считается период с первого по последнее число каждого месяца.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="tolls-calc">
+        <div class="tolls-calc-title">
+            <div>
+                <p class="title">Калькулятор</p>
+                <p class="description">Чтобы вы не рассчитывали пошлину вручную, мы сделали этот калькулятор.</p>
+            </div>
+            <img src="img/calc-tolls-ico.png" alt="" class="image">
+        </div>
+        <form action="" class="tolls-calc-form">
+            <div class="inputs">
+                <div class="group">
+                    <label for="" class="input_label">Валюта*</label>
+                    <div class="select">
+                        <select name="currency">
+                            <option value="">Евро</option>
+                            <option value="">Евро</option>
+                            <option value="">Доллар</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="group">
+                    <label for="" class="input_label">Цена товара*</label>
+                    <input type="text" class="input_text" value="€1500" name="price">
+                </div>
+            </div>
+            <div class="description">
+                <p>Формула расчета пошлины: </p>
+                <p>(Цена товара – 200 евро)*15% + 500 р.</p>
+            </div>
+            <button class="button">Расcчитать пошлину</button>
+        </form>
+        <div class="tolls-example">
+            <div class="row">
+                <div class="item">
+                    <div>
+                        <p class="title">Цена<br>товара:</p>
+                        <p class="subtitle"></p>
+                    </div>
+                    <div>
+                        <p class="price">€1 500.00</p>
+                        <p class="description">примерно 130 268р.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <p class="title">Фиксированный<br>сбор:</p>
+                        <p class="subtitle"></p>
+                    </div>
+                    <div>
+                        <p class="price">€5.76</p>
+                        <p class="description">примерно 500р.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <p class="title">Размер<br>пошлины:</p>
+                        <p class="subtitle">Рассчет по цене товара</p>
+                    </div>
+                    <div>
+                        <p class="price">€195.00</p>
+                        <p class="description">примерно 16 935р.</p>
+                    </div>
+                </div>
+                <div class="item active">
+                    <div>
+                        <p class="title">Цена товара<br>с пошлиной:</p>
+                        <p class="subtitle"></p>
+                    </div>
+                    <div>
+                        <p class="price">€1 700.76</p>
+                        <p class="description">примерно 147 702р.</p>
+                    </div>
+                </div>
+            </div>
+            <p class="warning"><span>Внимание! </span>Итоговая сумма является приблизительной. Точная сумма может быть расчитана в день прохождения таможни по актуальному курсу.</p>
+        </div>
+    </section>
+
+    <section class="tolls-payment">
+        <p class="title">Как оплачивать пошлину</p>
+        <div class="row">
+            <div class="item">
+                <p>При <span>получении</span> посылки</p>
+                <p>Для посылок, отправленных Эконом, Эконом лайт и EMS Russia пошлину можно оплатить в отделении.</p>
+            </div>
+            <div class="item">
+                <p>Оплата пошлины <span>онлайн</span></p>
+                <p>Для посылок, отправленных Superfast, FastBox и Express – оплата пошлины происходит онлайн.</p>
+                <a href="#" class="button">Подробнее об оплате</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-banner section-banner--get-address">
+        <div class="container">
+            <div class="section-banner__wrapper">
+                <div class="section-banner__block-wrapper">
+                    <div class="section-banner__text-wrapper">
+                        <p class="title">Получите <span>бесплатный адрес</span> для покупок в США</p>
+                    </div>
+                    <div class="section-banner__button-wrapper">
+                        <a class="button button--medium button--medium-2" href="#">Зарегистрироватьcя</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-nav">
+        <div class="container">
+            <div class="d-flex justify-between align-start">
+                <p class="service-name">Prostobox</p>
+                <ul class="list">
+                    <p class="title">О компании</p>
+                    <li class="item"><a href="https://www.pochtoy.com/services/" class="link">Услуги</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/prices/" class="link">Цены</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/reviews/" class="link">Отзывы</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/contacts/" class="link">Конакты</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/landings/vacancies/" class="link">Вакансии</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/policy/" class="link">Соглашение о персональных данных</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/agreement/" class="link">Условия использования</a></li>
+                </ul>
+                <ul class="list">
+                    <p class="title">Полезное</p>
+                    <li class="item"><a href="https://www.pochtoy.com/tolls-title/" class="link">Как работает наш сервис</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/fast-buy/" class="link">Как покупать с оператором</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/faq/" class="link">Ответы на частые вопрос</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/shops/" class="link">Популярные магазины</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/black-list/" class="link">Черный список магазинов</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/sales/" class="link">Актуальные распродажи</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/size/" class="link">Как подобрать американский размер</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/faq/tolls/" class="link">Как рассчитать таможенную пошлину</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/forbidden-items/" class="link">Что мы не доставляем</a></li>
+                </ul>
+                <ul class="list">
+                    <p class="title">Спецпроекты</p>
+                    <li class="item"><a href="https://www.pochtoy.com/landings/50/" class="link">50% на первую доставку</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/" class="link">Скидки для постоянных клиентов</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/affiliates/" class="link">Реферальная программа</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/landings/cashback-mrrebates-ebates/" class="link">Кэшбек</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/garage-sale/" class="link">Гаражная распродажа</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/stop-fraud/" class="link">Stop Fraud</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer d-flex justify-between align-center">
+        <p class="copy">©prostobox.com 2022</p>
+        <div class="socnet d-flex align-center">
+            <p class="text">Мы в соцсетях:</p>
+            <ul class="list">
+                <li class="item vk"><a href="#" class="link"></a></li>
+                <li class="item instagram"><a href="#" class="link"></a></li>
+                <li class="item telegram"><a href="#" class="link"></a></li>
+                <li class="item fb"><a href="#" class="link"></a></li>
+                <li class="item twitter"><a href="#" class="link"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="mob-menu">
+        <div class="nav">
+            <ul class="list">
+                <li class="item"><a href="#" class="link">Как покупать в США</a></li>
+                <li class="item"><a href="#" class="link">Калькулятор</a></li>
+                <li class="item"><a href="#" class="link">Скидки</a></li>
+                <li class="item"><a href="#" class="link">Партнерская программа</a></li>
+            </ul>
+            <ul class="list">
+                <li class="item"><a href="#" class="link">Ликбез</a></li>
+                <li class="item"><a href="#" class="link">Блог</a></li>
+                <li class="item"><a href="#" class="link">Подобрать размер</a></li>
+                <li class="item"><a href="#" class="link">Контакты</a></li>
+            </ul>
+            <ul class="list">
+                <li class="item"><a href="#" class="link">Обработка персональных данных</a></li>
+                <li class="item"><a href="#" class="link">Условия использования сервиса</a></li>
+            </ul>
+        </div>
+        <div class="socnet">
+            <p class="text">Мы в соцсетях:</p>
+            <ul class="list">
+                <li class="item vk"><a href="#" class="link"></a></li>
+                <li class="item instagram"><a href="#" class="link"></a></li>
+                <li class="item telegram"><a href="#" class="link"></a></li>
+                <li class="item fb"><a href="#" class="link"></a></li>
+                <li class="item twitter"><a href="#" class="link"></a></li>
+            </ul>
+        </div>
+    </div>
+</body> 
+</html>

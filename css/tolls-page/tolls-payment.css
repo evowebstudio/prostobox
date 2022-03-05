@@ -1,0 +1,13 @@
+.tolls-payment {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.tolls-payment .title {
+  font-family: Jost;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 130%;
+  color: #1a223f;
+}

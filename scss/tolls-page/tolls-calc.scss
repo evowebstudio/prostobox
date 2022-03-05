@@ -1,0 +1,320 @@
+.tolls-calc {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.tolls-calc-title {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 811px;
+
+  .title {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 130%;
+    color: #1a223f;
+  }
+
+  .description {
+    max-width: 448px;
+    margin-top: 40px;
+    font-family: Stolzl;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 180%;
+    letter-spacing: 0.04em;
+    color: #282828;
+  }
+}
+.tolls-calc-form {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+  .inputs {
+    display: flex;
+
+    .group {
+      width: 285px;
+      margin-right: 20px;
+
+      .input_text {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .description {
+    padding: 40px;
+    background: #ffffff;
+    border: 2px dashed #1467ff;
+    box-sizing: border-box;
+    box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+
+    p {
+      &:first-child {
+        font-family: Stolzl;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 180%;
+        letter-spacing: 0.04em;
+        color: #1a223f;
+      }
+    }
+
+    p {
+      &:nth-child(2) {
+        margin-top: 10px;
+        font-family: Stolzl;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 180%;
+        letter-spacing: 0.04em;
+        color: #282828;
+      }
+    }
+  }
+
+  .button {
+    width: 285px;
+  }
+}
+.tolls-example {
+  margin-top: 85px;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+
+    .item {
+      margin-right: 26.66666px;
+      padding: 40px;
+      width: calc(25% - 20px);
+      background: #ffffff;
+      box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
+
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+
+      &.active {
+        background-color: $colorYellow;
+      }
+
+      .title {
+        font-family: Stolzl;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 180%;
+        letter-spacing: 0.04em;
+        color: #1a223f;
+      }
+
+      .subtitle {
+        min-height: 21px;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 130%;
+        color: #808080;
+      }
+
+      .price {
+        margin-top: 20px;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 130%;
+        color: $colorBlue;
+      }
+
+      .description {
+        margin-top: 5px;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        color: #1a223f;
+      }
+    }
+  }
+
+  .warning {
+    position: relative;
+    margin-top: 60px;
+    padding-left: 20px;
+    max-width: 774px;
+    font-family: Stolzl;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 180%;
+    letter-spacing: 0.04em;
+
+    span {
+      display: block;
+      font-weight: bold;
+      color: $colorBlue;
+
+      &::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        background-color: $colorBlue;
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 0;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1240px) {
+  .tolls-calc {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .tolls-calc-form {
+    .inputs {
+      width: 100%;
+    }
+
+    .description {
+      margin: 40px 0;
+      padding: 20px 30px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .tolls-example {
+    .row {
+      .item {
+        display: flex;
+        margin-bottom: 20px;
+        width: 100%;
+        margin-right: 0;
+
+        & > div {
+          width: 50%;
+        }
+
+        .price {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1030px) {
+  .tolls-calc-title {
+    max-width: 100%;
+
+    & > div {
+      width: 100%;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 30px;
+    }
+    .description {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+      max-width: 100%;
+    }
+    .image {
+      display: none;
+    }
+  }
+
+  .tolls-calc-form {
+    margin-top: 40px;
+
+    .inputs {
+      flex-direction: column;
+
+      .group {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+
+        .input_label {
+          text-align: center;
+        }
+
+        .select {
+          margin: 0 auto 20px;
+        }
+
+        .input_text {
+          margin: 0 auto;
+          display: block;
+        }
+      }
+    }
+
+    .button {
+      margin: 0 auto;
+    }
+  }
+
+  .tolls-example {
+    .row {
+      .item {
+        padding: 20px;
+
+        .title {
+          font-size: 16px;
+          line-height: 180%;
+        }
+
+        .price {
+          font-size: 20px;
+          line-height: 130%;
+        }
+
+        .description {
+          margin-top: 5px;
+          font-size: 14px;
+          line-height: 130%;
+        }
+      }
+    }
+    .warning {
+      margin-top: 30px;
+      font-size: 14px;
+      line-height: 180%;
+
+      span {
+        &::before {
+          top: 9px;
+        }
+      }
+    }
+  }
+}

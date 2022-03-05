@@ -1,0 +1,180 @@
+.tolls-title {
+  .section-xxl {
+    max-width: 1600px;
+    padding: 0 0.9375rem;
+    margin: 0 auto;
+  }
+}
+.tolls-title__wrapper {
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 0 8px 220px;
+  position: relative;
+  overflow: hidden;
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+
+.tolls-title__text-wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 60%;
+    transform: translateY(-50%);
+    width: 301px;
+    height: 287px;
+    right: 0;
+    background-image: url("../img/tolls-title.png");
+    background-repeat: no-repeat;
+  }
+
+  .title {
+    width: 100%;
+    max-width: 668px;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 130%;
+    color: #1a223f;
+  }
+
+  .description {
+    margin: 20px 0 0 0;
+    width: 100%;
+    max-width: 678px;
+    font-family: "Stolzl";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 180%;
+    letter-spacing: 0.04em;
+    color: #282828;
+
+    span {
+      color: #1467ff;
+      font-weight: bold;
+    }
+  }
+}
+
+@media (min-width: 1240px) {
+  .tolls-title__text-wrapper {
+    &::before {
+      width: 686px;
+      height: 514px;
+      top: 0;
+      right: -130px;
+      transform: none;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .tolls-title__text-wrapper {
+    padding-top: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .tolls-title {
+    .section-xxl {
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 1240px) {
+  .tolls-title__wrapper {
+    padding-bottom: 20px;
+  }
+  .tolls-title__text-wrapper {
+    flex-direction: row-reverse;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      content: "";
+      position: relative;
+      display: block;
+      width: 100%;
+      background-image: url("../img/tolls-calc-min.png");
+      height: 360px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .title {
+      max-width: 100%;
+    }
+
+    .description {
+      max-width: 100%;
+    }
+  }
+  .tolls-title {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .main-breadcrumbs {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+@media (max-width: 1030px) {
+  .tolls-title__wrapper {
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      transform: translateX(50%);
+      right: 50%;
+      width: 360px;
+      height: 379px;
+      bottom: -66px;
+      background-image: url(../img/tolls-title-mobile.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  }
+
+  .tolls-title__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .title {
+      margin-top: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
+      max-width: 100%;
+    }
+
+    .description {
+      margin-top: 20px;
+      max-width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 14px;
+    }
+
+    &::before {
+      display: none;
+    }
+    .title {
+      text-align: center;
+      font-size: 30px;
+    }
+  }
+}

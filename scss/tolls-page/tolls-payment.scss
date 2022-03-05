@@ -1,0 +1,172 @@
+.tolls-payment {
+  width: 100%;
+  max-width: 1200px;
+  margin: 150px auto 0;
+
+  .title {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 130%;
+    color: #1a223f;
+  }
+
+  .row {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .item {
+      padding-left: 120px;
+      position: relative;
+      width: 100%;
+      max-width: 470px;
+      margin-right: 45px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        background: #ffffff;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 130%;
+        color: #c1c1c1;
+      }
+
+      &:nth-child(1) {
+        &::before {
+          content: "01";
+        }
+      }
+
+      &:nth-child(2) {
+        &::before {
+          content: "02";
+        }
+      }
+
+      .button {
+        margin-top: 40px;
+      }
+
+      p {
+        &:first-child {
+          font-family: Jost;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 40px;
+          line-height: 130%;
+          color: #1a223f;
+
+          span {
+            font-family: Jost;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 130%;
+            color: $colorBlue;
+          }
+        }
+
+        &:nth-child(2) {
+          margin-top: 40px;
+          font-family: Stolzl;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 180%;
+          letter-spacing: 0.04em;
+          color: #282828;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1240px) {
+  .tolls-payment {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .tolls-payment {
+    .row {
+      .item {
+        max-width: 100%;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1030px) {
+  .tolls-payment {
+    margin-top: 60px;
+
+    .title {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .row {
+      margin-top: 40px;
+
+      .item {
+        padding-left: 0;
+        margin-right: 0;
+
+        .button {
+          margin-right: auto;
+          margin-left: auto;
+          display: block;
+          width: 285px;
+        }
+
+        &::before {
+          margin: 0 auto 20px;
+          width: 50px;
+          height: 50px;
+          position: relative;
+          font-size: 20px;
+          line-height: 130%;
+          border-radius: 10px;
+        }
+
+        p {
+          &:first-child {
+            font-size: 18px;
+            text-align: center;
+
+            span {
+              font-size: 18px;
+            }
+          }
+
+          &:nth-child(2) {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
