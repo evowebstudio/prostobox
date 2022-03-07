@@ -248,7 +248,7 @@ window.addEventListener('DOMContentLoaded', () => {
             );
 
             const pinOptions = {
-                iconImageHref: '/img/pin.svg',
+                iconImageHref: 'https://evowebstudio.github.io/prostobox/img/pin.svg',
                 iconImageSize: [60, 60],
                 iconImageOffset: [-30, -30],
                 iconContentOffset: [25, 13],
