@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Отзывы клиентов. Prostobox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header d-flex justify-between align-center">
+            <a href="#">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <ul class="nav d-flex">
+                <li><a href="#">Как покупать в США</a></li>
+                <li><a href="#">Калькулятор</a></li>
+                <li><a href="#">Скидки в США</a></li>
+                <li><a href="#">ЛикБез</a></li>
+                <li><a href="#">Блог</a></li>
+            </ul>
+            <div class="buttons d-flex">
+                <button class="login guest">Вход</button>
+            </div>
+            <button class="burger"></button>
+        </div>
+    </header>
+
+    <ul class="main-breadcrumbs">
+        <li class="item"><a href="#" class="link">Главная</a></li>
+        <li class="item"><a href="#" class="link">Карта отзывов</a></li>
+    </ul>
+
+    <div class="reviews-map-title">
+        <p class="title">Карта отзывов</p>
+        <form action="" class="search-form">
+            <input type="text" placeholder="Введите город" name="request" required>
+            <button class="submit"></button>
+        </form>
+    </div>
+
+    <div class="reviews-map" id="YMapsID"></div>
+
+    <div class="main-subcribe">
+        <div class="wrapper">
+            <form class="content">
+                <p class="text"><span>Подпишитесь</span> на новостную рассылку Простобокса и получайте информацию о новинках и акциях в числе первых.</p>
+                <div class="d-flex justify-between buttons">
+                    <input type="text" class="input_text" name="email" placeholder="Ваш e-mail" required="">
+                    <button class="button">Подписаться</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-nav">
+        <div class="container">
+            <div class="d-flex justify-between align-start">
+                <p class="service-name">Prostobox</p>
+                <ul class="list">
+                    <p class="title">О компании</p>
+                    <li class="item"><a href="https://www.pochtoy.com/services/" class="link">Услуги</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/prices/" class="link">Цены</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/reviews/" class="link">Отзывы</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/contacts/" class="link">Конакты</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/landings/vacancies/" class="link">Вакансии</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/policy/" class="link">Соглашение о персональных данных</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/agreement/" class="link">Условия использования</a></li>
+                </ul>
+                <ul class="list">
+                    <p class="title">Полезное</p>
+                    <li class="item"><a href="https://www.pochtoy.com/how-to-buy/" class="link">Как работает наш сервис</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/fast-buy/" class="link">Как покупать с оператором</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/faq/" class="link">Ответы на частые вопрос</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/shops/" class="link">Популярные магазины</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/black-list/" class="link">Черный список магазинов</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/sales/" class="link">Актуальные распродажи</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/size/" class="link">Как подобрать американский размер</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/faq/tolls/" class="link">Как рассчитать таможенную пошлину</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/forbidden-items/" class="link">Что мы не доставляем</a></li>
+                </ul>
+                <ul class="list">
+                    <p class="title">Спецпроекты</p>
+                    <li class="item"><a href="https://www.pochtoy.com/landings/50/" class="link">50% на первую доставку</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/" class="link">Скидки для постоянных клиентов</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/affiliates/" class="link">Реферальная программа</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/landings/cashback-mrrebates-ebates/" class="link">Кэшбек</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/garage-sale/" class="link">Гаражная распродажа</a></li>
+                    <li class="item"><a href="https://www.pochtoy.com/stop-fraud/" class="link">Stop Fraud</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer d-flex justify-between align-center">
+        <p class="copy">©prostobox.com 2022</p>
+        <div class="socnet d-flex align-center">
+            <p class="text">Мы в соцсетях:</p>
+            <ul class="list">
+                <li class="item vk"><a href="#" class="link"></a></li>
+                <li class="item instagram"><a href="#" class="link"></a></li>
+                <li class="item telegram"><a href="#" class="link"></a></li>
+                <li class="item fb"><a href="#" class="link"></a></li>
+                <li class="item twitter"><a href="#" class="link"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="mob-menu">
+        <div class="nav">
+            <ul class="list">
+                <li class="item"><a href="#" class="link">Как покупать в США</a></li>
+                <li class="item"><a href="#" class="link">Калькулятор</a></li>
+                <li class="item"><a href="#" class="link">Скидки</a></li>
+                <li class="item"><a href="#" class="link">Партнерская программа</a></li>
+            </ul>
+            <ul class="list">
+                <li class="item"><a href="#" class="link">Ликбез</a></li>
+                <li class="item"><a href="#" class="link">Блог</a></li>
+                <li class="item"><a href="#" class="link">Подобрать размер</a></li>
+                <li class="item"><a href="#" class="link">Контакты</a></li>
+            </ul>
+            <ul class="list">
+                <li class="item"><a href="#" class="link">Обработка персональных данных</a></li>
+                <li class="item"><a href="#" class="link">Условия использования сервиса</a></li>
+            </ul>
+        </div>
+        <div class="socnet">
+            <p class="text">Мы в соцсетях:</p>
+            <ul class="list">
+                <li class="item vk"><a href="#" class="link"></a></li>
+                <li class="item instagram"><a href="#" class="link"></a></li>
+                <li class="item telegram"><a href="#" class="link"></a></li>
+                <li class="item fb"><a href="#" class="link"></a></li>
+                <li class="item twitter"><a href="#" class="link"></a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body> 
+</html>

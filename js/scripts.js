@@ -234,4 +234,100 @@ window.addEventListener('DOMContentLoaded', () => {
         header.classList.toggle('active');
         body.classList.toggle('fixed');
     });
+
+    if(document.querySelector(".reviews-map")) {
+        ymaps.ready(function () { 
+            const myMap = new ymaps.Map("YMapsID", {
+                center: [55.755819, 37.617644],
+                zoom: 7,
+                controls: []
+            });
+
+            const myIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                '<div style="color: #000; font-weight: bold;">$[properties.iconContent]</div>'
+            );
+
+            const pinOptions = {
+                iconImageHref: '/img/pin.svg',
+                iconImageSize: [60, 60],
+                iconImageOffset: [-30, -30],
+                iconContentOffset: [25, 13],
+                iconLayout: 'default#imageWithContent',
+                iconContentLayout: myIconContentLayout
+            }
+
+            const placemark1 = new ymaps.Placemark([55.755819, 37.617644], {
+                balloonContent: 
+                `
+                    <div class="baloon">
+                        <div class="heading">
+                            <p class="count">3</p>
+                            <p class="title">Отзывы в выбранной точке:</p>
+                        </div>
+                        <div class="list">
+                            <div class="item">
+                                <p class="name">Отзыв: 000000999</p>
+                                <div class="value">
+                                    <p class="time">26.04.2021</p>
+                                    <p class="author">Name</p>
+                                    <div class="rating">
+                                        <div class="stars stars_2"></div>
+                                    </div>
+                                    <p class="city">Москва</p>
+                                    <p class="trackcode">PCT000000443175</p>
+                                    <p class="text">А ещё тщательные исследования конкурентов смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Современные технологии достигли такого уровня, что убеждённость некоторых оппонентов предопределяет высокую востребованность системы обучения.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <p class="name">Отзыв: 000000999</p>
+                            </div>
+                            <div class="item">
+                                <p class="name">Отзыв: 000000999</p>
+                            </div>
+                        </div>
+                    </div>
+                `,
+                iconContent: '3'
+            }, 
+                pinOptions
+            );
+
+            const placemark2 = new ymaps.Placemark([57.626559, 39.893813], {
+                balloonContent: 
+                `
+                    <div class="baloon">
+                        <div class="heading">
+                            <p class="count">2</p>
+                            <p class="title">Отзывы в выбранной точке:</p>
+                        </div>
+                        <div class="list">
+                            <div class="item">
+                                <p class="name">Отзыв: 000000999</p>
+                                <div class="value">
+                                    <p class="time">26.04.2021</p>
+                                    <p class="author">Name</p>
+                                    <div class="rating">
+                                        <div class="stars stars_2"></div>
+                                    </div>
+                                    <p class="city">Москва</p>
+                                    <p class="trackcode">PCT000000443175</p>
+                                    <p class="text">А ещё тщательные исследования конкурентов смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Современные технологии достигли такого уровня, что убеждённость некоторых оппонентов предопределяет высокую востребованность системы обучения.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <p class="name">Отзыв: 000000999</p>
+                            </div>
+                        </div>
+                    </div>
+                `,
+                iconContent: '2'
+            }, 
+                pinOptions
+            );
+
+            myMap.geoObjects
+                .add(placemark1)
+                .add(placemark2);
+        });
+    }
 });
