@@ -1,0 +1,36 @@
+.faq-search {
+  margin: 30px 0 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.faq-search .faq-search-text {
+  width: 100%;
+  max-width: 398px;
+  height: 60px;
+  padding: 13px 30px;
+  font-family: Stolzl;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 180%;
+  letter-spacing: 0.04em;
+  color: #bfbfbf;
+  border: 1px solid #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.05));
+          filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.05));
+  border-radius: 20px;
+}
+.faq-search .faq-search-button {
+  width: 70px;
+  height: 60px;
+  margin-left: 20px;
+  background-color: #1467ff;
+  border-radius: 20px;
+  background-image: url("../img/icons/search_blog.svg");
+  background-position: center;
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+}
