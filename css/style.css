@@ -1741,9 +1741,22 @@ header .header .buttons .login.guest:after {
   line-height: 24px;
   color: #000000;
 }
+.account .about .text a {
+  margin-top: 0;
+}
+.account .about .small-text {
+  max-width: 655px;
+  margin-top: 16px;
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #616d99;
+}
 .account .about a {
   margin: 20px 0 0 0;
-  display: block;
+  display: inline-block;
   font-size: 18px;
   line-height: 24px;
   -webkit-text-decoration-line: underline;
@@ -1752,6 +1765,65 @@ header .header .buttons .login.guest:after {
 }
 .account .about a:hover {
   text-decoration: none;
+}
+.account .about.balance {
+  margin-top: 28px;
+}
+.account .about.balance .title {
+  font-size: 24px;
+  font-weight: 400;
+}
+.account .about.balance .title span {
+  color: #2b69f6;
+}
+.account .about.balance .title.in-progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.account .about.balance .title.in-progress::after {
+  content: "";
+  margin-left: 15px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../img/icons/loader.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: block;
+}
+.account .about.balance .button {
+  margin-top: 28px;
+}
+.account .about .warning-text {
+  position: relative;
+  margin-top: 20px;
+  padding: 17px 90px 17px 56px;
+  border: 1px solid #2b69f6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+.account .about .warning-text:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../../img/icons/warning-text.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px 20xp;
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 14px;
 }
 
 .account .news {
@@ -1810,6 +1882,92 @@ header .header .buttons .login.guest:after {
   font-size: 13px;
   line-height: 20px;
   color: #616d99;
+}
+
+.transactions-table {
+  width: 100%;
+  padding: 24px 48px;
+  margin-top: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+          box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+  border-radius: 20px;
+}
+.transactions-table thead tr th {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 180%;
+  letter-spacing: 0.04em;
+  color: #282828;
+  text-align: left;
+}
+.transactions-table tbody tr td {
+  padding-top: 24px;
+  padding-bottom: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1a223f;
+  vertical-align: top;
+}
+.transactions-table tbody tr td.date {
+  width: 158px;
+}
+.transactions-table tbody tr td.sum {
+  color: #1467ff;
+  width: 95px;
+}
+.transactions-table tbody tr td.description {
+  width: 253px;
+}
+.transactions-table tbody tr td.description a {
+  color: #1467ff;
+}
+.transactions-table tbody tr td.balance {
+  font-weight: bold;
+  width: 89px;
+}
+
+.account .error {
+  margin-top: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.account .error .title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+}
+.account .error .description {
+  max-width: 634px;
+  margin-top: 36px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+}
+.account .error .button {
+  margin-top: 24px;
 }
 
 .main-banner {

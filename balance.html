@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Prostobox</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header d-flex justify-between align-center">
+            <a href="#">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <ul class="nav d-flex">
+                <li><a href="#">Как покупать в США</a></li>
+                <li><a href="#">Калькулятор</a></li>
+                <li><a href="#">Скидки в США</a></li>
+                <li><a href="#">ЛикБез</a></li>
+                <li><a href="#">Блог</a></li>
+            </ul>
+            <div class="buttons d-flex">
+                <div class="notification">
+                    <button class="active"></button>
+                    <span>2</span>
+                </div>
+                <button class="login"></button>
+            </div>
+        </div>
+    </header>
+    <main class="d-flex">
+        <div class="sidebar">
+            <ul class="breadcrumbs d-flex">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Личный кабинет</a></li>
+            </ul>
+            <ul class="sidebar-nav">
+                <li class="item"><a class="link d-flex align-center home" href="#">Главная</a></li>
+                <li class="item"><a class="link d-flex align-center early-delivery" href="#">Оформить доставку заранее</a></li>
+                <li class="item has-child opened"><a class="link d-flex align-center my-parcels" href="#">Мои посылки</a></li>
+                <ul class="child">
+                    <form action="" class="search">
+                        <input type="text" placeholder="Поиск входящей по треку" required>
+                        <button></button>
+                    </form>
+                    <li><a href="#">Зарегистрировать посылку</a></li>
+                    <li><a href="#">Ожидаемые посылки</a></li>
+                    <li><a href="#">Посылки на складе</a></li>
+                    <li><a href="#">Формируемые посылки</a></li>
+                    <li><a href="#">Ожидают отправки</a></li>
+                    <li><a href="#">Отправленные посылки</a></li>
+                    <li><a href="#">Полученные посылки</a></li>
+                    <li><a href="#">Отмененные посылки</a></li>
+                </ul>
+                <li class="item has-child opened"><a class="link d-flex align-center affilate" href="#">Партнерская программа</a></li>
+                <ul class="child">
+                    <li><a href="#">Промо-материалы</a></li>
+                    <li><a href="#">Статистика</a></li>
+                </ul>
+                <li class="item"><a class="link d-flex align-center settings" href="#">Настройки</a></li>
+                <li class="item"><a class="link d-flex align-center support" href="#">Служба поддержки</a></li>
+                <li class="item"><a class="link d-flex align-center logout" href="#">Выход</a></li>
+            </ul>
+            <div class="banners">
+                <div class="item d-flex column align-center justify-center affilate">
+                    <img src="img/banner-affilate.png" alt="">
+                    <p class="title">Партнерская программа Простобокса</p>
+                    <p class="subtitle">Дарите друзьям <span>скидку 10%</span></p>
+                    <p class="description"><span>Зарабатывайте по $2</span> c каждой посылки</p>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+                <div class="item d-flex column align-center justify-center cashback">
+                    <img src="img/banner-cashback.png" alt="">
+                    <p class="title">Кешбэк за покупки
+                        в США</p>
+                    <p class="description">Регистрируйтесь в кешбэк-сервисах и <span>получайте $20</span> после первой покупки</p>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="content account">
+            <div class="head">
+                <p class="time">Время на складе: <span>12:06:45</span></p>
+            </div>
+            <div class="about balance">
+                <p class="title in-progress">Пополнение баланса</p>
+                <p class="text">Выполняется пополнение баланса, пожалуйста, не закрывайте страницу до завершения процедуру пополнения.</p>
+                <button class="button">Обновить</button>
+            </div>
+        </div>
+    </main>
+</body> 
+</html>

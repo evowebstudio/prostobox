@@ -1,0 +1,33 @@
+.account {
+  .error {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 40px;
+      text-align: center;
+      color: #000000;
+    }
+
+    .description {
+      max-width: 634px;
+      margin-top: 36px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+      color: #000000;
+    }
+
+    .button {
+      margin-top: 24px;
+    }
+  }
+}

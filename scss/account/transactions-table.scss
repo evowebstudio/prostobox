@@ -1,0 +1,60 @@
+.transactions-table {
+  width: 100%;
+  padding: 24px 48px;
+  margin-top: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+  border-radius: 20px;
+
+  thead {
+    tr {
+      th {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 180%;
+        letter-spacing: 0.04em;
+        color: #282828;
+        text-align: left;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        padding-top: 24px;
+        padding-bottom: 12px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #1a223f;
+        vertical-align: top;
+
+        &.date {
+          width: 158px;
+        }
+
+        &.sum {
+          color: #1467ff;
+          width: 95px;
+        }
+
+        &.description {
+          width: 253px;
+
+          a {
+            color: #1467ff;
+          }
+        }
+
+        &.balance {
+          font-weight: bold;
+          width: 89px;
+        }
+      }
+    }
+  }
+}
