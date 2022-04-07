@@ -1,0 +1,113 @@
+.balance-plus-form {
+  .title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #616d99;
+  }
+
+  .balance-plus-input {
+    width: 100%;
+    padding: 12px 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+    letter-spacing: 0.04em;
+    color: #1a223f;
+
+    background: #ffffff;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+  }
+
+  .balance-plus-label {
+    margin-top: 10px;
+    font-family: "Stolzl";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    letter-spacing: 0.04em;
+    color: #282828;
+  }
+
+  .balance-plus-guide {
+    p {
+      margin-bottom: 20px;
+      font-family: "Stolzl";
+      font-style: normal;
+      font-size: 16px;
+      line-height: 180%;
+      letter-spacing: 0.04em;
+    }
+
+    .title {
+      margin-bottom: 10px;
+      color: #1467ff;
+      font-weight: 700;
+    }
+  }
+
+  .list {
+    display: flex;
+    margin-bottom: 65px;
+
+    .item {
+      margin-right: 14px;
+      width: calc(33.333% - 9.333px);
+      padding: 16px 16px 40px 50px;
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      box-sizing: border-box;
+      box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+      border-radius: 20px;
+      cursor: pointer;
+
+      &.active {
+        border: 1px solid #2b69f6;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .currency {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: right;
+        color: #616d99;
+        margin-bottom: 5px;
+      }
+
+      .bold {
+        margin-top: 12px;
+        min-height: 44px;
+        font-family: "Stolzl";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+        color: #1a223f;
+      }
+
+      .medium {
+        margin-top: 17px;
+        max-width: 172px;
+        font-family: "Stolzl";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+        color: #000000;
+      }
+    }
+  }
+}

@@ -69,6 +69,144 @@ header {
           letter-spacing: 0.03em;
           color: #ff0000;
         }
+
+        .notification-content {
+          display: none;
+          position: absolute;
+          width: 408px;
+          left: -365px;
+          top: 0;
+          margin-top: 45px;
+
+          background: #ffffff;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          border-radius: 5px;
+          z-index: 2;
+
+          &::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            transform: rotate(45deg);
+            top: -10px;
+            right: 20px;
+            box-shadow: -1px -1px 10px -2px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+          }
+
+          .title {
+            padding: 14px 20px;
+            font-family: "Stolzl";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+            color: #000000;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+          }
+
+          .empty {
+            padding: 14px 20px;
+            font-family: "Stolzl";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: #616d99;
+          }
+
+          .close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-image: url("../img/icons/close.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 20px;
+            height: 20px;
+          }
+
+          .list {
+            padding-bottom: 16px;
+
+            .item {
+              position: relative;
+              padding: 16px 20px 16px 60px;
+              border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+              .title-message {
+                margin-bottom: 4px;
+                font-family: "Stolzl";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+                color: #2b69f6;
+              }
+
+              .message {
+                font-family: "Stolzl";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+                color: #616d99;
+
+                a {
+                  text-decoration: underline;
+                  color: #2b69f6;
+                  font-family: "Stolzl";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 12px;
+                  line-height: 18px;
+
+                  &:hover {
+                    text-decoration: none;
+                  }
+                }
+              }
+
+              &.new {
+                &::before {
+                  content: "";
+                  display: block;
+                  position: absolute;
+                  background-image: url("../img/icons/notification-ok.svg");
+                  width: 24px;
+                  height: 24px;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  top: 18px;
+                  left: 20px;
+                }
+              }
+
+              &.error {
+                &::before {
+                  content: "";
+                  display: block;
+                  position: absolute;
+                  background-image: url("../img/icons/notification-error.svg");
+                  width: 24px;
+                  height: 24px;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  top: 18px;
+                  left: 20px;
+                }
+              }
+            }
+          }
+        }
+
+        &:hover {
+          .notification-content {
+            display: block;
+          }
+        }
       }
 
       .login {

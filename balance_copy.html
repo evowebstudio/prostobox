@@ -29,16 +29,7 @@
                     <div class="notification-content">
                         <p class="title">Уведомления</p>
                         <button class="close"></button>
-                        <div class="list">
-                            <div class="item new">
-                                <p class="title-message">Вам пришла новая посылка.</p>
-                                <p class="message">Посылка <a href="#">#4535</a> уже на складе в вашем городе. Получить ее вы можете по <a href="#">данному адресу</a>.</p>
-                            </div>
-                            <div class="item error">
-                                <p class="title-message">Ошибка в оформлении посылки. </p>
-                                <p class="message">Посылка <a href="#">#4535</a> уже на складе в вашем городе. Получить ее вы можете по <a href="#">данному адресу</a>.</p>
-                            </div>
-                        </div>
+                        <p class="empty">У вас пока нету не прочитанных уведомлений</p>
                     </div>
                 </div>
                 <button class="login"></button>
@@ -100,10 +91,47 @@
                 <p class="time">Время на складе: <span>12:06:45</span></p>
             </div>
             <div class="about balance">
-                <p class="title in-progress">Пополнение баланса</p>
-                <p class="text">Выполняется пополнение баланса, пожалуйста, не закрывайте страницу до завершения процедуру пополнения.</p>
-                <button class="button">Обновить</button>
+                <p class="title">Пополнение баланса</p>
+                <div class="warning-text">
+                    <p>Важно: Баланс должен пополнять владелец аккаунта. Пополнение баланса картами третьих лиц, оплата покупок гифт картами (gift cards) или картами третьих лиц строго запрещены.</p>
+                    <p class="small">В случае нарушения данных правил аккаунт будет заблокирован, а покупки, если таковые будут находиться на складе, возвращены отправителям.</p>
+                </div>
             </div>
+            <form action="" class="balance-plus-form">
+                <p class="title">Сумма пополения, $</p>
+                <input type="text" value="20" class="balance-plus-input" name="sum">
+                <p class="balance-plus-label">комиссия при сумме пополнения менее $10: 2.9%</p>
+                
+                <p class="title">Способ пополнения</p>
+                <div class="list">
+                    <div class="item active">
+                        <p class="currency">рубли (₽)</p>
+                        <img src="img/icons/card.png" width="36px" alt="">
+                        <p class="bold">Картами Visa или Mastercard</p>
+                        <p class="medium">Регистрация не требуется</p>
+                    </div>
+                    <div class="item">
+                        <p class="currency">доллары ($)</p>
+                        <img src="img/icons/card.png" width="36px" alt="">
+                        <p class="bold">Картами Visa или Mastercard</p>
+                        <p class="medium">Регистрация не требуется</p>
+                    </div>
+                    <div class="item">
+                        <p class="currency">доллары ($)</p>
+                        <img src="img/icons/paypal.svg" alt="">
+                        <p class="bold">PayPal</p>
+                        <p class="medium">Требуется регистрация в PayPal</p>
+                    </div>
+                </div>
+
+                <div class="balance-plus-guide">
+                    <p class="title">Внимание!</p>
+                    <p>На баланс будет зачислена та сумма, которую вы укажете в поле «Пополнить баланс на сумму».</p> 
+                    <p>При пополнении банковской картой через Stripe расчет производится по курсу вашего банка на день оплаты.</p>
+                    <p>При пополнении банковской картой в рублях расчет производится по курсу платежной системы на день оплаты.</p>
+                    <a href="#" class="button">Пополнить</a>
+                </div>
+            </form>
         </div>
     </main>
 </body> 

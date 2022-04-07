@@ -466,6 +466,126 @@ header .header .buttons .notification span {
   letter-spacing: 0.03em;
   color: #ff0000;
 }
+header .header .buttons .notification .notification-content {
+  display: none;
+  position: absolute;
+  width: 408px;
+  left: -365px;
+  top: 0;
+  margin-top: 45px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 2;
+}
+header .header .buttons .notification .notification-content::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: -10px;
+  right: 20px;
+  -webkit-box-shadow: -1px -1px 10px -2px rgba(0, 0, 0, 0.1);
+          box-shadow: -1px -1px 10px -2px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+header .header .buttons .notification .notification-content .title {
+  padding: 14px 20px;
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+header .header .buttons .notification .notification-content .empty {
+  padding: 14px 20px;
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #616d99;
+}
+header .header .buttons .notification .notification-content .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("../img/icons/close.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+header .header .buttons .notification .notification-content .list {
+  padding-bottom: 16px;
+}
+header .header .buttons .notification .notification-content .list .item {
+  position: relative;
+  padding: 16px 20px 16px 60px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+header .header .buttons .notification .notification-content .list .item .title-message {
+  margin-bottom: 4px;
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #2b69f6;
+}
+header .header .buttons .notification .notification-content .list .item .message {
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #616d99;
+}
+header .header .buttons .notification .notification-content .list .item .message a {
+  text-decoration: underline;
+  color: #2b69f6;
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+header .header .buttons .notification .notification-content .list .item .message a:hover {
+  text-decoration: none;
+}
+header .header .buttons .notification .notification-content .list .item.new::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../img/icons/notification-ok.svg");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 18px;
+  left: 20px;
+}
+header .header .buttons .notification .notification-content .list .item.error::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../img/icons/notification-error.svg");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 18px;
+  left: 20px;
+}
+header .header .buttons .notification:hover .notification-content {
+  display: block;
+}
 header .header .buttons .login {
   width: 29px;
   height: 29px;
@@ -1825,6 +1945,13 @@ header .header .buttons .login.guest:after {
   top: 14px;
   left: 14px;
 }
+.account .about .warning-text .small {
+  margin-top: 12px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #616d99;
+}
 
 .account .news {
   margin: 40px 0 0 0;
@@ -1968,6 +2095,110 @@ header .header .buttons .login.guest:after {
 }
 .account .error .button {
   margin-top: 24px;
+}
+
+.balance-plus-form .title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #616d99;
+}
+.balance-plus-form .balance-plus-input {
+  width: 100%;
+  padding: 12px 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 180%;
+  letter-spacing: 0.04em;
+  color: #1a223f;
+  background: #ffffff;
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+.balance-plus-form .balance-plus-label {
+  margin-top: 10px;
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  letter-spacing: 0.04em;
+  color: #282828;
+}
+.balance-plus-form .balance-plus-guide p {
+  margin-bottom: 20px;
+  font-family: "Stolzl";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 180%;
+  letter-spacing: 0.04em;
+}
+.balance-plus-form .balance-plus-guide .title {
+  margin-bottom: 10px;
+  color: #1467ff;
+  font-weight: 700;
+}
+.balance-plus-form .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 65px;
+}
+.balance-plus-form .list .item {
+  margin-right: 14px;
+  width: calc(33.333% - 9.333px);
+  padding: 16px 16px 40px 50px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+          box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.balance-plus-form .list .item.active {
+  border: 1px solid #2b69f6;
+}
+.balance-plus-form .list .item:last-child {
+  margin-right: 0;
+}
+.balance-plus-form .list .item .currency {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: right;
+  color: #616d99;
+  margin-bottom: 5px;
+}
+.balance-plus-form .list .item .bold {
+  margin-top: 12px;
+  min-height: 44px;
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #1a223f;
+}
+.balance-plus-form .list .item .medium {
+  margin-top: 17px;
+  max-width: 172px;
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
 }
 
 .main-banner {
