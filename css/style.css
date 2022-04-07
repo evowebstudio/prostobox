@@ -519,8 +519,8 @@ header .header .buttons .notification .notification-content .close {
   background-image: url("../img/icons/close.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 12px;
 }
 header .header .buttons .notification .notification-content .list {
   padding-bottom: 16px;
