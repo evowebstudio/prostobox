@@ -1,0 +1,159 @@
+.tickets {
+  .about {
+    margin-top: 28px;
+
+    .title {
+      font-family: "Stolzl";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 18px;
+      color: #000000;
+    }
+
+    .row {
+      display: flex;
+      margin-top: 40px;
+    }
+
+    .button {
+      max-width: 209px;
+
+      &.yellow {
+        margin-left: 8px;
+        max-width: 100%;
+        padding-left: 60px;
+        padding-right: 60px;
+        background: #ffe200;
+        color: #000;
+      }
+    }
+  }
+
+  .filters {
+    margin-top: 40px;
+    display: flex;
+
+    .col {
+      display: flex;
+      align-items: center;
+      margin-right: 12px;
+    }
+
+    .select {
+      margin-right: 6px;
+
+      &.big {
+        min-width: 118px;
+      }
+      &.medium {
+        min-width: 84px;
+      }
+      &.small {
+        min-width: 66px;
+      }
+
+      .select-selected {
+        padding: 16px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.04em;
+
+        &::after {
+          width: 12px;
+          height: 6px;
+          right: 15px;
+          background-size: contain;
+        }
+      }
+
+      .select-items {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 14px;
+
+        div {
+          font-size: 14px;
+        }
+      }
+    }
+
+    p {
+      margin-right: 12px;
+      font-family: "Stolzl";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.04em;
+      color: #000000;
+    }
+
+    .button {
+      padding: 15px 30px;
+      min-width: auto;
+      font-family: "Stolzl";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.04em;
+      color: #2b69f6;
+      border: 1px solid #2b69f6;
+      background: transparent;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .list {
+    padding-top: 10px;
+
+    .item {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 24px 35px 24px 24px;
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      box-sizing: border-box;
+      box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+      border-radius: 20px;
+
+      .title {
+        font-family: "Stolzl";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+        color: #2b69f6;
+
+        span {
+          color: #000;
+        }
+      }
+
+      .description {
+        padding-right: 95px;
+        margin-top: 8px;
+        font-family: "Stolzl";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #616d99;
+      }
+
+      .button {
+        min-width: 135px;
+        padding: 15px 28px;
+        font-size: 14px;
+      }
+    }
+  }
+}

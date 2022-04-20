@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Prostobox</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header d-flex justify-between align-center">
+            <a href="#">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <ul class="nav d-flex">
+                <li><a href="#">Как покупать в США</a></li>
+                <li><a href="#">Калькулятор</a></li>
+                <li><a href="#">Скидки в США</a></li>
+                <li><a href="#">ЛикБез</a></li>
+                <li><a href="#">Блог</a></li>
+            </ul>
+            <div class="buttons d-flex">
+                <div class="notification">
+                    <button class="active"></button>
+                    <span>2</span>
+
+                    <div class="notification-content">
+                        <p class="title">Уведомления</p>
+                        <button class="close"></button>
+                        <div class="list">
+                            <div class="item new">
+                                <p class="title-message">Вам пришла новая посылка.</p>
+                                <p class="message">Посылка <a href="#">#4535</a> уже на складе в вашем городе. Получить ее вы можете по <a href="#">данному адресу</a>.</p>
+                            </div>
+                            <div class="item error">
+                                <p class="title-message">Ошибка в оформлении посылки. </p>
+                                <p class="message">Посылка <a href="#">#4535</a> уже на складе в вашем городе. Получить ее вы можете по <a href="#">данному адресу</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="login"></button>
+            </div>
+        </div>
+    </header>
+    <main class="d-flex">
+        <div class="sidebar">
+            <ul class="breadcrumbs d-flex">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Личный кабинет</a></li>
+            </ul>
+            <ul class="sidebar-nav">
+                <li class="item"><a class="link d-flex align-center home" href="#">Главная</a></li>
+                <li class="item"><a class="link d-flex align-center early-delivery" href="#">Оформить доставку заранее</a></li>
+                <li class="item has-child opened"><a class="link d-flex align-center my-parcels" href="#">Мои посылки</a></li>
+                <ul class="child">
+                    <form action="" class="search">
+                        <input type="text" placeholder="Поиск входящей по треку" required>
+                        <button></button>
+                    </form>
+                    <li><a href="#">Зарегистрировать посылку</a></li>
+                    <li><a href="#">Ожидаемые посылки</a></li>
+                    <li><a href="#">Посылки на складе</a></li>
+                    <li><a href="#">Формируемые посылки</a></li>
+                    <li><a href="#">Ожидают отправки</a></li>
+                    <li><a href="#">Отправленные посылки</a></li>
+                    <li><a href="#">Полученные посылки</a></li>
+                    <li><a href="#">Отмененные посылки</a></li>
+                </ul>
+                <li class="item has-child opened"><a class="link d-flex align-center affilate" href="#">Партнерская программа</a></li>
+                <ul class="child">
+                    <li><a href="#">Промо-материалы</a></li>
+                    <li><a href="#">Статистика</a></li>
+                </ul>
+                <li class="item"><a class="link d-flex align-center settings" href="#">Настройки</a></li>
+                <li class="item"><a class="link d-flex align-center support" href="#">Служба поддержки</a></li>
+                <li class="item"><a class="link d-flex align-center logout" href="#">Выход</a></li>
+            </ul>
+            <div class="banners">
+                <div class="item d-flex column align-center justify-center affilate">
+                    <img src="img/banner-affilate.png" alt="">
+                    <p class="title">Партнерская программа Простобокса</p>
+                    <p class="subtitle">Дарите друзьям <span>скидку 10%</span></p>
+                    <p class="description"><span>Зарабатывайте по $2</span> c каждой посылки</p>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+                <div class="item d-flex column align-center justify-center cashback">
+                    <img src="img/banner-cashback.png" alt="">
+                    <p class="title">Кешбэк за покупки
+                        в США</p>
+                    <p class="description">Регистрируйтесь в кешбэк-сервисах и <span>получайте $20</span> после первой покупки</p>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="content account tickets">
+            <div class="head">
+                <p class="time">Время на складе: <span>12:06:45</span></p>
+            </div>
+            <div class="about">
+                <p class="title">Служба поддержки</p>
+                <p class="text">Оперативно ответим на ваши вопросы по заказам, посылкам<br>и работе сервиса</p>
+                <div class="row">
+                    <button class="button">Новый тикет</button>
+                    <button class="button yellow">«Срочный тикет» - стоимость $2</button>
+                </div>
+            </div>
+
+            <div class="row filters">
+                <div class="col">
+                    <p>С</p>
+                    <div class="select big">
+                        <select name="date_from_month">
+                            <option value="">Декабрь</option>
+                            <option value="">Январь</option>
+                            <option value="">Февраль</option>
+                            <option value="">Март</option>
+                        </select>
+                    </div>
+                    <div class="select small">
+                        <select name="date_from_date">
+                            <option value="">31</option>
+                            <option value="">30</option>
+                            <option value="">29</option>
+                            <option value="">28</option>
+                        </select>
+                    </div>
+                    <div class="select medium">
+                        <select name="date_from_year">
+                            <option value="">2021</option>
+                            <option value="">2020</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <p>по</p>
+                    <div class="select big">
+                        <select name="date_from_month">
+                            <option value="">Декабрь</option>
+                            <option value="">Январь</option>
+                            <option value="">Февраль</option>
+                            <option value="">Март</option>
+                        </select>
+                    </div>
+                    <div class="select small">
+                        <select name="date_from_date">
+                            <option value="">31</option>
+                            <option value="">30</option>
+                            <option value="">29</option>
+                            <option value="">28</option>
+                        </select>
+                    </div>
+                    <div class="select medium">
+                        <select name="date_from_year">
+                            <option value="">2021</option>
+                            <option value="">2020</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <button class="button">Показать</button>
+                </div>    
+            </div>
+
+            <div class="list">
+                <div class="item">
+                    <div class="info">
+                        <p class="title">Тикет #169361 <span>от 20 Января 2021</span></p>
+                        <p class="description">Оперативно ответим на ваши вопросы по заказам, посылкам и работе сервиса...</p>
+                    </div>
+                    <a href="#" class="button">Просмотр</a>
+                </div>
+                <div class="item">
+                    <div class="info">
+                        <p class="title">Тикет #169361 <span>от 20 Января 2021</span></p>
+                        <p class="description">Оперативно ответим на ваши вопросы по заказам, посылкам и работе сервиса...</p>
+                    </div>
+                    <a href="#" class="button">Просмотр</a>
+                </div>
+                <div class="item">
+                    <div class="info">
+                        <p class="title">Тикет #169361 <span>от 20 Января 2021</span></p>
+                        <p class="description">Оперативно ответим на ваши вопросы по заказам, посылкам и работе сервиса...</p>
+                    </div>
+                    <a href="#" class="button">Просмотр</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body> 
+</html>
