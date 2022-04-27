@@ -96,55 +96,104 @@
                 </div>
             </div>
         </div>
-        <div class="content account bonuses">
+        <div class="content account settings">
             <div class="head">
                 <p class="time">Время на складе: <span>12:06:45</span></p>
             </div>
             <div class="about">
-                <p class="title">Бонусы</p>
-                <p class="text">Мы очень ценим постоянных клиентов, поэтому мы придумали систему премирования за отправку с помощью ншей компании.<br><br>Отправляте больше посылок и получайте постоянные вечные скидки от Prostobox</p>
+                <p class="title">Настройки</p>
+                <p class="text">Здесь нужно заполнить информацию о вашем адресе доставки, и других<br>ваших данных и настроек аккаунта</p>
+            </div> 
+            <div class="nav">
+                <a href="#" class="button blue">Мой адрес и основные данные</a>
+                <a href="#" class="button">Настройки</a>
+                <a href="#" class="button">Смена пароля</a>
+                <a href="#" class="button">Бот</a>
             </div>
-            <div class="table">
-                <p class="head">Статистика ваших отправлений:</p>
-                <table cellspacing="0" cellpadding="0">
-                    <tr>
-                        <td>Отправлено<br>
-                            посылок</td>
-                        <td><span>1 из 30</span></td>
-                    </tr>
-                    <tr>
-                        <td>Вес отправленных<br>
-                            посылок/кг</td>
-                        <td><span>0.8 из 60</span></td>
-                    </tr>
-                    <tr>
-                        <td>Потрачено<br>на доставку, $</td>
-                        <td><span>25</span></td>
-                    </tr>
-                    <tr>
-                        <td>Скидка</td>
-                        <td>Ожидаемая<br>скидка 10%<span>(?)</span></td>
-                    </tr>
-                    <tr>
-                        <td>Код на скидку</td>
-                        <td>340700-ххх</td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="table">
-                <p class="head">Бонусы:<button class="warning-text"></button></p>
-                <table cellspacing="0" cellpadding="0">
-                    <tr>
-                        <td>Скидка на страховку<br>
-                            от утери посылки</td>
-                        <td>15%</td>
-                    </tr>
-                    <tr>
-                        <td>Бесплатное хранение<br>собранной посылки</td>
-                        <td>14 дней <span class="gray">(стандартный<br>срок хранения 7 дней)</span></td>
-                    </tr>
-                </table>
+            <div class="form">
+                <div class="row">
+                    <div class="group select-address">
+                        <label class="label">Мои адреса:</label>
+                        <div class="select">
+                            <select name="address">
+                                <option value="">Адрес из профиля</option>
+                                <option value="">Адрес 1</option>
+                                <option value="">Адрес 2</option>
+                                <option value="">Адрес 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="button">Добавить адрес</button>
+                </div>
+                <div class="row">
+                    <div class="group">
+                        <label class="label">Название адреса:</label>
+                        <input type="text" name="address-name" value="Адрес из профиля" class="input_text full">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="group half">
+                        <label class="label">Фамилия:</label>
+                        <input type="text" name="firstname" value="KOVALCHUK" class="input_text">
+                    </div>
+                    <div class="group half">
+                        <label class="label">Имя:</label>
+                        <input type="text" name="lastname" value="ANTON" class="input_text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="group half">
+                        <label class="label">Отчество:</label>
+                        <input type="text" name="partname" value="" class="input_text">
+                    </div>
+                    <div class="group half">
+                        <label class="label">Страна:</label>
+                        <div class="select">
+                            <select name="country">
+                                <option value="">Россия</option>
+                                <option value="">Россия</option>
+                                <option value="">Россия</option>
+                                <option value="">Россия</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="group half">
+                        <label class="label">Область:</label>
+                        <input type="text" name="region" value="" class="input_text">
+                    </div>
+                    <div class="group half">
+                        <label class="label">Город:</label>
+                        <input type="text" name="city" value="" class="input_text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="group half">
+                        <label class="label">Индекс:</label>
+                        <input type="text" name="postcode" value="" class="input_text">
+                    </div>
+                    <div class="group half">
+                        <label class="label">Улица:</label>
+                        <input type="text" name="street" value="" class="input_text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="group half">
+                        <label class="label">Дом:</label>
+                        <input type="text" name="building" value="" class="input_text">
+                    </div>
+                    <div class="group half">
+                        <label class="label">Квартира:</label>
+                        <input type="text" name="apart" value="" class="input_text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="group half">
+                        <label class="label">Телефон:</label>
+                        <input type="text" name="phone" value="" class="input_text">
+                    </div>
+                </div>
             </div>
         </div>
     </main>

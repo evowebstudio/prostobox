@@ -1,0 +1,127 @@
+.settings {
+    .about {
+      margin-top: 28px;
+  
+      .title {
+        font-family: "Stolzl";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 18px;
+        color: #000000;
+      }
+    }
+
+    .nav {
+        margin:30px 0 0 0;
+        display: flex;
+
+        .button {
+            margin-right: 12px;
+            min-width: auto;
+            padding: 22px 28px;
+            font-family: 'Stolzl';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 160%;
+            color: #616D99;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+            border-radius: 20px;
+
+            &::before {
+                display: none;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.blue {
+                color:#fff;
+                background: #2B69F6;
+                border: 2px solid #2B69F6;
+                box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+            }
+
+        }
+    }
+
+    .form {
+        margin-top: 40px;
+        padding: 40px;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+        border-radius: 20px;
+
+        .row {
+            margin-bottom: 28px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+
+        .group {
+            width: 100%;
+            
+            .label {
+                margin-bottom: 20px;
+                font-family: 'Stolzl';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 18px;
+                /* identical to box height, or 100% */
+
+                display: flex;
+                align-items: center;
+
+                color: #616D99;
+            }
+
+            &.select-address {
+                width: calc(100% - 240px - 30px);
+
+                .select {
+                    max-width: 100%;
+                }
+            }
+
+            .input_text {
+                &.full {
+                    width: 100%;
+                }
+            }
+
+            &.half {
+                width: calc(50% - 15px);
+
+                .input_text {
+                    width: 100%;
+                }
+
+                .select {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .button {
+            margin-left: 30px;
+            width: 240px;
+            font-family: 'Stolzl';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            color: #000000;
+            background: #FFE200;
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+}

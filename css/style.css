@@ -2366,6 +2366,196 @@ header .header .buttons .login.guest:after {
   line-height: 18px;
   color: #000000;
 }
+.bonuses .table {
+  margin: 35px 0 0 0;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+          box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+  border-radius: 20px;
+}
+.bonuses .table .head {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #616D99;
+}
+.bonuses .table .head .warning-text {
+  margin-left: 3px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-image: url("https://evowebstudio.github.io/prostobox/img/icons/warning-text.svg");
+  background-position: center;
+  background-size: 18px;
+}
+.bonuses .table table {
+  margin: 0 20px;
+  padding-bottom: 40px;
+  width: calc(100% - 40px);
+}
+.bonuses .table table tr:nth-child(odd) td {
+  background: #F9F9F9;
+  vertical-align: top;
+}
+.bonuses .table table tr:nth-child(odd) td:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 240px;
+}
+.bonuses .table table tr:nth-child(odd) td:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.bonuses .table table tr td {
+  padding: 24px;
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #282828;
+}
+.bonuses .table table tr td span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2B69F6;
+}
+.bonuses .table table tr td span.gray {
+  color: #616D99;
+}
+
+.settings .about {
+  margin-top: 28px;
+}
+.settings .about .title {
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 18px;
+  color: #000000;
+}
+.settings .nav {
+  margin: 30px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.settings .nav .button {
+  margin-right: 12px;
+  min-width: auto;
+  padding: 22px 28px;
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  color: #616D99;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+          box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+  border-radius: 20px;
+}
+.settings .nav .button::before {
+  display: none;
+}
+.settings .nav .button:last-child {
+  margin-right: 0;
+}
+.settings .nav .button.blue {
+  color: #fff;
+  background: #2B69F6;
+  border: 2px solid #2B69F6;
+  -webkit-box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+          box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+}
+.settings .form {
+  margin-top: 40px;
+  padding: 40px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+          box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+  border-radius: 20px;
+}
+.settings .form .row {
+  margin-bottom: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.settings .form .group {
+  width: 100%;
+}
+.settings .form .group .label {
+  margin-bottom: 20px;
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  /* identical to box height, or 100% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #616D99;
+}
+.settings .form .group.select-address {
+  width: calc(100% - 240px - 30px);
+}
+.settings .form .group.select-address .select {
+  max-width: 100%;
+}
+.settings .form .group .input_text.full {
+  width: 100%;
+}
+.settings .form .group.half {
+  width: calc(50% - 15px);
+}
+.settings .form .group.half .input_text {
+  width: 100%;
+}
+.settings .form .group.half .select {
+  max-width: 100%;
+}
+.settings .form .button {
+  margin-left: 30px;
+  width: 240px;
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  background: #FFE200;
+}
+.settings .form .button::before {
+  display: none;
+}
 
 .main-banner {
   overflow: hidden;
