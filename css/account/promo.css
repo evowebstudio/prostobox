@@ -1,0 +1,36 @@
+.promo .about {
+  margin-top: 28px;
+}
+.promo .about .title {
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 18px;
+  color: #000000;
+}
+.promo .table {
+  margin: 35px 0 0 0;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+          box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+  border-radius: 20px;
+}
+.promo .table .head {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #616D99;
+}

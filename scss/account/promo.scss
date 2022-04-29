@@ -1,0 +1,148 @@
+.promo {
+    .about {
+      margin-top: 28px;
+  
+      .title {
+        font-family: "Stolzl";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 18px;
+        color: #000000;
+      }
+    }
+  
+    .block {
+        margin: 35px 0 0 0;
+        padding: 8px 40px 51px;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+        border-radius: 20px;
+
+        .title {
+            padding-top: 32px;
+            font-family: 'Stolzl';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            color: #616D99;
+        }
+
+        .label {
+            margin-top: 32px;
+            margin-bottom: 20px;
+            display: block;
+            font-family: 'Stolzl';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 18px;
+            color: #616D99;
+        }
+
+        p {
+            font-family: 'Stolzl';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 180%;
+            letter-spacing: 0.04em;
+            color: #282828;
+        }
+
+        .input_text {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .textarea_code {
+            padding: 16px;
+            overflow-y: hidden;
+            width: 100%;
+            height: 143px;
+            background: #FFFFFF;
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+            border-radius: 20px;
+            font-family: 'Stolzl';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 180%;
+            letter-spacing: 0.04em;
+            color: #1A223F;
+        }
+
+        &.block_full {
+            .textarea_code {
+                height: 90px;
+            }
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .input_text {
+                width: calc(100% - 240px - 30px);
+            }
+    
+            .button {
+                margin-bottom: 10px;
+                width: 240px;
+                min-width: 240px;
+                background: #FFE200;
+                color: #000000;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+
+        .col {
+            width: 210px;
+            margin-top:4px;
+
+            &.col_full {
+                margin-top: 32px;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            
+            .description {
+                margin-top: 24px;
+                margin-bottom: 18px;
+                display: flex;
+                justify-content: space-between;
+
+                p {
+                    &:first-child {
+                        font-family: 'Stolzl';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: #616D99;
+                    }
+
+                    &:last-child {
+                        font-family: 'Stolzl';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: #282828;
+                    }
+                }
+            }
+        }
+    }
+}
