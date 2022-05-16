@@ -1,0 +1,365 @@
+.account {
+    &.orders {
+        .subtitle {
+            margin-top: 55px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 15px;
+            color: #000000;
+        }
+        .about {
+            .title {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 18px;
+                color: #000000;
+            }
+
+            .text {
+                max-width: 736px;
+                margin-top: 14px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #000000;
+            }
+
+            a {
+                margin-top: 10px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                text-decoration-line: underline;
+                color: #000000;  
+                
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .block {
+            margin-top: 30px;
+            padding: 20px;
+            border: 2px solid #000000;
+            //filter: drop-shadow(0px 0px 20px rgba(213, 234, 241, 0.5));
+            border-radius: 7px;
+
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                &.left {
+                    justify-content: flex-start;
+                }
+            }
+
+            .row-buttons {
+                margin-top: 10px;
+                display: flex;
+
+                .button-fill {
+                    padding: 12px;
+                    margin-right: 9px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #FFFFFF;
+                    background: #5B72EC;
+                    border-radius: 5px;
+                    border: 2px solid #5B72EC;
+                    text-decoration: none;
+                }
+
+                .button-frame {
+                    padding: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #5B72EC;
+                    border: 2px solid #5B72EC;
+                    border-radius: 5px;
+                    text-decoration: none;
+                }
+            }
+
+            .block-header {
+                margin-bottom: 20px;
+
+                .name {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #000000;
+                }
+
+                .delete {
+                    margin-right: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-decoration-line: underline;
+                    color: #5B72EC;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+
+                .status {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #616E81;
+                    border: 2px solid #616E81;
+                    border-radius: 5px;
+                }
+            }
+
+            .button-apply {
+                width: 216px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+                text-align: center;
+                color: #FFFFFF;
+                background: #2F71EB;
+                border-radius: 7px;
+            }
+
+            .group {
+                margin-bottom: 14px;
+
+                &.small {
+                    width: calc(25% - 18px);
+                }
+
+                &.medium {
+                    width: calc(50% - 15px);
+                }
+
+                &.group_check {
+                    margin-right: 40px;
+                    margin-top: 20px;
+                }
+            }
+
+            .warning-text {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: #E3292A;
+            }
+
+            .label {
+                display: block;
+                margin-bottom: 10px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+                color: #616E81;
+
+                &.total {
+                    color: #637CAB;
+                }
+
+                &.warning {
+                    color: #E3292A;
+                }
+
+                .warning {
+                    display: block;
+                    color: #E3292A;
+                }
+            }
+            
+            .label_check {
+                display: inline-block;
+                margin-bottom: 7px;
+                font-style: normal;
+                font-size: 14px;
+                line-height: 100%;
+                color: #504F56;
+            }
+
+            .text-comment {
+                display: block;
+                margin-top: 10px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+                color: #616E81;
+            }
+
+            .input {
+                width: 100%;
+                padding: 12px 15px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 100%;
+                color: #000;
+                border: 2px solid #000000;
+                border-radius: 7px;
+
+                &::placeholder {
+                    color: #504F56;
+                    font-weight: 400;
+                }
+
+                &.input_promocode {
+                    width: calc(100% - 216px - 10px);
+                    border: 2px solid #2F71EB;
+                    border-radius: 7px;
+                }
+
+                &.active {
+                    background: rgba(69, 78, 88, 0.1);
+                }
+            }
+
+            hr {
+                margin-top:5px;
+                margin-left: -20px;
+                margin-bottom: 19px;
+                width: calc(100% + 40px);
+                height: 2px;
+                background-color: #000;
+            }
+
+            table {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                width: 100%;
+
+                th {
+                    padding-right: 40px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #637CAB;
+                    text-align: left;
+                }
+
+                td {
+                    padding-top: 30px;
+                    padding-right: 20px;
+                    max-width: 230px;
+                    vertical-align: text-top;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+
+            .sum {
+                margin-top: 4px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 23px;                
+                color: #5B72EC;
+            }
+
+            .site {
+                margin-top: 4px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 18px;                
+                color: #5B72EC;
+                text-decoration: underline;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            .qty, .commission, .promocode, .tax {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 23px;                
+                color: #000000;
+            }
+
+            .num {
+                padding: 5px 0;
+                margin-right: 97px;
+            }
+
+            .date {
+                padding:5px 0;
+            }
+
+            .status {
+                padding: 5px 10px;
+                border-radius: 5px;
+
+                &.done {
+                    border: 2px solid #3662EF;                 
+                }
+
+                &.process {
+                    background: #F9F33F;
+                }
+
+                &.cancel {
+                    border: 2px solid #E3292A;
+                    text-align: center;
+                }
+            }
+
+            .comment {
+                width: 100%;
+                padding: 16px 20px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 120%;
+                color: #000000;
+                background: rgba(69, 78, 88, 0.1);
+                border: 2px solid #000000;
+                border-radius: 7px;
+            }
+
+            .block-footer {
+                margin-top: 40px;
+                align-items: center;
+
+                .label {
+                    padding-top: 4px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #637CAB;
+                }
+
+                .footer-sum {
+                    margin-left: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 23px;
+                    color: #5B72EC;
+                }
+            }
+        }
+    }
+}

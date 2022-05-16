@@ -2696,6 +2696,346 @@ header .header .buttons .login.guest:after {
   color: #282828;
 }
 
+.account.orders .subtitle {
+  margin-top: 55px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 15px;
+  color: #000000;
+}
+.account.orders .about .title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 18px;
+  color: #000000;
+}
+.account.orders .about .text {
+  max-width: 736px;
+  margin-top: 14px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.account.orders .about a {
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #000000;
+}
+.account.orders .about a:hover {
+  text-decoration: none;
+}
+.account.orders .block {
+  margin-top: 30px;
+  padding: 20px;
+  border: 2px solid #000000;
+  border-radius: 7px;
+}
+.account.orders .block .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.account.orders .block .row.left {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.account.orders .block .row-buttons {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.account.orders .block .row-buttons .button-fill {
+  padding: 12px;
+  margin-right: 9px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  background: #5B72EC;
+  border-radius: 5px;
+  border: 2px solid #5B72EC;
+  text-decoration: none;
+}
+.account.orders .block .row-buttons .button-frame {
+  padding: 12px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #5B72EC;
+  border: 2px solid #5B72EC;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.account.orders .block .block-header {
+  margin-bottom: 20px;
+}
+.account.orders .block .block-header .name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+.account.orders .block .block-header .delete {
+  margin-right: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #5B72EC;
+}
+.account.orders .block .block-header .delete:hover {
+  text-decoration: none;
+}
+.account.orders .block .block-header .status {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #616E81;
+  border: 2px solid #616E81;
+  border-radius: 5px;
+}
+.account.orders .block .button-apply {
+  width: 216px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #2F71EB;
+  border-radius: 7px;
+}
+.account.orders .block .group {
+  margin-bottom: 14px;
+}
+.account.orders .block .group.small {
+  width: calc(25% - 18px);
+}
+.account.orders .block .group.medium {
+  width: calc(50% - 15px);
+}
+.account.orders .block .group.group_check {
+  margin-right: 40px;
+  margin-top: 20px;
+}
+.account.orders .block .warning-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #E3292A;
+}
+.account.orders .block .label {
+  display: block;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #616E81;
+}
+.account.orders .block .label.total {
+  color: #637CAB;
+}
+.account.orders .block .label.warning {
+  color: #E3292A;
+}
+.account.orders .block .label .warning {
+  display: block;
+  color: #E3292A;
+}
+.account.orders .block .label_check {
+  display: inline-block;
+  margin-bottom: 7px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 100%;
+  color: #504F56;
+}
+.account.orders .block .text-comment {
+  display: block;
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #616E81;
+}
+.account.orders .block .input {
+  width: 100%;
+  padding: 12px 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #000;
+  border: 2px solid #000000;
+  border-radius: 7px;
+}
+.account.orders .block .input::-webkit-input-placeholder {
+  color: #504F56;
+  font-weight: 400;
+}
+.account.orders .block .input::-moz-placeholder {
+  color: #504F56;
+  font-weight: 400;
+}
+.account.orders .block .input:-ms-input-placeholder {
+  color: #504F56;
+  font-weight: 400;
+}
+.account.orders .block .input::-ms-input-placeholder {
+  color: #504F56;
+  font-weight: 400;
+}
+.account.orders .block .input::placeholder {
+  color: #504F56;
+  font-weight: 400;
+}
+.account.orders .block .input.input_promocode {
+  width: calc(100% - 216px - 10px);
+  border: 2px solid #2F71EB;
+  border-radius: 7px;
+}
+.account.orders .block .input.active {
+  background: rgba(69, 78, 88, 0.1);
+}
+.account.orders .block hr {
+  margin-top: 5px;
+  margin-left: -20px;
+  margin-bottom: 19px;
+  width: calc(100% + 40px);
+  height: 2px;
+  background-color: #000;
+}
+.account.orders .block table {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.account.orders .block table th {
+  padding-right: 40px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #637CAB;
+  text-align: left;
+}
+.account.orders .block table td {
+  padding-top: 30px;
+  padding-right: 20px;
+  max-width: 230px;
+  vertical-align: text-top;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+.account.orders .block .sum {
+  margin-top: 4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #5B72EC;
+}
+.account.orders .block .site {
+  margin-top: 4px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #5B72EC;
+  text-decoration: underline;
+}
+.account.orders .block .site:hover {
+  text-decoration: none;
+}
+.account.orders .block .qty, .account.orders .block .commission, .account.orders .block .promocode, .account.orders .block .tax {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+}
+.account.orders .block .num {
+  padding: 5px 0;
+  margin-right: 97px;
+}
+.account.orders .block .date {
+  padding: 5px 0;
+}
+.account.orders .block .status {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.account.orders .block .status.done {
+  border: 2px solid #3662EF;
+}
+.account.orders .block .status.process {
+  background: #F9F33F;
+}
+.account.orders .block .status.cancel {
+  border: 2px solid #E3292A;
+  text-align: center;
+}
+.account.orders .block .comment {
+  width: 100%;
+  padding: 16px 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #000000;
+  background: rgba(69, 78, 88, 0.1);
+  border: 2px solid #000000;
+  border-radius: 7px;
+}
+.account.orders .block .block-footer {
+  margin-top: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.account.orders .block .block-footer .label {
+  padding-top: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #637CAB;
+}
+.account.orders .block .block-footer .footer-sum {
+  margin-left: 16px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #5B72EC;
+}
+
 .main-banner {
   overflow: hidden;
 }

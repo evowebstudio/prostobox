@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Prostobox</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header d-flex justify-between align-center">
+            <a href="#">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <ul class="nav d-flex">
+                <li><a href="#">Как покупать в США</a></li>
+                <li><a href="#">Калькулятор</a></li>
+                <li><a href="#">Скидки в США</a></li>
+                <li><a href="#">ЛикБез</a></li>
+                <li><a href="#">Блог</a></li>
+            </ul>
+            <div class="buttons d-flex">
+                <div class="notification">
+                    <button class="active"></button>
+                    <span>2</span>
+
+                    <div class="notification-content">
+                        <p class="title">Уведомления</p>
+                        <button class="close"></button>
+                        <div class="list">
+                            <div class="item new">
+                                <p class="title-message">Вам пришла новая посылка.</p>
+                                <p class="message">Посылка <a href="#">#4535</a> уже на складе в вашем городе. Получить ее вы можете по <a href="#">данному адресу</a>.</p>
+                            </div>
+                            <div class="item error">
+                                <p class="title-message">Ошибка в оформлении посылки. </p>
+                                <p class="message">Посылка <a href="#">#4535</a> уже на складе в вашем городе. Получить ее вы можете по <a href="#">данному адресу</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="login"></button>
+            </div>
+        </div>
+    </header>
+    <main class="d-flex">
+        <div class="sidebar">
+            <ul class="breadcrumbs d-flex">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Личный кабинет</a></li>
+            </ul>
+            <ul class="sidebar-nav">
+                <li class="item"><a class="link d-flex align-center home" href="#">Главная</a></li>
+                <li class="item"><a class="link d-flex align-center early-delivery" href="#">Оформить доставку заранее</a></li>
+                <li class="item has-child opened"><a class="link d-flex align-center my-parcels" href="#">Мои посылки</a></li>
+                <ul class="child">
+                    <form action="" class="search">
+                        <input type="text" placeholder="Поиск входящей по треку" required>
+                        <button></button>
+                    </form>
+                    <li><a href="#">Зарегистрировать посылку</a></li>
+                    <li><a href="#">Ожидаемые посылки</a></li>
+                    <li><a href="#">Посылки на складе</a></li>
+                    <li><a href="#">Формируемые посылки</a></li>
+                    <li><a href="#">Ожидают отправки</a></li>
+                    <li><a href="#">Отправленные посылки</a></li>
+                    <li><a href="#">Полученные посылки</a></li>
+                    <li><a href="#">Отмененные посылки</a></li>
+                </ul>
+                <li class="item has-child opened"><a class="link d-flex align-center affilate" href="#">Партнерская программа</a></li>
+                <ul class="child">
+                    <li><a href="#">Промо-материалы</a></li>
+                    <li><a href="#">Статистика</a></li>
+                </ul>
+                <li class="item"><a class="link d-flex align-center settings" href="#">Настройки</a></li>
+                <li class="item"><a class="link d-flex align-center support" href="#">Служба поддержки</a></li>
+                <li class="item"><a class="link d-flex align-center logout" href="#">Выход</a></li>
+            </ul>
+            <div class="banners">
+                <div class="item d-flex column align-center justify-center affilate">
+                    <img src="img/banner-affilate.png" alt="">
+                    <p class="title">Партнерская программа Простобокса</p>
+                    <p class="subtitle">Дарите друзьям <span>скидку 10%</span></p>
+                    <p class="description"><span>Зарабатывайте по $2</span> c каждой посылки</p>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+                <div class="item d-flex column align-center justify-center cashback">
+                    <img src="img/banner-cashback.png" alt="">
+                    <p class="title">Кешбэк за покупки
+                        в США</p>
+                    <p class="description">Регистрируйтесь в кешбэк-сервисах и <span>получайте $20</span> после первой покупки</p>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="content account orders">
+            <div class="head">
+                <p class="time">Время на складе: <span>12:06:45</span></p>
+            </div>
+            <div class="about">
+                <p class="title">Заказы в работе</p>
+            </div> 
+
+            <div class="block">
+                <div class="row">
+                    <div class="row">
+                        <div class="group">
+                            <p class="label">Номер заказа</p>
+                            <p class="num">#84567-1</p>
+                        </div>
+                        <div class="group">
+                            <p class="label">Статус заказа</p>
+                            <p class="status done">Выкуплен</p>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <p class="label">Дата заказа</p>
+                        <p class="date">25 сентября 2020 г.</p>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="group">
+                        <p class="label">В этом товаре заказы из магазина:</p>
+                        <a href="https://amazon.com" target="_blank" class="site">amazon.com</a>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="group">
+                        <p class="label total">Стоимость товаров:</p>
+                        <p class="sum">$2467.02</p>
+                    </div>
+                    <div class="group">
+                        <p class="label total">Товаров в заказе:</p>
+                        <p class="qty">12 штук</p>
+                    </div>
+                    <div class="group">
+                        <p class="label total">Комиссия:</p>
+                        <p class="commission">$25.00</p>
+                    </div>
+                    <div class="group">
+                        <p class="label total">Промокод:</p>
+                        <p class="qty">Fast2Fast3</p>
+                    </div>
+                    <div class="group">
+                        <p class="label total">Налог штата:</p>
+                        <p class="tax">$0</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="group">
+                    <label for="" class="label">Комментарий</label>
+                    <textarea name="" class="comment">примените промокод 40estra  без него не выкупайте товар; выкупайте заказ как есть; если не будет размера s/m купите m/l</textarea>
+                </div>
+                <div class="row row-buttons block-footer">
+                    <div class="row">
+                        <p class="label">Стоимость товаров:</p>
+                        <p class="footer-sum">$2467.02</p>
+                    </div>
+                    <a href="#" class="button-frame">Посмотреть содержимое корзины</a>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="row">
+                    <div class="row">
+                        <div class="group">
+                            <p class="label">Номер заказа</p>
+                            <p class="num">#84567-1</p>
+                        </div>
+                        <div class="group">
+                            <p class="label">Статус заказа</p>
+                            <p class="status done">Выкуплен</p>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <p class="label">Дата заказа</p>
+                        <p class="date">25 сентября 2020 г.</p>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="group">
+                        <p class="label">Отредактируйте товарыв заказе и отправьте их на выкуп операторам.<br> 
+                            Если не хотите ничего менять – нажмите кнопку “Отменить”, чтобы невыкупенный  заказ отправился в архив.<br> 
+                            Средства за невыкупленные товары уже вернулись на ваш счет в Pochtoy.com</p>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="group">
+                        <p class="label total">Стоимость товаров:</p>
+                        <p class="sum">$2467.02</p>
+                    </div>
+                    <div class="group">
+                        <p class="label total">Товаров в заказе:</p>
+                        <p class="qty">12 штук</p>
+                    </div>
+                    <div class="group">
+                        <p class="label total">Комиссия:</p>
+                        <p class="commission">$25.00</p>
+                    </div>
+                    <div class="group">
+                        <p class="label total">Промокод:</p>
+                        <p class="qty">Fast2Fast3</p>
+                    </div>
+                    <div class="group">
+                        <p class="label total">Налог штата:</p>
+                        <p class="tax">$0</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="group">
+                    <label for="" class="label">Комментарий</label>
+                    <textarea name="" class="comment">примените промокод 40estra  без него не выкупайте товар; выкупайте заказ как есть; если не будет размера s/m купите m/l</textarea>
+                </div>
+                <div class="row row-buttons block-footer">
+                    <div class="row">
+                        <p class="label">Стоимость товаров:</p>
+                        <p class="footer-sum">$2467.02</p>
+                    </div>
+                    <a href="#" class="button-frame">Посмотреть содержимое корзины</a>
+                    <a href="#" class="button-fill">Отменить заказ</a>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="row block-header">
+                    <p class="name">Товар №1</p>
+                    <div class="row">
+                        <button class="delete">Удалить из корзины</button>
+                        <p class="status wait">Ожидает выкупа</p>
+                    </div>
+                </div>
+                <div class="group">
+                    <label for="" class="label">Ссылка на товар</label>
+                    <input type="text" placeholder="Например: http://amazom.com/phone/iphone12" class="input" value="https://www.amazon.com/gp/product/P6...RT50BRZ&pf_rd_p=9d9090dd-8b99-4ac3-b4a9-90a1db2ef53b">
+                </div>
+                <div class="group">
+                    <label for="" class="label">Название товара на сайте</label>
+                    <input type="text" placeholder="Например: Iphone 12 pro 256 gold" class="input" value="DC-BEAUTIFUL 6 Set Girl Dolls Clothes ...Hat Socks, Total 14 Pcs Doll Onesies Clothes Pajamas Costumes">
+                </div>
+                <div class="row">
+                    <div class="group small">
+                        <label for="" class="label">Цена</label>
+                        <input type="text" placeholder="Например: $1234.33" class="input" value="25.98">
+                    </div>
+                    <div class="group small">
+                        <label for="" class="label">Цвет (color)</label>
+                        <input type="text" placeholder="Например: green" class="input" value="Rayas Azul Marino">
+                    </div>
+                    <div class="group small">
+                        <label for="" class="label">Размер (size)</label>
+                        <input type="text" placeholder="Например: 7 M / 9,5 W" class="input" value="s/m">
+                    </div>
+                    <div class="group small">
+                        <label for="" class="label">Количество</label>
+                        <input type="text" placeholder="Например: 1" class="input" value="2">
+                    </div>
+                </div>
+                <div class="group">
+                    <label for="" class="label">Коментарии или промокод сайта:</label>
+                    <textarea name="" class="comment">примените промокод 40estra  без него не выкупайте товар; выкупайте заказ как есть; если не будет размера s/m купите m/l</textarea>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="row block-header">
+                    <p class="name">Товар №2</p>
+                    <div class="row">
+                        <button class="delete">Удалить из корзины</button>
+                        <p class="status wait">Ожидает выкупа</p>
+                    </div>
+                </div>
+                <div class="group">
+                    <label for="" class="label">Ссылка на товар</label>
+                    <input type="text" placeholder="Например: http://amazom.com/phone/iphone12" class="input active" value="https://www.amazon.com/gp/product/P6...RT50BRZ&pf_rd_p=9d9090dd-8b99-4ac3-b4a9-90a1db2ef53b">
+                </div>
+                <div class="group">
+                    <label for="" class="label">Название товара на сайте</label>
+                    <input type="text" placeholder="Например: Iphone 12 pro 256 gold" class="input active" value="DC-BEAUTIFUL 6 Set Girl Dolls Clothes ...Hat Socks, Total 14 Pcs Doll Onesies Clothes Pajamas Costumes">
+                </div>
+                <div class="row">
+                    <div class="group small">
+                        <label for="" class="label">Цена</label>
+                        <input type="text" placeholder="Например: $1234.33" class="input active" value="25.98">
+                    </div>
+                    <div class="group small">
+                        <label for="" class="label">Цвет (color)</label>
+                        <input type="text" placeholder="Например: green" class="input active" value="Rayas Azul Marino">
+                    </div>
+                    <div class="group small">
+                        <label for="" class="label">Размер (size)</label>
+                        <input type="text" placeholder="Например: 7 M / 9,5 W" class="input active" value="s/m">
+                    </div>
+                    <div class="group small">
+                        <label for="" class="label">Количество</label>
+                        <input type="text" placeholder="Например: 1" class="input active" value="2">
+                    </div>
+                </div>
+                <div class="group">
+                    <label for="" class="label">Коментарии или промокод сайта:</label>
+                    <textarea name="" class="comment">примените промокод 40estra  без него не выкупайте товар; выкупайте заказ как есть; если не будет размера s/m купите m/l</textarea>
+                </div>
+                <hr />
+                <p class="label-problem">Что делать если такого товара не будет в магазине:</p>
+                <div class="row left">
+                    <div class="group group_check">
+                        <input type="checkbox" id="v1">
+                        <label for="v1" class="label_check">Купить те товары, которые будут</label>
+                    </div>
+                    <div class="group group_check">
+                        <input type="checkbox" id="v2">
+                        <label for="v2" class="label_check">Отменить весь заказ</label>
+                    </div>
+                </div>
+                <hr>
+                <div class="group group_check">
+                    <input type="checkbox" id="v3">
+                    <label for="v3" class="label_check">Если промокод на сайте выкупа не cработает, я соглашаюсь с выкупом заказа без скидки.</label>
+                </div>
+                <div class="row-buttons">
+                    <a href="#" class="button-fill">Оформить заказ и оплатить</a>
+                    <a href="#" class="button-frame">Редактирование заказа</a>
+                </div>
+            </div> 
+
+            <div class="block">
+                <div class="row">
+                    <div class="row">
+                        <div class="group">
+                            <p class="label">Номер заказа</p>
+                            <p class="num">#84567-1</p>
+                        </div>
+                        <div class="group">
+                            <p class="label">Статус заказа</p>
+                            <p class="status process">Частично выкуплен</p>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <p class="label">Дата заказа</p>
+                        <p class="date">25 сентября 2020 г.</p>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="group">
+                        <p class="label warning">Отредактируйте товарыв заказе и отправьте их на выкуп операторам.<br> 
+                            Если не хотите ничего менять – нажмите кнопку “Отменить”, чтобы невыкупенный  заказ отправился в архив. <br>
+                            Средства за невыкупленные товары уже вернулись на ваш счет в Простобоксе.</p>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="group">
+                        <p class="label total">Стоимость товаров:</p>
+                        <p class="sum">$2467.02</p>
+                    </div>
+                    <div class="group">
+                        <p class="label total">Товаров в заказе:</p>
+                        <p class="qty">12 штук</p>
+                    </div>
+                    <div class="group">
+                        <p class="label total">Комиссия:</p>
+                        <p class="commission">$25.00</p>
+                    </div>
+                    <div class="group">
+                        <p class="label total">Промокод:</p>
+                        <p class="qty">Fast2Fast3</p>
+                    </div>
+                    <div class="group">
+                        <p class="label total">Налог штата:</p>
+                        <p class="tax">$0</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="group">
+                    <label for="" class="label">Комментарий</label>
+                    <textarea name="" class="comment">примените промокод 40estra  без него не выкупайте товар; выкупайте заказ как есть; если не будет размера s/m купите m/l</textarea>
+                </div>
+                <div class="row row-buttons block-footer">
+                    <div class="row">
+                        <p class="label">Стоимость товаров:</p>
+                        <p class="footer-sum">$2467.02</p>
+                    </div>
+                    <a href="#" class="button-fill">Показать заказ</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body> 
+</html>
