@@ -405,6 +405,19 @@ main {
     line-height: 180%;
   }
 }
+@media (max-width: 1240px) {
+  .sidebar .breadcrumbs {
+    margin: 0;
+    position: absolute;
+    left: 15px;
+  }
+  .sidebar .sidebar-nav {
+    display: none;
+  }
+  .sidebar .banners {
+    display: none;
+  }
+}
 header {
   background: #fafafb;
   position: relative;
@@ -2438,6 +2451,9 @@ header .header .buttons .login.guest:after {
   color: #616D99;
 }
 
+.settings .mob-nav-sidebar {
+  display: none;
+}
 .settings .about {
   margin-top: 28px;
 }
@@ -2557,6 +2573,109 @@ header .header .buttons .login.guest:after {
   display: none;
 }
 
+@media (max-width: 1240px) {
+  .content.account.settings {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+@media (max-width: 768px) {
+  .settings .mob-nav-sidebar {
+    display: block;
+    margin-top: 20px;
+    padding: 25px 10px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+            box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+    border-radius: 12px;
+  }
+  .settings .mob-nav-sidebar p {
+    position: relative;
+    font-family: "Stolzl";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    color: #000000;
+  }
+  .settings .mob-nav-sidebar p:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -15px;
+    display: block;
+    width: 10px;
+    height: 5px;
+    background-image: url("https://evowebstudio.github.io/prostobox/img/icons/arrow-down-nav.svg");
+    background-position: center;
+    background-size: 10px 5px;
+    background-repeat: no-repeat;
+  }
+  .settings .about .title {
+    font-size: 16px;
+  }
+  .settings .about .text {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  .settings .nav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .settings .nav .button {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 16px 24px;
+  }
+  .settings .form {
+    margin-top: 20px;
+    padding: 20px;
+  }
+  .settings .form .row {
+    margin-bottom: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .settings .form .row .group {
+    margin-top: 20px;
+  }
+  .settings .form .row .group .label {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  .settings .form .row .group.half {
+    width: 100%;
+  }
+  .settings .form .row .group.select-address {
+    width: 100%;
+  }
+  .settings .form .button {
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 0;
+  }
+  .settings .form .input_text {
+    font-size: 12px;
+  }
+  .settings .form .select .select-selected {
+    font-size: 12px;
+  }
+}
 .promo .about {
   margin-top: 28px;
 }

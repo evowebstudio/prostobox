@@ -275,3 +275,19 @@ main {
     }
   }
 }
+
+@media(max-width: 1240px) {
+  .sidebar {
+    .breadcrumbs {
+      margin:0;
+      position: absolute;
+      left: 15px;
+    }
+    .sidebar-nav {
+      display: none;
+    }
+    .banners {
+      display: none;
+    }
+  }
+}
