@@ -287,6 +287,33 @@ main {
   outline: none;
 }
 
+.textarea_text {
+  width: 100%;
+  padding: 11px 23px;
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 180%;
+  letter-spacing: 0.04em;
+  color: #1a223f;
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.05));
+  filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.05));
+  border-radius: 20px;
+  outline: none;
+}
+.textarea_text:hover, .textarea_text:active, .textarea_text:focus {
+  border: 1px solid #000000;
+}
+
+.select.select_full {
+  width: 100%;
+  max-width: 100%;
+}
+
 .ask {
   padding: 0;
   width: 20px;
@@ -2571,6 +2598,34 @@ header .header .buttons .login.guest:after {
 }
 .settings .form .button::before {
   display: none;
+}
+.settings .group-bold {
+  font-size: 18px;
+  font-weight: 500;
+}
+.settings .group-thin {
+  max-width: 680px;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+@media (max-width: 768px) {
+  .settings .group-bold {
+    font-size: 14px;
+  }
+  .settings .group-thin {
+    font-size: 12px;
+  }
+}
+.settings .button.blue {
+  color: #fff;
+  background: #2B69F6;
+  border: 2px solid #2B69F6;
+  -webkit-box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+          box-shadow: 0px 2px 30px rgba(97, 109, 153, 0.08);
+}
+.settings .button.center {
+  display: block;
+  margin: 0 auto;
 }
 
 @media (max-width: 1240px) {
