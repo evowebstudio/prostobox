@@ -236,7 +236,7 @@
         margin-top: 100px;
         display: flex;
         justify-content: space-between;
-        background-image: url('/img/pr-line.png');
+        background-image: url('../img/pr-line.png');
         background-position: 25% 15%;
         background-repeat: no-repeat;
 
@@ -303,7 +303,7 @@
         }
 
         &.instagram {
-            background-image: url('/img/pr-line-2.png');
+            background-image: url('../img/pr-line-2.png');
             background-position: 50% 10%;
 
             .col {
@@ -583,10 +583,10 @@
         .row {
             margin-top: 20px;
             flex-direction: column;
-            background-image: url("/img/pr-line-mob.png");
+            background-image: url("../img/pr-line-mob.png");
 
             &.instagram {
-                background-image: url("/img/pr-line-2-mob.png");
+                background-image: url("../img/pr-line-2-mob.png");
                 background-position: 20% center;
             }
 

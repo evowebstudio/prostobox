@@ -14056,7 +14056,7 @@ ymaps {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-image: url("/img/pr-line.png");
+  background-image: url("../img/pr-line.png");
   background-position: 25% 15%;
   background-repeat: no-repeat;
 }
@@ -14122,7 +14122,7 @@ ymaps {
   margin-top: 20px;
 }
 .pr-item .row.instagram {
-  background-image: url("/img/pr-line-2.png");
+  background-image: url("../img/pr-line-2.png");
   background-position: 50% 10%;
 }
 .pr-item .row.instagram .col:last-child {
@@ -14387,10 +14387,10 @@ ymaps {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-image: url("/img/pr-line-mob.png");
+    background-image: url("../img/pr-line-mob.png");
   }
   .pr-item .row.instagram {
-    background-image: url("/img/pr-line-2-mob.png");
+    background-image: url("../img/pr-line-2-mob.png");
     background-position: 20% center;
   }
   .pr-item .row .col {
