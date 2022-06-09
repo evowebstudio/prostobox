@@ -1,0 +1,250 @@
+.onboard-overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+
+    &.active {
+        display: block;
+    }
+}
+
+.onboard-wrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+
+    &.active {
+        display: flex;
+    }
+}
+
+.onboard {
+    overflow: hidden;
+    position: relative;
+    width: 590px;
+    height: 582px;
+    display: block;
+    border-radius: 20px;
+    background-color: #fff;
+    display: none;
+
+    &::before {
+        display: block;
+        content: "";
+        width: 218px;
+        height: 222px;
+        position: absolute;
+        top: -95px;
+        right: -95px;
+        border-radius: 50%;
+        background-color: #ffe220;
+    }
+
+    &.active {
+        display: block;
+    }
+
+    &[data-step="3"] {
+        &::after {
+            display: block;
+            content: "";
+            width: 516px;
+            height: 526px;
+            position: absolute;
+            bottom: -275px;
+            left: -175px;
+            border-radius: 50%;
+            background-color: #ffe220;
+        }
+    }
+}
+
+.onboard-close {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-image: url('../img/icons/onboard-close.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+}
+
+.onboard-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.onboard-title {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 130%;
+    color: #1A223F;
+
+    &.onboard-title_1 {
+        padding: 100px 0 0 60px;
+    }
+
+    &.onboard-title_2 {
+        padding: 180px 0 0 60px;
+    }
+
+    &.onboard-title_3 {
+        padding: 120px 0 0 60px;
+    }
+
+    &.onboard-title_4 {
+        padding: 160px 0 0 60px;
+    }
+
+    &.onboard-title_7 {
+        padding: 120px 0 0 60px;
+    }
+}
+
+.onboard-text{
+    margin-top: 20px;
+    margin-left: 60px;
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    color: #282828;
+
+    strong {
+        font-weight: bold;
+    }
+}
+
+.onboard-button {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 60px;
+    min-width: 170px;
+    z-index: 1;
+}
+
+.onboard-nav {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    left: 60px;
+}
+
+.onboard-nav-list {
+    margin-left: 20px;
+    display: flex;
+}
+
+.onboard-nav-item {
+    display: block;
+    margin-right: 5px;
+    width: 10px;
+    height: 5px;
+    background-color: #DDEAFF;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &.active {
+        width: 20px;
+        background-color: #1467FF;
+    }
+}
+
+.onboard-prev {
+    width: 60px;
+    height: 60px;
+    display: block;
+    background-image: url('../img/icons/button-prev.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+}
+
+.onboard-next {
+    position: absolute;
+    left: 60px;
+    bottom: 40px;
+    width: 142px;
+    height: 60px;
+    background: #F2F2F2;
+    border-radius: 30px;
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+
+    color: #1467FF;
+    padding-left: 15px;
+    z-index: 1;
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        background-image: url('../img/icons/button-prev.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 60px 60px;
+        transform: rotate(180deg);
+    }
+
+    &.last {
+        min-width: 184px;
+    }
+}
+
+.onboard-list{
+    margin-top: 20px;
+    margin-left: 60px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.onboard-list-link {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 7px 20px;
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    letter-spacing: 0.04em;
+
+    color: #1467FF;
+    background: #FFFFFF;
+    border: 1px dashed #1467FF;
+    border-radius: 20px;
+
+    &:hover {
+        text-decoration: none;
+    }
+}

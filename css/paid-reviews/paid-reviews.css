@@ -1,0 +1,49 @@
+.pr-title-wrapper {
+  position: relative;
+  overflow: hidden;
+  max-width: 1600px;
+  margin: 0 auto;
+  background: #e3f5ff;
+  -webkit-box-shadow: 0px 24px 30px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 24px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+.pr-title-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 700px;
+  height: 479px;
+  background-image: url("../img/stores-title.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pr-title {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.pr-title .content {
+  width: 50%;
+  padding: 0;
+}
+.pr-title .content .title {
+  margin: 100px 0;
+  font-family: Jost;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 130%;
+  color: #282828;
+}
