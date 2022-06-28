@@ -248,3 +248,74 @@
         text-decoration: none;
     }
 }
+
+@media(max-width: 768px) {
+    .onboard {
+        width: 345px;
+        height: 552px;
+    }
+
+    .onboard-title {
+        font-size: 20px;
+    }
+
+    .onboard-title.onboard-title_1,
+    .onboard-title.onboard-title_2,
+    .onboard-title.onboard-title_3,
+    .onboard-title.onboard-title_4,
+    .onboard-title.onboard-title_7 {
+        padding: 100px 10px 0 30px;
+    }
+
+    .onboard-title.onboard-title_4 br {
+        display: none;
+    }
+
+    .onboard-list {
+        margin-left: 30px;
+    }
+
+    .onboard-list-link {
+        font-size: 9px;
+        padding: 4px 10px;
+    }
+
+    .onboard::before {
+        width: 147px;
+        height: 147px;
+        top: -60px;
+        right: -60px;
+    }
+    .onboard-text {
+        margin-left: 30px;
+    }
+
+    .onboard-button {
+        margin-left: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;    
+    }
+
+    .onboard-nav {
+        top: 25px;
+        left: 25px;
+    }
+
+    .onboard-prev {
+        width: 40px;
+        height: 40px;
+        background-size: 40px;
+    }
+
+    .onboard-next {
+        left: 30px;
+    }
+
+    .onboard-img_1 {
+        max-width: 80%;
+    }
+
+    .onboard-img_6 {
+        max-width: 70%;
+    }
+}

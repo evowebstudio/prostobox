@@ -330,4 +330,64 @@ window.addEventListener('DOMContentLoaded', () => {
                 .add(placemark2);
         });
     }
+
+    if(document.querySelector('.onboard-wrap')) {
+        const buttonOnboardStart = document.querySelector('.onboard.active .onboard-start');
+        const buttonsOnboardClose = document.querySelectorAll('.onboard .onboard-close');
+        const buttonsOnboardNext = document.querySelectorAll('.onboard .onboard-next');
+        const buttonsOnboardPrev = document.querySelectorAll('.onboard .onboard-prev');
+        const buttonOnboardLast = document.querySelector('.onboard .onboard-next.last');
+        const buttonsNavItem = document.querySelectorAll('.onboard .onboard-nav-item');
+
+        buttonOnboardStart.addEventListener('click', () => {
+            document.querySelector('.onboard[data-step="1"]').classList.remove('active');
+            document.querySelector('.onboard[data-step="2"]').classList.add('active');
+        });
+
+        buttonsOnboardClose.forEach((item) => {
+            item.addEventListener('click', () => {
+                document.querySelector('.onboard.active').classList.remove('active');
+                document.querySelector('.onboard-overlay.active').classList.remove('active');
+            });
+        });
+        
+        buttonOnboardLast.addEventListener('click', () => {
+            document.querySelector('.onboard.active').classList.remove('active');
+            document.querySelector('.onboard-overlay.active').classList.remove('active');
+            
+        });
+
+        buttonsOnboardNext.forEach((item) => {
+            item.addEventListener('click', () => {
+                if(!item.classList.contains('last')) {
+                    const activeBlock = document.querySelector('.onboard.active');
+                    const id = Number(activeBlock.getAttribute('data-step'));
+                    const nextId = id + 1;
+                    if(id < 7) {
+                        document.querySelector(`.onboard[data-step="${nextId}"]`).classList.add('active');
+                        activeBlock.classList.remove('active');
+                    }
+                }
+            });
+        });
+
+        buttonsOnboardPrev.forEach((item) => {
+            item.addEventListener('click', () => {
+                const activeBlock = document.querySelector('.onboard.active');
+                const id = Number(activeBlock.getAttribute('data-step'));
+                const prevId = id - 1;
+                document.querySelector(`.onboard[data-step="${prevId}"]`).classList.add('active');
+                activeBlock.classList.remove('active');
+            });
+        });
+
+        buttonsNavItem.forEach((item) => {
+            item.addEventListener('click', () => {
+                const idTarget = item.getAttribute('data-to');
+                const activeBlock = document.querySelector('.onboard.active');
+                activeBlock.classList.remove('active');
+                document.querySelector(`.onboard[data-step="${idTarget}"]`).classList.add('active');
+            });
+        });
+    }
 });
